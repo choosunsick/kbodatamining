@@ -3,10 +3,8 @@ Type: Package
 Title: Kbo Data Mining and Analysis with R
 Version: 0.1.0
 Date: 2019-01-31
-Author: Choo Sunsick
-Maintainer: 1993ss@naver.com
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Authors@R: person("Sunsick", "Choo", email = "1993ss@naver.com", role = c("aut", "cre"))
+Description: This package has functions to analyze korean baseball data such as batting average and on-base percentage.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

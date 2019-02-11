@@ -1,5 +1,5 @@
 library(jsonlite)
-sample_set <- jsonlite::fromJSON("https://raw.githubusercontent.com/LOPES-HUFS/KBO_Data_Wrangling/master/sample/hanhwa_normalseason_2018.json")
+sample_set <- jsonlite:::fromJSON("https://raw.githubusercontent.com/LOPES-HUFS/KBO_Data_Wrangling/master/sample/hanhwa_normalseason_2018.json")
 
 json2batterdf <- function(jsondata,gameid){
   merge_team <- rbind.data.frame(jsondata[[gameid]]$away_batter,jsondata[[gameid]]$home_batter)
@@ -50,6 +50,9 @@ json2batterdf <- function(jsondata,gameid){
   }
   return(merge_team)
 }
-hanhwa_batter <- do.call(rbind,lapply(names(sample_set),FUN = function(x)json2batterdf(sample_set,x)))
-write.csv(hanhwa_batter,"data-raw/hanhwa_batter_2018.csv")
-usethis::use_data(hanhwa_batter,overwrite = TRUE)
+hanhwa_batter_2018 <- do.call(rbind,lapply(names(sample_set),FUN = function(x)json2batterdf(sample_set,x)))
+hanhwa_batter_2018 <- hanhwa_batter_2018[,c(18:21,11,16:17,1:9,24,23,22,13,12,10,15)]
+colnames(hanhwa_batter_2018) <- c('date','away','home','doubleheader','name','team','position','one','two','three','four','five'
+                                  ,'six','seven','eight','nine','ten','eleven','twelve','ab','h','r','rbi')
+write.csv(hanhwa_batter_2018,"data-raw/hanhwa_batter_2018.csv",row.names = F)
+usethis::use_data(hanhwa_batter_2018,overwrite = TRUE)

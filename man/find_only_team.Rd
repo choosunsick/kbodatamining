@@ -18,6 +18,5 @@ The batter data only the team you want to find
 find_only_team function creates data that contains only the teams you want.
 }
 \examples{
-library(kbodatamining)
 find_only_team(hanhwa_batter_2018,"한화")
 }

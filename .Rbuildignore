@@ -6,3 +6,5 @@
 .gitignore
 README.md
 .Rhistory
+
+^json_sample$

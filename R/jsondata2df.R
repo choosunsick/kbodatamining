@@ -6,11 +6,14 @@
 #' @param gameid KBO game date and versus infomation
 #' @return One game is made up of data frames.
 #' @examples
-#' ## You can read the json file in the json_sample folder and use it as an argument.
+#' ## You can read the json file in the json_sample folder and use it.
 #' ## You can use the fromJSON function of the jsonlite package to read the json file.
-#' ## You can also get the KBO full game json file by getting the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project and working the code in the notebook file.
-#' ## If you get a json file through one of the above methods, you can open it and use it as an argument to the function.
-#' ## The gameid argument can be obtained by opening your json file and using the default function names.
+#' ## You can also get the KBO full game json file.
+#' ## You can import it from the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project.
+#' ## And working the code in the notebook file.
+#' ## If you get a json file through one of the above methods,
+#' ## you can open it and use it as an argument to the function.
+#' ## The gameid argument can be obtained using the default function names.
 #' ## jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
 #' # json2batterdf(jsondata,names(jsondata)[1])
 #' @export

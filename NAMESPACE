@@ -2,3 +2,4 @@
 
 export(find_only_team)
 export(json2batterdf)
+export(json2pitcherdf)

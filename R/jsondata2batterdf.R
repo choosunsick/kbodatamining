@@ -1,10 +1,10 @@
-#' json file to dataframe
+#' json file to batter dataframe
 #'
-#' A function that creates a json file as a data frame.
+#' A function that creates a json file as a batter data frame.
 #'
 #' @param jsondata KBO data json file
 #' @param gameid KBO game date and versus infomation
-#' @return One game is made up of data frames.
+#' @return A game consists of a batter data frame.
 #' @examples
 #' ## You can read the json file in the json_sample folder and use it.
 #' ## You can use the fromJSON function of the jsonlite package to read the json file.

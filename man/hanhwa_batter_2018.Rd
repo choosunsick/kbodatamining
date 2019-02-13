@@ -3,8 +3,8 @@
 \docType{data}
 \name{hanhwa_batter_2018}
 \alias{hanhwa_batter_2018}
-\title{2018 season hanhwabatters}
-\format{A data frame with 3580 rows and 24 variables:
+\title{2018 season hanhwa batters data}
+\format{A data frame with 3580 rows and 23 variables:
 \describe{
 \item{one}{one, 1 inning}
 \item{two}{two, 2 inning}

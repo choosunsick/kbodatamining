@@ -1,6 +1,19 @@
-library(jsonlite)
-sample_set <- fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
-
+#' json file to dataframe
+#'
+#' A function that creates a json file as a data frame.
+#'
+#' @param jsondata KBO data json file
+#' @param gameid KBO game date and versus infomation
+#' @return One game is made up of data frames.
+#' @examples
+#' ## You can read the json file in the json_sample folder and use it as an argument.
+#' ## You can use the fromJSON function of the jsonlite package to read the json file.
+#' ## You can also get the KBO full game json file by getting the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project and working the code in the notebook file.
+#' ## If you get a json file through one of the above methods, you can open it and use it as an argument to the function.
+#' ## The gameid argument can be obtained by opening your json file and using the default function names.
+#' ## jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
+#' # json2batterdf(jsondata,names(jsondata)[1])
+#' @export
 json2batterdf <- function(jsondata,gameid){
   merge_team <- rbind.data.frame(jsondata[[gameid]]$away_batter,jsondata[[gameid]]$home_batter)
   if (NCOL(merge_team)==23){
@@ -50,9 +63,3 @@ json2batterdf <- function(jsondata,gameid){
   }
   return(merge_team)
 }
-hanhwa_batter_2018 <- do.call(rbind,lapply(names(sample_set),FUN = function(x)json2batterdf(sample_set,x)))
-hanhwa_batter_2018 <- hanhwa_batter_2018[,c(18:21,11,16:17,1:9,24,23,22,13,12,10,15)]
-colnames(hanhwa_batter_2018) <- c('date','away','home','doubleheader','name','team','position','one','two','three','four','five'
-                                  ,'six','seven','eight','nine','ten','eleven','twelve','ab','h','r','rbi')
-write.csv(hanhwa_batter_2018,"data-raw/hanhwa_batter_2018.csv",row.names = F)
-usethis::use_data(hanhwa_batter_2018,overwrite = TRUE)

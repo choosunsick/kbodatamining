@@ -9,7 +9,7 @@
 #' If you put a year and a month in two parameter, the AVG for the time period you put in is calculated.
 #' @param data KBO Batter data
 #' @param playername The name of the batter you want
-#' @param yearly The default value is FALSE. Possible values are a specific year or a TRUE value.
+#' @param yearly The default value is TRUE Possible values are a specific year or a FALSE value.
 #' @param monthly The default value is FALSE. Possible values are a specific month or a TRUE value.
 #' @return The batting average for the year, month, or period entered is calculated.
 #' @importFrom dplyr "%>%"
@@ -22,9 +22,11 @@
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 #' ## yearly=2018, monthly=FALSE
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=2018)
-#' ## yearly= TRUE, monthly=05
+#' #' ## yearly=2018, monthly=TRUE
+#' player_avg(hanhwa_batter_2018,"이용규",yearly=2018,monthly=TRUE)
+#' ## yearly=TRUE, monthly=05
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
-#' ## yearly=2018,monthly=05
+#' ## yearly=2018, monthly=05
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
 #' @export
 player_avg <- function(data,playername,yearly=TRUE,monthly=FALSE){
@@ -48,6 +50,15 @@ player_avg <- function(data,playername,yearly=TRUE,monthly=FALSE){
   else if(is.numeric(yearly)==TRUE & monthly==FALSE){
     avg <- data$h[substr(data$date,1,4)==yearly] %>%
       avg_formula(data$ab[substr(data$date,1,4)==yearly])
+  }
+  else if(is.numeric(yearly)==TRUE & monthly==TRUE){
+    avg <- list()
+    for(i in unique(substr(data$date,6,7))){
+      colname <- paste("month","_",i,sep = "")
+      temp <- data[substr(data$date,1,4)==yearly&substr(data$date,6,7)==i,]
+      avg[colname] <- avg_formula(temp$h,temp$ab)
+    }
+    avg <- data.frame(avg)
   }
   else if(yearly==TRUE & is.character(monthly)==TRUE){
     avg <- list()

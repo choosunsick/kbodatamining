@@ -11,7 +11,7 @@ player_avg(data, playername, yearly = TRUE, monthly = FALSE)
 
 \item{playername}{The name of the batter you want}
 
-\item{yearly}{The default value is FALSE. Possible values are a specific year or a TRUE value.}
+\item{yearly}{The default value is TRUE Possible values are a specific year or a FALSE value.}
 
 \item{monthly}{The default value is FALSE. Possible values are a specific month or a TRUE value.}
 }
@@ -36,8 +36,10 @@ player_avg(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
 player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 ## yearly=2018, monthly=FALSE
 player_avg(hanhwa_batter_2018,"이용규",yearly=2018)
-## yearly= TRUE, monthly=05
+#' ## yearly=2018, monthly=TRUE
+player_avg(hanhwa_batter_2018,"이용규",yearly=2018,monthly=TRUE)
+## yearly=TRUE, monthly=05
 player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
-## yearly=2018,monthly=05
+## yearly=2018, monthly=05
 player_avg(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
 }

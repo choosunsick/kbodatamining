@@ -6,7 +6,7 @@
 #' If only the monthly parameter is TRUE, the monthly AVG is calculated
 #' If you put a year in the yearly parameter, it calculates the AVG for that year.
 #' If you put a month in the monthly parameter, it calculates the corresponding monthly AVG.
-#' If you put a year and a month in two parameter, the AVG for the time period you put is calculated.
+#' If you put a year and a month in two parameter, the AVG for the time period you put in is calculated.
 #' @param data KBO Batter data
 #' @param playername The name of the batter you want
 #' @param yearly The default value is FALSE. Possible values are a specific year or a TRUE value.
@@ -22,13 +22,13 @@
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 #' ## yearly=2018, monthly=FALSE
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=2018)
-#' ## yearly=FALSE, monthly=05
-#' player_avg(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=05)
+#' ## yearly= TRUE, monthly=05
+#' player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
 #' ## yearly=2018,monthly=05
 #' player_avg(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
 #' @export
 player_avg <- function(data,playername,yearly=TRUE,monthly=FALSE){
-  data <- data[data$name == playername,]
+  data <- find_player(data,playername)
   if(yearly == TRUE & monthly==FALSE){
     avg <- list()
     for(i in unique(substr(data$date,1,4))){
@@ -40,7 +40,7 @@ player_avg <- function(data,playername,yearly=TRUE,monthly=FALSE){
   else if(yearly==FALSE & monthly==TRUE){
     avg <- list()
     for(i in unique(substr(data$date,6,7))){
-      colname<- paste("month","_",i,sep = "")
+      colname <- paste("month","_",i,sep = "")
       avg[colname] <- avg_formula(data$h[substr(data$date,6,7)==i],data$ab[substr(data$date,6,7)==i])
     }
     avg <- data.frame(avg)
@@ -49,7 +49,7 @@ player_avg <- function(data,playername,yearly=TRUE,monthly=FALSE){
     avg <- data$h[substr(data$date,1,4)==yearly] %>%
       avg_formula(data$ab[substr(data$date,1,4)==yearly])
   }
-  else if(yearly==FALSE & is.character(monthly)==TRUE){
+  else if(yearly==TRUE & is.character(monthly)==TRUE){
     avg <- list()
     for(i in unique(substr(data$date,1,4))){
       colname <- paste("date",i,"_",monthly,sep = "")

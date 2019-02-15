@@ -25,7 +25,7 @@ default: the annual AVG is calculated
 If only the monthly parameter is TRUE, the monthly AVG is calculated
 If you put a year in the yearly parameter, it calculates the AVG for that year.
 If you put a month in the monthly parameter, it calculates the corresponding monthly AVG.
-If you put a year and a month in two parameter, the AVG for the time period you put is calculated.
+If you put a year and a month in two parameter, the AVG for the time period you put in is calculated.
 }
 \examples{
 ## default
@@ -36,8 +36,8 @@ player_avg(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
 player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 ## yearly=2018, monthly=FALSE
 player_avg(hanhwa_batter_2018,"이용규",yearly=2018)
-## yearly=FALSE, monthly=05
-player_avg(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=05)
+## yearly= TRUE, monthly=05
+player_avg(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
 ## yearly=2018,monthly=05
 player_avg(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
 }

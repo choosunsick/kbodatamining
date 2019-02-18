@@ -1,14 +1,13 @@
-#' avg calculate formula
+#' AVG calculate formula
 #'
-#' only calculate function
+#' only AVG calculate function
 #'
-#' @param h hit record data
-#' @param ab at bat record data
+#' @param data batter record data
 #' @return calculate avg
 #' @examples
 #' ## internal function
-#' #avg_formula(h,ab)
+#' #avg_formula(hanhwa_batter_2018)
 
-avg_formula <- function(h,ab){
-  return(sum(h)/sum(ab))
+avg_formula <- function(data){
+  return(sum(data$h)/sum(data$ab))
 }

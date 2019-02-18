@@ -4,12 +4,13 @@ Title: Kbo Data Mining and Analysis with R
 Version: 0.1.0
 Date: 2019-01-31
 Authors@R: person("Sunsick", "Choo", email = "1993ss@naver.com", role = c("aut", "cre"))
-Description: This package has functions to analyze korean baseball data such as batting average and on-base percentage.
+Description: This package analyzes records such as AVG and ERA through Korean baseball data. 
 Depends:
     R (>= 2.10)
 Imports:
     jsonlite,
-    dplyr
+    dplyr,
+    rlang
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

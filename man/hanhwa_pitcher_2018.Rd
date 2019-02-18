@@ -35,6 +35,6 @@
 hanhwa_pitcher_2018
 }
 \description{
-This data includes Hanhwa and the opponent's pitcher record in 2018.
+This data includes Hanhwa's and the opponent's pitcher record of 2018.
 }
 \keyword{datasets}

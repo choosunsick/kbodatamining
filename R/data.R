@@ -1,6 +1,6 @@
 #' 2018 season hanhwa batters data
 #'
-#' This data includes Hanhwa and the opponent's batter record in 2018.
+#' This data includes Hanhwa's and the opponent's batter record of 2018.
 #'
 #' @format A data frame with 3580 rows and 23 variables:
 #' \describe{
@@ -33,7 +33,7 @@
 
 #' 2018 season hanhwa pitchers data
 #'
-#' This data includes Hanhwa and the opponent's pitcher record in 2018.
+#' This data includes Hanhwa's and the opponent's pitcher record of 2018.
 #'
 #' @format A data frame with 3580 rows and 21 variables:
 #' \describe{

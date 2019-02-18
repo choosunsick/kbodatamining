@@ -2,22 +2,20 @@
 % Please edit documentation in R/avg_formula.R
 \name{avg_formula}
 \alias{avg_formula}
-\title{avg calculate formula}
+\title{AVG calculate formula}
 \usage{
-avg_formula(h, ab)
+avg_formula(data)
 }
 \arguments{
-\item{h}{hit record data}
-
-\item{ab}{at bat record data}
+\item{data}{batter record data}
 }
 \value{
 calculate avg
 }
 \description{
-only calculate function
+only AVG calculate function
 }
 \examples{
 ## internal function
-#avg_formula(h,ab)
+#avg_formula(hanhwa_batter_2018)
 }

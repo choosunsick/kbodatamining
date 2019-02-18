@@ -33,11 +33,11 @@ player_2B(hanhwa_batter_2018,"이용규")
 ## yearly=FALSE, monthly=TRUE
 player_2B(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
 ## yearly=TRUE, monthly=TRUE #error case
-player_2B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
+##player_2B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 ## yearly=2018, monthly=FALSE
 player_2B(hanhwa_batter_2018,"이용규",yearly=2018)
 ## yearly= TRUE, monthly=05
-player_2B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
+player_2B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly="05")
 ## yearly=2018,monthly=05
-player_2B(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
+player_2B(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 }

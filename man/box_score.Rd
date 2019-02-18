@@ -12,7 +12,7 @@ box_score(jsondata, gameid)
 \item{gameid}{KBO game date and versus infomation}
 }
 \value{
-gameid Shows the box score of the match that matches the information.
+the baseball match of gameid appears in box score dataframe.
 }
 \description{
 It shows the box score of the KBO game.

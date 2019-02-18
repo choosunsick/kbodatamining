@@ -4,7 +4,7 @@
 #'
 #' @param jsondata KBO data json file
 #' @param gameid KBO game date and versus infomation
-#' @return gameid Shows the box score of the match that matches the information.
+#' @return the baseball match of gameid appears in box score dataframe.
 #' @examples
 #' ## not run
 #' ## You can read the json file in the json_sample folder and use it.

@@ -18,13 +18,13 @@
 #' ## yearly=FALSE, monthly=TRUE
 #' player_3B(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
 #' ## yearly=TRUE, monthly=TRUE #error case
-#' player_3B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
+#' ## player_3B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 #' ## yearly=2018, monthly=FALSE
 #' player_3B(hanhwa_batter_2018,"이용규",yearly=2018)
 #' ## yearly= TRUE, monthly=05
-#' player_3B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
+#' player_3B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly="05")
 #' ## yearly=2018,monthly=05
-#' player_3B(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
+#' player_3B(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 #' @export
 
 player_3B <-  function(data,playername,yearly=TRUE,monthly=FALSE){
@@ -44,7 +44,7 @@ player_3B <-  function(data,playername,yearly=TRUE,monthly=FALSE){
     for(i in unique(substr(data$date,6,7))){
       colname <- paste("month","_",i,sep = "")
       inning_data <- data[substr(data$date,6,7)==i,c(inning)]
-      temp[colname] <- factor_count(inning_data,"11")
+      temp[colname] <- factor_count(inning_data,"12")
     }
     temp <- data.frame(temp)
   }
@@ -75,7 +75,7 @@ player_3B <-  function(data,playername,yearly=TRUE,monthly=FALSE){
     temp <- factor_count(inning_data,"12")
   }
   else{
-    return("Reread the description of the yearly and monthly arguments and use the function")
+    stop("The use of the yearly and monthly arguments is incorrect.")
   }
   return(temp)
 }

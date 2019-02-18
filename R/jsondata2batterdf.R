@@ -1,19 +1,19 @@
 #' json file to batter dataframe
 #'
-#' A function that creates a json file as a batter data frame.
+#' This function changes batter data in json file to dataframe data
 #'
 #' @param jsondata KBO data json file
 #' @param gameid KBO game date and versus infomation
-#' @return A game consists of a batter data frame.
+#' @return the dataframe data that is changed from batter data
 #' @examples
 #' ## You can read the json file in the json_sample folder and use it.
-#' ## You can use the fromJSON function of the jsonlite package to read the json file.
-#' ## You can also get the KBO full game json file.
-#' ## You can import it from the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project.
-#' ## And working the code in the notebook file.
-#' ## If you get a json file through one of the above methods,
-#' ## you can open it and use it as an argument to the function.
-#' ## The gameid argument can be obtained using the default function names.
+#' ## You can use fromJSON function of jsonlite package to read the json file.
+#' ## You can also get KBO full game json file.
+#' ## You can extract it from the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project
+#' ## And work the code in the notebook file.
+#' ## If you got a json file through one of the above methods,
+#' ## you can open it and use it as an argument of the function.
+#' ## The gameid argument can be obtained through using the default function names.
 #' ## jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
 #' # json2batterdf(jsondata,names(jsondata)[1])
 #' @export

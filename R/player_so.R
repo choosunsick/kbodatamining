@@ -14,20 +14,20 @@
 #' @return Batter's strikeout for the year, month, or period put in is calculated.
 #' @examples
 #' ## default
-#' player_so(hanhwa_batter_2018,"이용규")
+#' player_SO(hanhwa_batter_2018,"이용규")
 #' ## yearly=FALSE, monthly=TRUE
-#' player_so(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
+#' player_SO(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
 #' ## yearly=TRUE, monthly=TRUE #error case
-#' player_so(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
+#' ## player_SO(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
 #' ## yearly=2018, monthly=FALSE
-#' player_so(hanhwa_batter_2018,"이용규",yearly=2018)
+#' player_SO(hanhwa_batter_2018,"이용규",yearly=2018)
 #' ## yearly= TRUE, monthly=05
-#' player_so(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=05)
+#' player_SO(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly="05")
 #' ## yearly=2018,monthly=05
-#' player_so(hanhwa_batter_2018,"이용규",yearly=2018,monthly=05)
+#' player_SO(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 #' @export
 
-player_so <-  function(data,playername,yearly=TRUE,monthly=FALSE){
+player_SO <-  function(data,playername,yearly=TRUE,monthly=FALSE){
   data <- find_player(data,playername)
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   if(yearly == TRUE & monthly==FALSE){
@@ -75,7 +75,7 @@ player_so <-  function(data,playername,yearly=TRUE,monthly=FALSE){
     temp <- sum(factor_count(inning_data,"20"),factor_count(inning_data,"21"))
   }
   else{
-    return("Reread the description of the yearly and monthly arguments and use the function")
+    stop("The use of the yearly and monthly arguments is incorrect.")
   }
   return(temp)
 }

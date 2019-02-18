@@ -11,8 +11,8 @@
 #' @importFrom dplyr filter %>%
 #' @importFrom rlang .data
 #' @examples
-#' ## internal function
 #' #date_test(hanhwa_batter_2018,"이용규",NULL,NULL,avg_formula)
+#' @export
 date_test <- function(data,playername,yearly,monthly,recordname){
   if(is.null(yearly) == TRUE & is.null(monthly) == TRUE){
      temp <- yearly_record(data,playername,recordname)

@@ -1,9 +1,9 @@
 #' AVG calculate formula
 #'
-#' only AVG calculate function
+#' AVG calculate function
 #'
 #' @param data batter record data
-#' @return calculate avg
+#' @return calculate AVG
 #' @examples
 #' ## internal function
 #' #avg_formula(hanhwa_batter_2018)

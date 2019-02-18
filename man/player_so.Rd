@@ -2,42 +2,38 @@
 % Please edit documentation in R/player_SO.R
 \name{player_SO}
 \alias{player_SO}
-\title{Calculating batter's strike out}
+\title{Calculating batter's strikeout}
 \usage{
-player_SO(data, playername, yearly = TRUE, monthly = FALSE)
+player_SO(data = kbodatamining::hanhwa_batter_2018, playername,
+  yearly = NULL, monthly = NULL)
 }
 \arguments{
-\item{data}{KBO Batter data}
+\item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
 
 \item{playername}{The name of the batter you want}
 
-\item{yearly}{The default value is TRUE Possible values are a specific year or a FALSE value.}
+\item{yearly}{The default value is NULL Possible values are a specific year.}
 
-\item{monthly}{The default value is FALSE. Possible values are a specific month or a TRUE value.}
+\item{monthly}{The default value is NULL Possible values are a specific month.}
 }
 \value{
-Batter's strikeout for the year, month, or period put in is calculated.
+The strikeout for the year, month, or period put in is calculated.
 }
 \description{
 This function calculates the strikeout for the specified player.
 This function has an option for yearly and monthly.
-default: the annualy strikeout is calculated
-If only the monthly parameter is TRUE, the monthly strikeout is calculated
-If you put a year in the yearly parameter, it calculates the strikeout for that year.
-If you put a month in the monthly parameter, it calculates the corresponding monthly strikeout.
-If you put a year and a month in two parameter, the strikeout for the time period you put in is calculated.
+default: the annual strikeout is calculated
+If you put a year in the yearly parameter, it calculates the corresponding year strikeout.
+If you put a month in the monthly parameter, it calculates the corresponding yearly-month strikeout.
+If you put a year and a month in two parameters, the strikeout for the specific time you put in is calculated.
 }
 \examples{
 ## default
 player_SO(hanhwa_batter_2018,"이용규")
-## yearly=FALSE, monthly=TRUE
-player_SO(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
-## yearly=TRUE, monthly=TRUE #error case
-## player_SO(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
-## yearly=2018, monthly=FALSE
+## yearly=2018, monthly=NULL
 player_SO(hanhwa_batter_2018,"이용규",yearly=2018)
-## yearly= TRUE, monthly=05
-player_SO(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly="05")
-## yearly=2018,monthly=05
+## yearly=NULL, monthly="05"
+player_SO(hanhwa_batter_2018,"이용규",monthly="05")
+## yearly=2018, monthly="05"
 player_SO(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 }

@@ -33,7 +33,7 @@ player_AVG(hanhwa_batter_2018,"이용규")
 ## yearly=2018, monthly=NULL
 player_AVG(hanhwa_batter_2018,"이용규",yearly=2018)
 ## yearly=NULL, monthly="05"
-player_AVG(hanhwa_batter_2018,"이용규",yearly=NULL,monthly="05")
+player_AVG(hanhwa_batter_2018,"이용규",monthly="05")
 ## yearly=2018, monthly="05"
 player_AVG(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 }

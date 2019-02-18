@@ -10,10 +10,10 @@ avg_formula(data)
 \item{data}{batter record data}
 }
 \value{
-calculate avg
+calculate AVG
 }
 \description{
-only AVG calculate function
+AVG calculate function
 }
 \examples{
 ## internal function

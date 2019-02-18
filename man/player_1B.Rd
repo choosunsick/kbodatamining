@@ -4,40 +4,36 @@
 \alias{player_1B}
 \title{Calculating batter's single hit}
 \usage{
-player_1B(data, playername, yearly = TRUE, monthly = FALSE)
+player_1B(data = kbodatamining::hanhwa_batter_2018, playername,
+  yearly = NULL, monthly = NULL)
 }
 \arguments{
-\item{data}{KBO Batter data}
+\item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
 
 \item{playername}{The name of the batter you want}
 
-\item{yearly}{The default value is TRUE Possible values are a specific year or a FALSE value.}
+\item{yearly}{The default value is NULL Possible values are a specific year.}
 
-\item{monthly}{The default value is FALSE. Possible values are a specific month or a TRUE value.}
+\item{monthly}{The default value is NULL Possible values are a specific month.}
 }
 \value{
-Batter's single hit for the year, month, or period put in is calculated.
+The single hit for the year, month, or period put in is calculated.
 }
 \description{
 This function calculates the single hit for the specified player.
 This function has an option for yearly and monthly.
 default: the annualy single hit is calculated
-If only the monthly parameter is TRUE, the monthly single hit is calculated
-If you put a year in the yearly parameter, it calculates the single hit for that year.
-If you put a month in the monthly parameter, it calculates the corresponding monthly single hit
-If you put a year and a month in two parameter, the single hit for the time period you put in is calculated.
+If you put a year in the yearly parameter, it calculates the corresponding year single hit.
+If you put a month in the monthly parameter, it calculates the corresponding yearly-month single hit.
+If you put a year and a month in two parameters, the single hit for the specific time you put in is calculated.
 }
 \examples{
 ## default
 player_1B(hanhwa_batter_2018,"이용규")
-## yearly=FALSE, monthly=TRUE
-player_1B(hanhwa_batter_2018,"이용규",yearly=FALSE,monthly=TRUE)
-## yearly=TRUE, monthly=TRUE #error case
-## player_1B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly=TRUE)
-## yearly=2018, monthly=FALSE
+## yearly=2018, monthly=NULL
 player_1B(hanhwa_batter_2018,"이용규",yearly=2018)
-## yearly= TRUE, monthly=05
-player_1B(hanhwa_batter_2018,"이용규",yearly=TRUE,monthly="05")
-## yearly=2018,monthly=05
+## yearly=NULL, monthly="05"
+player_1B(hanhwa_batter_2018,"이용규",monthly="05")
+## yearly=2018, monthly="05"
 player_1B(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 }

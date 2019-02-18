@@ -1,10 +1,10 @@
-#' Calculating batter's  On-base percentage
+#' Calculating batter's On-base percentage
 #'
-#' This function calculates the  On-base percentage for the specified player.
+#' This function calculates the On-base percentage for the specified player.
 #' This function has an option for yearly and monthly.
-#' default: the annualy  On-base percentage is calculated
-#' If you put a year in the yearly parameter, it calculates the corresponding year  On-base percentage.
-#' If you put a month in the monthly parameter, it calculates the corresponding yearly-month  On-base percentage.
+#' default: the annualy On-base percentage is calculated
+#' If you put a year in the yearly parameter, it calculates the corresponding year On-base percentage.
+#' If you put a month in the monthly parameter, it calculates the corresponding yearly-monthOn-base percentage.
 #' If you put a year and a month in two parameters, the On-base percentage for the specific time you put in is calculated.
 #' @param data Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.
 #' @param playername The name of the batter you want.

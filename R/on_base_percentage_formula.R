@@ -9,8 +9,6 @@
 #' ## internal function
 #' #obp_formula(hanhwa_batter_2018)
 obp_formula <- function(data){
-  inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
-  data <- select(data,inning)
   numerator <- sum(data$ab,bb_formula(data),hbp_formula(data))
   if(numerator!=0){
     obp <- numerator/sum(numerator,sf_formula(data))

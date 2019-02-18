@@ -1,15 +1,15 @@
-#' Base on balls calculate function
+#' Hit by pitch calculate function
 #'
-#' count base on balls of player
+#' count Hit by pitch of player
 #'
 #' @param data batter inning data
-#' @return the number of base on balls
+#' @return the number of  Hit by pitch
 #' @importFrom dplyr select
 #' @examples
 #' ## internal function
-#' #bb_formula(hanhwa_batter_2018)
-bb_formula <- function(data){
+#' #hbp_formula(hanhwa_batter_2018)
+hbp_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)
-  return(factor_count(data,"30")+factor_count(data,"32"))
+  return(factor_count(data,"31"))
 }

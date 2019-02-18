@@ -29,11 +29,11 @@ If you put a year and a month in two parameters, the Hit by pitch for the specif
 }
 \examples{
 ## default
-player_BB(hanhwa_batter_2018,"이용규")
+player_HBP(hanhwa_batter_2018,"이용규")
 ## yearly=2018, monthly=NULL
-player_BB(hanhwa_batter_2018,"이용규",yearly=2018)
+player_HBP(hanhwa_batter_2018,"이용규",yearly=2018)
 ## yearly=NULL, monthly="05"
-player_BB(hanhwa_batter_2018,"이용규",monthly="05")
+player_HBP(hanhwa_batter_2018,"이용규",monthly="05")
 ## yearly=2018, monthly="05"
-player_BB(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
+player_HBP(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/base_on_balls_formula.R
 \name{bb_formula}
 \alias{bb_formula}
-\title{Homerun calculate function}
+\title{Base on balls calculate function}
 \usage{
 bb_formula(data)
 }
@@ -17,5 +17,5 @@ count base on balls of player
 }
 \examples{
 ## internal function
-#threebase_formula(hanhwa_batter_2018)
+#bb_formula(hanhwa_batter_2018)
 }

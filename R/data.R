@@ -56,6 +56,7 @@
 #' \item{er}{er, The pitcher's earned run.}
 #' \item{k}{k, Pitcher's strikeout number}
 #' \item{bb}{bb, Number of base on balls and number of hit by pitch}
+#' \item{pit}{pit, Pitches thrown}
 #' \item{ab}{ab, AB: At Bat}
 #' \item{tbf}{tbf, TBF:Total Batters Faced}
 #' }

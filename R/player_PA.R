@@ -13,13 +13,13 @@
 #' @return The Plate appearance for the year, month, or period put in is calculated.
 #' @examples
 #' ## default
-#' player_SO(hanhwa_batter_2018,"이용규")
+#' player_PA(hanhwa_batter_2018,"이용규")
 #' ## yearly=2018, monthly=NULL
-#' player_SO(hanhwa_batter_2018,"이용규",yearly=2018)
+#' player_PA(hanhwa_batter_2018,"이용규",yearly=2018)
 #' ## yearly=NULL, monthly="05"
-#' player_SO(hanhwa_batter_2018,"이용규",monthly="05")
+#' player_PA(hanhwa_batter_2018,"이용규",monthly="05")
 #' ## yearly=2018, monthly="05"
-#' player_SO(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
+#' player_PA(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 #' @export
 
 player_PA <-  function(data=kbodatamining::hanhwa_batter_2018,playername,yearly=NULL,monthly=NULL){

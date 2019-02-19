@@ -21,7 +21,7 @@
 #' ## yearly=2018, monthly="05"
 #' player_HRA(hanhwa_pitcher_2018,"송은범",yearly=2018,monthly="05")
 #' @export
-player_HA <- function(data=kbodatamining::hanhwa_pitcher_2018,playername,yearly=NULL,monthly=NULL){
+player_HRA <- function(data=kbodatamining::hanhwa_pitcher_2018,playername,yearly=NULL,monthly=NULL){
   hra <- date_test(data,playername,yearly,monthly,hra_formula)
   return(hra)
 }

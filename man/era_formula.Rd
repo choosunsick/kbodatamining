@@ -7,7 +7,7 @@
 era_formula(data)
 }
 \arguments{
-\item{data}{pitcher inning data}
+\item{data}{KBO pitcher data}
 }
 \value{
 player ERA

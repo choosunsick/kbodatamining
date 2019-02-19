@@ -23,5 +23,5 @@
 #' @export
 player_ER <- function(data=kbodatamining::hanhwa_pitcher_2018,playername,yearly=NULL,monthly=NULL){
   er <- date_test(data,playername,yearly,monthly,er_formula)
-  return(k)
+  return(er)
 }

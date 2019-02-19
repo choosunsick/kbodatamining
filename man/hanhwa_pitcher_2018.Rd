@@ -26,6 +26,8 @@
 \item{k}{k, Pitcher's strikeout number}
 \item{bb}{bb, Number of base on balls and number of hit by pitch}
 \item{pit}{pit, Pitches thrown}
+\item{h}{h, Hits allowed}
+\item{hr}{hr, Home runs allowed}
 \item{ab}{ab, AB: At Bat}
 \item{tbf}{tbf, TBF:Total Batters Faced}
 }}

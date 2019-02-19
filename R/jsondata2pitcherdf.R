@@ -19,5 +19,7 @@
 #' @export
 json2pitcherdf <- function(jsondata,gameid){
   merge_team <- rbind.data.frame(jsondata[[gameid]]$away_pitcher,jsondata[[gameid]]$home_pitcher)
+  merge_team$inning <- as.numeric(merge_team$inning)
+  merge_team$restinning <- as.numeric(merge_team$restinning)
   return(merge_team)
 }

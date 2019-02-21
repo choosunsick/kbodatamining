@@ -9,9 +9,9 @@
 #' ## internal function
 #' #obp_formula(hanhwa_batter_2018)
 obp_formula <- function(data){
-  numerator <- sum(data$ab,bb_formula(data),hbp_formula(data))
-  if(numerator!=0){
-    obp <- numerator/sum(numerator,sf_formula(data))
+  denominator <- sum(sum(data$ab),bb_formula(data),hbp_formula(data),sf_formula(data))
+  if(denominator>0){
+    obp <- sum(sum(data$h),bb_formula(data),hbp_formula(data))/denominator
   }
   else{
     obp <- 0

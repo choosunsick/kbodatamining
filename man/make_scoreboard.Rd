@@ -2,7 +2,7 @@
 % Please edit documentation in R/scoreboard.R
 \name{make_scoreboard}
 \alias{make_scoreboard}
-\title{Make scoreboarddataframe}
+\title{Make scoreboard dataframe}
 \usage{
 make_scoreboard(jsondata, gameid)
 }
@@ -19,10 +19,6 @@ It shows the scoreboard of the KBO game.
 }
 \examples{
 ## not run
-## You can read the json file in the json_sample folder and use it.
-## You can use the fromJSON function of the jsonlite package to read the json file.
-## You can also get the KBO full game json file.
-## You can import it from the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project.
-## jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
+# jsondata <- jsonlite::fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
 # make_scoreboard(jsondata,names(jsondata)[1])
 }

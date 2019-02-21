@@ -13,17 +13,17 @@
 #' @return The Ground into double play for the year, month, or period put in is calculated.
 #' @examples
 #' ## default
-#' player_GDP(hanhwa_batter_2018,"이용규")
+#' player_GIDP(hanhwa_batter_2018,"이용규")
 #' ## yearly=2018, monthly=NULL
-#' player_GDP(hanhwa_batter_2018,"이용규",yearly=2018)
+#' player_GIDP(hanhwa_batter_2018,"이용규",yearly=2018)
 #' ## yearly=NULL, monthly="05"
-#' player_GDP(hanhwa_batter_2018,"이용규",monthly="05")
+#' player_GIDP(hanhwa_batter_2018,"이용규",monthly="05")
 #' ## yearly=2018, monthly="05"
-#' player_GDP(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
+#' player_GIDP(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
 #' @export
 
-player_GDP <- function(data=kbodatamining::hanhwa_batter_2018,playername,yearly=NULL,monthly=NULL){
-  gdp <- date_test(data,playername,yearly,monthly,gdp_formula)
+player_GIDP <- function(data=kbodatamining::hanhwa_batter_2018,playername,yearly=NULL,monthly=NULL){
+  gdp <- date_test(data,playername,yearly,monthly,gidp_formula)
   return(gdp)
 }
 

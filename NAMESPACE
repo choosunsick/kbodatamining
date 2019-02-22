@@ -3,6 +3,7 @@
 export(batter_boxscore)
 export(date_test)
 export(find_player)
+export(find_team)
 export(json2batterdf)
 export(json2pitcherdf)
 export(make_scoreboard)

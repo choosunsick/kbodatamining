@@ -6,9 +6,9 @@
 #' @return Batter's statistic
 #' @examples
 #' ## internal function
-#' #batter_statics(find_player(hanhwa_batter_2018,"이용규"))
+#' #batter_statistics(find_player(hanhwa_batter_2018,"이용규"))
 
-batter_statics <- function(data){
+batter_statistics <- function(data){
   team <- unique(data$team)
   team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>2,paste(team[1],team[2],sep = ""),"NO game participation"))
   pa <- pa_formula(data)

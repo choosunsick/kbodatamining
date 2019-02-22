@@ -10,6 +10,7 @@
 
 batter_statistics <- function(data){
   team <- unique(data$team)
+  g <- NROW(unique(data$date))+NROW(unique(data$date[data$doubleheader!=0]))
   team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>2,paste(team[1],team[2],sep = ""),"NO game participation"))
   pa <- pa_formula(data)
   ab <- sum(data$ab)
@@ -33,7 +34,7 @@ batter_statistics <- function(data){
   slg <- slg_formula(data)
   ops <- obp+slg
   babip <- ifelse(ab+sh-so-hr>0,(h-hr)/(ab+sh-so-hr),0)
-  batterstatics <- data.frame(team,pa,ab,h,r,rbi,one_base,two_base,three_base,hr,
+  batterstatics <- data.frame(team,g,pa,ab,h,r,rbi,one_base,two_base,three_base,hr,
              tb,bb,hbp,ibb,so,gidp,sh,sf,avg,obp,slg,ops,babip)
   return(batterstatics)
 }

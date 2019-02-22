@@ -8,12 +8,15 @@
 #' @examples
 #' ## not run
 #' # jsondata <- jsonlite::fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
-#' # make_scoreboard(jsondata,names(jsondata)[1])
+#' # scoreboard(jsondata,names(jsondata)[1])
 #' @export
-make_scoreboard <- function(jsondata,gameid){
+scoreboard <- function(jsondata,gameid){
   date <- paste(substr(gameid,1,4),"_",substr(gameid,5,6),"_",substr(gameid,7,8),sep = "")
-  temp <-data.frame(jsondata[[gameid]]$ETC_info)
-  scoreboard <- data.frame(Date=date,stadium=unique(temp[,11]),spectator=unique(temp[,12]),
-                           time=unique(temp[,15]),jsondata[[gameid]]$scoreboard)
-  return(scoreboard)
+  stadium <- names(jsondata[[gameid]]$ETC_info)[NROW(names(jsondata[[gameid]]$ETC_info))-4]
+  spactator <- names(jsondata[[gameid]]$ETC_info)[NROW(names(jsondata[[gameid]]$ETC_info))-3]
+  playtime <- names(jsondata[[gameid]]$ETC_info)[NROW(names(jsondata[[gameid]]$ETC_info))]
+  etc <- find_etcname(jsondata,gameid,stadium,spactator,playtime)
+  score <- jsondata[[gameid]]$scoreboard
+  score_board <- cbind(etc,score)
+  return(score_board)
 }

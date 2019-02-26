@@ -9,5 +9,9 @@
 #' find_player(hanhwa_batter_2018,"이용규")
 #' @export
 find_player <- function(data,playername){
-  return(data[data$name == playername,])
+  player_data <- data[data$name == playername,]
+  if(NROW(player_data)==0){
+    warning("There is no data for player.")
+  }
+  return(player_data)
 }

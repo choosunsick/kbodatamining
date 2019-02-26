@@ -4,12 +4,12 @@
 \alias{date_test}
 \title{yearly and monthly argument test}
 \usage{
-date_test(data, playername, yearly, monthly, recordname)
+date_test(data, name, yearly, monthly, recordname)
 }
 \arguments{
 \item{data}{Default is hanhwa's batter data, You can include the entire KBO data if you wish.}
 
-\item{playername}{The name of the batter you want}
+\item{name}{The name of the batter or the team you want}
 
 \item{yearly}{Default is NULL, but you can put in the year}
 

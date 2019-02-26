@@ -4,12 +4,12 @@
 \alias{year_month_record}
 \title{year month record show}
 \usage{
-year_month_record(data, playername, recordname, year, month)
+year_month_record(data, name, recordname, year, month)
 }
 \arguments{
 \item{data}{Default is hanhwa's batter data, You can include the entire KBO data if you wish.}
 
-\item{playername}{The name of the batter you want}
+\item{name}{The name of the batter or the team you want}
 
 \item{recordname}{The name of the record you want}
 

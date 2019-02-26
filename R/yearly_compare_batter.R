@@ -14,9 +14,9 @@
 #' ## You can refer to the Readme file to obtain the annual KBO data
 #' ## if
 #' ## default:monthly=NULL
-#' ## yearly_compare_batter(hanhwa_batter_2018,"이용규","정근우")
+#' ## yearly_compare_batter(yearly_KBO_data,"이용규","정근우")
 #' ## monthly="05
-#' ## yearly_compare_batter(hanhwa_batter_2018,"이용규","정근우",monthly="05")
+#' ## yearly_compare_batter(yearly_KBO_data,"이용규","정근우",monthly="05")
 #' @export
 
 yearly_compare_batter <- function(data,playername1,playername2,monthly=NULL){

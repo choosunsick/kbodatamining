@@ -25,7 +25,10 @@
 batter_boxscore <- function(data=kbodatamining::hanhwa_batter_2018,playername,yearly=NULL,monthly=NULL){
   boxscore <- date_test(data,playername,yearly,monthly,batter_statistics)
   boxscore <- cbind(playername,boxscore)
-  colnames(boxscore)<-c("name","period","team","g","pa","ab","h","r","rbi","1B","2B","3B","hr","tb","bb","hbp",
+  colnames(boxscore)<-c("name","period","team","g","away","home","pa","ab","h","r","rbi","1B","2B","3B","hr","tb","bb","hbp",
                              "ibb","so","gidp","sh","sf","avg","obp","slg","ops","babip")
+  if(boxscore$name==boxscore$team){
+    boxscore <- boxscore[,2:NCOL(boxscore)]
+  }
   return(boxscore)
 }

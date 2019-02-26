@@ -4,12 +4,12 @@
 \alias{yearly_record}
 \title{Yearly record show}
 \usage{
-yearly_record(data, playername, recordname)
+yearly_record(data, name, recordname)
 }
 \arguments{
 \item{data}{default is hanhwa's batter data, You can include the entire KBO data if you wish.}
 
-\item{playername}{The name of the batter you want}
+\item{name}{The name of the batter or the team you want}
 
 \item{recordname}{The name of the record you want}
 }

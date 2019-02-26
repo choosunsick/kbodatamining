@@ -10,7 +10,10 @@ Depends:
 Imports:
     jsonlite,
     dplyr,
-    rlang
+    rlang,
+    ggplot2,
+    reshape2,
+    gridExtra
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

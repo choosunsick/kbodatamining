@@ -17,6 +17,6 @@ scoreboard <- function(jsondata,gameid){
   playtime <- names(jsondata[[gameid]]$ETC_info)[NROW(names(jsondata[[gameid]]$ETC_info))]
   etc <- find_etcname(jsondata,gameid,stadium,spactator,playtime)
   score <- jsondata[[gameid]]$scoreboard
-  score_board <- cbind(etc,score)
+  score_board <- cbind(date,etc,score)
   return(score_board)
 }

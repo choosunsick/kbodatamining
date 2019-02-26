@@ -4,13 +4,13 @@
 \alias{batter_boxscore}
 \title{The box score of the batter player's period}
 \usage{
-batter_boxscore(data = kbodatamining::hanhwa_batter_2018, playername,
+batter_boxscore(data = kbodatamining::hanhwa_batter_2018, name,
   yearly = NULL, monthly = NULL)
 }
 \arguments{
 \item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
 
-\item{playername}{The name of the batter you want}
+\item{name}{The name of the batter you want}
 
 \item{yearly}{The default value is NULL Possible values are a specific year.}
 

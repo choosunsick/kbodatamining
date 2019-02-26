@@ -31,5 +31,8 @@ pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,playername,
   boxscore <- cbind(playername,boxscore,cg,cgs)
   colnames(boxscore)<-c("name","period","team","g","win","lose","draw","wpct","sv","hld","ip","r","er","k","bb&hbp","pit",
                         "tbf","ha","hra","era","p_ip","k_9","hr_9","oba","cg","cgs")
+  if(all(boxscore$name==boxscore$team)){
+    boxscore <- boxscore[,2:NCOL(boxscore)]
+  }
   return(boxscore)
 }

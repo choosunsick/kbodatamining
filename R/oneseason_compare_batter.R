@@ -22,6 +22,7 @@
 #' @export
 
 oneseason_compare_batter <- function(data=kbodatamining::hanhwa_batter_2018,playername1,playername2,yearly=2018,monthly=NULL){
-  data <- make_plot_data(data,playername1,playername2,yearly,monthly)
-  return(oneyear_plotting(data))
+  data <- make_batter_data(data,playername1,playername2,yearly,monthly)
+  plot <- oneyear_batter_plot(data)
+  return(plot)
 }

@@ -10,9 +10,9 @@
 #' @return Combined data of two players
 #' @examples
 #' ## internal function
-#' #make_batter_data(hanhwa_batter_2018,"이용규","정근우")
+#' #make_plot_batter_data(hanhwa_batter_2018,"이용규","정근우")
 
-make_batter_data <- function(data,playername1,playername2,yearly=NULL,monthly=NULL){
+make_plot_batter_data <- function(data,playername1,playername2,yearly=NULL,monthly=NULL){
   player_1 <- kbodatamining::batter_boxscore(data,playername1,yearly,monthly)
   player_2 <- kbodatamining::batter_boxscore(data,playername2,yearly,monthly)
   return(rbind(player_1,player_2))

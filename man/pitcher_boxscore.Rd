@@ -4,13 +4,13 @@
 \alias{pitcher_boxscore}
 \title{The box score of the pitcher player's period}
 \usage{
-pitcher_boxscore(data = kbodatamining::hanhwa_pitcher_2018, playername,
+pitcher_boxscore(data = kbodatamining::hanhwa_pitcher_2018, name,
   yearly = NULL, monthly = NULL)
 }
 \arguments{
 \item{data}{Default data is hanhwa_pitcher_2018 You can put other kbo pitcher data if you want.}
 
-\item{playername}{The name of the pitcher you want}
+\item{name}{The name of the pitcher you want}
 
 \item{yearly}{The default value is NULL Possible values are a specific year.}
 
@@ -29,11 +29,11 @@ If you put a year and a month in two parameters, the box score for the specific 
 }
 \examples{
 ## default: yearly=NULL,monthly=NULL
-pitcher_boxscore(hanhwa_batter_2018,"이용규")
+pitcher_boxscore(hanhwa_pitcher_2018,"정우람")
 ## yearly=2018, monthly=NULL
-pitcher_boxscore(hanhwa_batter_2018,"이용규",yearly=2018)
+pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018)
 ## yearly=NULL, monthly="05"
-pitcher_boxscore(hanhwa_batter_2018,"이용규",monthly="05")
+pitcher_boxscore(hanhwa_pitcher_2018,"정우람",monthly="05")
 ## yearly=2018, monthly="05"
-pitcher_boxscore(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
+pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018,monthly="05")
 }

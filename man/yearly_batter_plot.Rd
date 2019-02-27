@@ -2,7 +2,7 @@
 % Please edit documentation in R/yearly_batter_plot.R
 \name{yearly_batter_plot}
 \alias{yearly_batter_plot}
-\title{Yearly data plotting}
+\title{Yearly batter data plotting}
 \usage{
 yearly_batter_plot(data)
 }
@@ -17,5 +17,5 @@ plotting yearly batter data
 }
 \examples{
 ## internal function
-#yearly_plotting(make_plot_data(hanhwa_batter_2018,"이용규","정근우"))
+#yearly_batter_plot(make_plot_data(hanhwa_batter_2018,"이용규","정근우"))
 }

@@ -3,12 +3,14 @@
 #' Calculate Complete game Shutout
 #'
 #' @param data KBO pitcher data
+#' @param team KBO team name
 #' @return Complete game Shutout dataframe
 #' @examples
 #' ## internal function
-#' #cgs_calculate(find_team(hanhwa_pitcher_2018,"한화"))
+#' #cgs_calculate(hanhwa_pitcher_2018,"한화")
 
-cgs_calculate <- function(data){
+cgs_calculate <- function(data,team){
+  data <- find_team(data,team)
   cgs_list <- data.frame()
   for(i in unique(data$date)){
     if(all(NROW(data[data$date==i,])==1 & data$r[data$date==i]==0)==TRUE){

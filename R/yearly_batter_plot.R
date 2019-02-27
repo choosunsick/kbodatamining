@@ -10,7 +10,7 @@
 #' @importFrom rlang .data
 #' @examples
 #' ## internal function
-#' #yearly_plotting(make_plot_data(hanhwa_batter_2018,"이용규","정근우"))
+#' #yearly_batter_plot(make_plot_data(hanhwa_batter_2018,"이용규","정근우"))
 
 yearly_batter_plot <- function(data){
   g_plot <- ggplot2::ggplot(data = data,aes(x=.data$period,y=.data$g,group=.data$name,fill=.data$name))+

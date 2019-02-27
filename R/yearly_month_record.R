@@ -11,7 +11,7 @@
 #' ## internal function
 #' #yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula)
 yearly_month_record <- function(data,name,recordname,month){
-  if(name %in% unique(kbodatamining::hanhwa_batter_2018$team) ==TRUE ){
+  if(name %in% unique(kbodatamining::hanhwa_batter_2018$team)){
     subset_data <- find_team(data,name)
   }
   else{

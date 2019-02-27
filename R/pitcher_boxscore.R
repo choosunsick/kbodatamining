@@ -7,32 +7,39 @@
 #' If you put a month in the monthly parameter, it calculates the corresponding yearly-month box score.
 #' If you put a year and a month in two parameters, the box score for the specific time you put in is created.
 #' @param data Default data is hanhwa_pitcher_2018 You can put other kbo pitcher data if you want.
-#' @param playername The name of the pitcher you want
+#' @param name The name of the pitcher you want
 #' @param yearly The default value is NULL Possible values are a specific year.
 #' @param monthly The default value is NULL Possible values are a specific month.
 #' @return The box score for the year, month, or period put in is created.
 #' @examples
 #' ## default: yearly=NULL,monthly=NULL
-#' pitcher_boxscore(hanhwa_batter_2018,"이용규")
+#' pitcher_boxscore(hanhwa_pitcher_2018,"정우람")
 #' ## yearly=2018, monthly=NULL
-#' pitcher_boxscore(hanhwa_batter_2018,"이용규",yearly=2018)
+#' pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018)
 #' ## yearly=NULL, monthly="05"
-#' pitcher_boxscore(hanhwa_batter_2018,"이용규",monthly="05")
+#' pitcher_boxscore(hanhwa_pitcher_2018,"정우람",monthly="05")
 #' ## yearly=2018, monthly="05"
-#' pitcher_boxscore(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
+#' pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018,monthly="05")
 #' @export
 
-pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,playername,yearly=NULL,monthly=NULL){
-  boxscore <- date_test(data,playername,yearly,monthly,pitcher_statistics)
-  cg_list <- cg_calculate(data)
-  cgs_list <- cgs_calculate(data)
-  cg <- ifelse(any(unique(cg_list$name))==playername,cg_list$cg[cg_list$name==playername],0)
-  cgs <- ifelse(any(unique(cgs_list$name))==playername,cgs_list$cgs[cgs_list$name==playername],0)
-  boxscore <- cbind(playername,boxscore,cg,cgs)
-  colnames(boxscore)<-c("name","period","team","g","win","lose","draw","wpct","sv","hld","ip","r","er","k","bb&hbp","pit",
-                        "tbf","ha","hra","era","p_ip","k_9","hr_9","oba","cg","cgs")
-  if(all(boxscore$name==boxscore$team)){
-    boxscore <- boxscore[,2:NCOL(boxscore)]
+pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,name,yearly=NULL,monthly=NULL){
+  boxscore <- date_test(data,name,yearly,monthly,pitcher_statistics)
+  cg_list <- cg_calculate(data,boxscore$record.team)
+  cgs_list <- cgs_calculate(data,boxscore$record.team)
+  if(name %in% unique(kbodatamining::hanhwa_pitcher_2018$team)){
+    cg <- sum(cg_list$cg)
+    cgs <- sum(cgs_list$cgs)
+    boxscore <- cbind(boxscore,cg,cgs)
+    colnames(boxscore)<-c("period","team","g","away","home","win","lose","draw","wpct","sv","hld","ip","r","er","k","bb&hbp","pit",
+                          "tbf","ha","hra","era","p_ip","k_9","hr_9","oba","cg","cgs")
+  }
+  else{
+    cg <- ifelse(any(unique(cg_list$name))==name,cg_list$cg[cg_list$name==name],0)
+    cgs <- ifelse(any(unique(cgs_list$name))==name,cgs_list$cgs[cgs_list$name==name],0)
+    boxscore <- cbind(name,boxscore,cg,cgs)
+    colnames(boxscore)<-c("name","period","team","g","away","home","win","lose","draw","wpct","sv","hld","ip","r","er","k","bb&hbp","pit",
+                          "tbf","ha","hra","era","p_ip","k_9","hr_9","oba","cg","cgs")
+
   }
   return(boxscore)
 }

@@ -61,8 +61,5 @@ json2batterdf <- function(jsondata,gameid){
     merge_team$`7` <- 0
     merge_team$`6` <- 0
   }
-  else{
-    print("pass")
-  }
   return(merge_team)
 }

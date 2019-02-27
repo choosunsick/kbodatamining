@@ -14,7 +14,7 @@ oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
 
 \item{playername2}{Name of the batter you want to compare}
 
-\item{yearly}{The default value is NULL Possible values are a specific year.}
+\item{yearly}{The default value is 2018 Possible values are a specific year.}
 
 \item{monthly}{The default value is NULL Possible values are a specific month.}
 }
@@ -30,6 +30,7 @@ If you put specific month in the monthly parameter,
 draws a batting comparison plot for the matched 2018 year and specific month.
 If you put specific year and month in two parameters,
 draws a batting comparison plot for the matched specific year and month.
+If you are using mac and Hangul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 }
 \examples{
 ## default: yearly=2018, monthly=NULL

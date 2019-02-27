@@ -11,6 +11,8 @@ pitcher_statistics <- function(data){
   team <- unique(data$team)
   team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>2,paste(team[1],team[2],sep = ""),"NO game participation"))
   g <- NROW(unique(data$date))+NROW(unique(data$date[data$doubleheader!=0]))
+  away <- NROW(unique(data$date[data$away==team]))
+  home <- NROW(unique(data$date[data$home==team]))
   win <- sum(data$win)
   lose <- sum(data$lose)
   draw <- sum(data$draw)
@@ -31,6 +33,6 @@ pitcher_statistics <- function(data){
   k_9 <- k_9_formula(data)
   hr_9 <- hr_9_formula(data)
   oba <- oba_formula(data)
-  pitcherstatistic <- data.frame(team,g,win,lose,draw,wpct,hld,sv,ip,r,er,k,bb_plus_hbp,pit,tbf,ha,hra,era,p_ip,k_9,hr_9,oba)
+  pitcherstatistic <- data.frame(team,g,away,home,win,lose,draw,wpct,hld,sv,ip,r,er,k,bb_plus_hbp,pit,tbf,ha,hra,era,p_ip,k_9,hr_9,oba)
   return(pitcherstatistic)
 }

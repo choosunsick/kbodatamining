@@ -3,12 +3,14 @@
 #' Calculate Complete game
 #'
 #' @param data KBO pitcher data
+#' @param team KBO team name
 #' @return Complete game player and cg count dataframe
 #' @examples
 #' ## internal function
-#' #cg_calculate(find_team(hanhwa_pitcher_2018,"한화"))
+#' #cg_calculate(hanhwa_pitcher_2018,"한화")
 
-cg_calculate <- function(data){
+cg_calculate <- function(data,team){
+  data <- find_team(data,team)
   cg_list <- data.frame()
   for(i in unique(data$date)){
     if(NROW(data[data$date==i,])==1){

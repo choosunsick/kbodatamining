@@ -4,10 +4,12 @@
 \alias{cgs_calculate}
 \title{Complete game Shutout calculate function}
 \usage{
-cgs_calculate(data)
+cgs_calculate(data, team)
 }
 \arguments{
 \item{data}{KBO pitcher data}
+
+\item{team}{KBO team name}
 }
 \value{
 Complete game Shutout dataframe
@@ -17,5 +19,5 @@ Calculate Complete game Shutout
 }
 \examples{
 ## internal function
-#cgs_calculate(find_team(hanhwa_pitcher_2018,"한화"))
+#cgs_calculate(hanhwa_pitcher_2018,"한화")
 }

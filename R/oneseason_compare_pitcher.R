@@ -8,6 +8,7 @@
 #' draws a pitching comparison plot for the matched 2018 year and specific month.
 #' If you put specific year and month in two parameters,
 #' draws a pitching comparison plot for the matched specific year and month.
+#' If you are using mac and Hangul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 #' @param data Default data is hanhwa_pitcher_2018 You can put other kbo batter data if you want.
 #' @param playername1 Name of the pitcher you want to compare
 #' @param playername2 Name of the pitcher you want to compare

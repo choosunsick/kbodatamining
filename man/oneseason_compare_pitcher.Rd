@@ -30,6 +30,7 @@ If you put specific month in the monthly parameter,
 draws a pitching comparison plot for the matched 2018 year and specific month.
 If you put specific year and month in two parameters,
 draws a pitching comparison plot for the matched specific year and month.
+If you are using mac and Hangul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 }
 \examples{
 ## default: yearly=2018, monthly=NULL

@@ -4,10 +4,12 @@
 \alias{cg_calculate}
 \title{Complete game calculate function}
 \usage{
-cg_calculate(data)
+cg_calculate(data, team)
 }
 \arguments{
 \item{data}{KBO pitcher data}
+
+\item{team}{KBO team name}
 }
 \value{
 Complete game player and cg count dataframe
@@ -17,5 +19,5 @@ Calculate Complete game
 }
 \examples{
 ## internal function
-#cg_calculate(find_team(hanhwa_pitcher_2018,"한화"))
+#cg_calculate(hanhwa_pitcher_2018,"한화")
 }

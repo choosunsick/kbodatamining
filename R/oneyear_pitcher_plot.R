@@ -14,11 +14,11 @@
 #' #oneyear_pitcher_plot(make_pitcher_data(hanhwa_pitcher_2018,"정우람","이태양"))
 
 oneyear_pitcher_plot <- function(data){
-  stat_data <- filter(melt(data,1:3),.data$variable %in% colnames(data)[c(1:7,9:19,21:22,25:26)])
+  stat_data <- filter(melt(data,1:3),.data$variable %in% colnames(data)[c(1:9,11:21,23:24,27:28)])
   stat_plot <- ggplot(data = stat_data,aes(x=.data$variable,y=.data$value,fill=.data$name))+
     geom_bar(stat="identity",position = "dodge")+theme(axis.text.x= element_text(angle=30, hjust=1))+
     ggtitle("Compare stats")+xlab("Stats")+ylab("Value")+labs(fill="player names")
-  percent_data <- filter(melt(data,1:3),.data$variable %in% colnames(data)[c(8,20,23:24)])
+  percent_data <- filter(melt(data,1:3),.data$variable %in% colnames(data)[c(10,22,25:26)])
   stat_plot2 <- ggplot(data = percent_data,aes(x=.data$variable,y=.data$value,fill=.data$name))+
     geom_bar(stat="identity",position = "dodge")+ggtitle("Compare stats2")+
     xlab("Stats")+ylab("Value")+labs(fill="player names")

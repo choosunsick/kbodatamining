@@ -9,6 +9,6 @@
 #' #avg_formula(hanhwa_batter_2018)
 
 avg_formula <- function(data){
-  avg <- ifelse(sum(data$ab),sum(data$h)/sum(data$ab),0)
+  avg <- ifelse(sum(data$ab)>0,sum(data$h)/sum(data$ab),0)
   return(avg)
 }

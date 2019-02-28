@@ -10,12 +10,11 @@ hr_9_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player HR / 9
+player's HR / 9
 }
 \description{
-Calculate HR / 9 of player
+Calculates Homerun / 9 in the data.
 }
 \examples{
-## internal function
-#hr_9_formula(hanhwa_pitcher_2018[hanhwa_pitcher_2018$team=="한화",])
+hr_9_formula(find_team(hanhwa_pitcher_2018,"한화"))
 }

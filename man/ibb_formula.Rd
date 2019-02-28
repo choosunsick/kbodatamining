@@ -10,10 +10,10 @@ ibb_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of intentional base on balls
+The intentional base on balls number of the player
 }
 \description{
-count intentional base on balls of player
+Calculates intentional base on balls in the data.
 }
 \examples{
 ## internal function

@@ -1,13 +1,13 @@
 #' Base on balls calculate function
 #'
-#' count base on balls of player
+#' Calculates base on balls from data
 #'
-#' @param data batter inning data
+#' @param data KBO batter inning data
 #' @return the number of base on balls
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #bb_formula(hanhwa_batter_2018)
+#' bb_formula(hanhwa_batter_2018)
+#' @export
 bb_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

@@ -18,6 +18,5 @@ Complete game player and cg count dataframe
 Calculate Complete game
 }
 \examples{
-## internal function
-#cg_calculate(hanhwa_pitcher_2018,"한화")
+cg_calculate(hanhwa_pitcher_2018,"한화")
 }

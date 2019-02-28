@@ -1,13 +1,13 @@
 #' Hit by pitch calculate function
 #'
-#' count Hit by pitch of player
+#' Calculates the hit by pitch record in the data.
 #'
 #' @param data batter inning data
-#' @return the number of  Hit by pitch
+#' @return  player's Hit by pitch
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #hbp_formula(hanhwa_batter_2018)
+#' hbp_formula(hanhwa_batter_2018)
+#' @export
 hbp_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

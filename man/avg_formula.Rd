@@ -7,15 +7,14 @@
 avg_formula(data)
 }
 \arguments{
-\item{data}{batter record data}
+\item{data}{KBO batter data}
 }
 \value{
-calculate AVG
+AVG
 }
 \description{
-AVG calculate function
+Calculates AVG from data
 }
 \examples{
-## internal function
-#avg_formula(hanhwa_batter_2018)
+avg_formula(hanhwa_batter_2018)
 }

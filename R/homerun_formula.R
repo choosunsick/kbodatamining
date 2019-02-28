@@ -1,13 +1,13 @@
 #' Homerun calculate function
 #'
-#' count Homerun of player
+#' Calculates Homerun in the data.
 #'
 #' @param data batter inning data
-#' @return the number of Homerun
+#' @return player's Homerun
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #homerun_formula(hanhwa_batter_2018)
+#' homerun_formula(hanhwa_batter_2018)
+#' @export
 homerun_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

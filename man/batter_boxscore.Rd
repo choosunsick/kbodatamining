@@ -2,7 +2,7 @@
 % Please edit documentation in R/batter_boxscore.R
 \name{batter_boxscore}
 \alias{batter_boxscore}
-\title{The box score of the batter player's period}
+\title{The box score of the batter}
 \usage{
 batter_boxscore(data = kbodatamining::hanhwa_batter_2018, name,
   yearly = NULL, monthly = NULL)

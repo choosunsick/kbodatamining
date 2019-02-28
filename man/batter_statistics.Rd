@@ -2,7 +2,7 @@
 % Please edit documentation in R/batter_statistic.R
 \name{batter_statistics}
 \alias{batter_statistics}
-\title{Make Batter statistic}
+\title{Make Batter statistics}
 \usage{
 batter_statistics(data)
 }
@@ -13,7 +13,7 @@ batter_statistics(data)
 Batter's statistic
 }
 \description{
-Function: Make Batter's statistic From the KBO data
+Function: Make Batter's statistics From the KBO data
 }
 \examples{
 ## internal function

@@ -6,8 +6,8 @@
 #' @param team KBO team name
 #' @return Complete game player and cg count dataframe
 #' @examples
-#' ## internal function
-#' #cg_calculate(hanhwa_pitcher_2018,"한화")
+#' cg_calculate(hanhwa_pitcher_2018,"한화")
+#' @export
 
 cg_calculate <- function(data,team){
   data <- find_team(data,team)

@@ -13,9 +13,8 @@ ip_formula(data)
 player IP
 }
 \description{
-Calculate IP of player
+Calculates innings pitched in the data.
 }
 \examples{
-## internal function
-#ip_formula(hanhwa_pitcher_2018)
+ip_formula(hanhwa_pitcher_2018)
 }

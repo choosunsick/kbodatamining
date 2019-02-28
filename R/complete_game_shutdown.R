@@ -6,8 +6,8 @@
 #' @param team KBO team name
 #' @return Complete game Shutout dataframe
 #' @examples
-#' ## internal function
-#' #cgs_calculate(hanhwa_pitcher_2018,"한화")
+#' cgs_calculate(hanhwa_pitcher_2018,"한화")
+#' @export
 
 cgs_calculate <- function(data,team){
   data <- find_team(data,team)

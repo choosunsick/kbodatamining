@@ -11,7 +11,7 @@
 find_player <- function(data,playername){
   player_data <- data[data$name == playername,]
   if(NROW(player_data)==0){
-    warning("There is no data for player.")
+    stop("There is no data for player.")
   }
   return(player_data)
 }

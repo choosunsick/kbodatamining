@@ -13,9 +13,8 @@ era_formula(data)
 player ERA
 }
 \description{
-Calculate ERA of player
+Calculates the ERA of the pitcher from the data
 }
 \examples{
-## internal function
-#era_formula(hanhwa_pitcher_2018)
+era_formula(hanhwa_pitcher_2018)
 }

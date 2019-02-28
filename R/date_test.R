@@ -11,7 +11,7 @@
 #' @importFrom dplyr filter %>%
 #' @importFrom rlang .data
 #' @examples
-#' #date_test(hanhwa_batter_2018,"이용규",NULL,NULL,avg_formula)
+#' date_test(hanhwa_batter_2018,"이용규",NULL,NULL,avg_formula)
 #' @export
 date_test <- function(data,name,yearly,monthly,recordname){
   if(is.null(yearly) == TRUE & is.null(monthly) == TRUE){
@@ -19,7 +19,7 @@ date_test <- function(data,name,yearly,monthly,recordname){
   }
   else if(is.null(yearly) == TRUE & is.null(monthly) == FALSE){
     if(is.character(monthly)==FALSE){
-      stop("The use of the monthly argument is incorrect.")
+      stop("The monthly argument must be a string.")
     }
     else{
       monthly <- ifelse(nchar(monthly)==1,paste(0,monthly,sep=""),monthly)
@@ -28,7 +28,7 @@ date_test <- function(data,name,yearly,monthly,recordname){
   }
   else if(is.null(yearly) == FALSE & is.null(monthly) == TRUE){
     if(nchar(yearly)!=4){
-      stop("The use of the yearly argument is incorrect.")
+      stop("The yearly argument must be a 4-digit number type.")
     }
     temp <- yearly_record(data,name,recordname) %>% filter(.data$period==yearly)
   }
@@ -40,6 +40,9 @@ date_test <- function(data,name,yearly,monthly,recordname){
       monthly <- ifelse(nchar(monthly)==1,paste(0,monthly,sep=""),monthly)
     }
     temp <- year_month_record(data,name,recordname,yearly,monthly)
+  }
+  if(NROW(temp)==0){
+    stop("There is no data for the time period you put.")
   }
   return(temp)
 }

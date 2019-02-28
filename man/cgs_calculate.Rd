@@ -18,6 +18,5 @@ Complete game Shutout dataframe
 Calculate Complete game Shutout
 }
 \examples{
-## internal function
-#cgs_calculate(hanhwa_pitcher_2018,"한화")
+cgs_calculate(hanhwa_pitcher_2018,"한화")
 }

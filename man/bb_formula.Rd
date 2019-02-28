@@ -7,15 +7,14 @@
 bb_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter inning data}
 }
 \value{
 the number of base on balls
 }
 \description{
-count base on balls of player
+Calculates base on balls from data
 }
 \examples{
-## internal function
-#bb_formula(hanhwa_batter_2018)
+bb_formula(hanhwa_batter_2018)
 }

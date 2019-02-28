@@ -7,15 +7,14 @@
 gidp_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter inning data}
 }
 \value{
-the number of Ground into double play
+The player's GIDP
 }
 \description{
-Count Ground into double play of player
+Calculates the ground into double play record in the data.
 }
 \examples{
-## internal function
-#gidp_formula(hanhwa_batter_2018)
+gidp_formula(hanhwa_batter_2018)
 }

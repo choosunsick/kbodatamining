@@ -1,13 +1,13 @@
 #' Ground into double play calculate function
 #'
-#' Count Ground into double play of player
+#' Calculates the ground into double play record in the data.
 #'
-#' @param data batter inning data
-#' @return the number of Ground into double play
+#' @param data KBO batter inning data
+#' @return The player's GIDP
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #gidp_formula(hanhwa_batter_2018)
+#' gidp_formula(hanhwa_batter_2018)
+#' @export
 gidp_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

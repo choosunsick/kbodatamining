@@ -1,4 +1,4 @@
-#' The box score of the batter player's period
+#' The box score of the batter
 #'
 #' This function creates a box score for the batter for the year or period.
 #' This function has an option for yearly and monthly.

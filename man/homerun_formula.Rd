@@ -10,12 +10,11 @@ homerun_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of Homerun
+player's Homerun
 }
 \description{
-count Homerun of player
+Calculates Homerun in the data.
 }
 \examples{
-## internal function
-#homerun_formula(hanhwa_batter_2018)
+homerun_formula(hanhwa_batter_2018)
 }

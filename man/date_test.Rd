@@ -24,5 +24,5 @@ Record dataframe by period according to test
 Tests whether the two arguments are null.
 }
 \examples{
-#date_test(hanhwa_batter_2018,"이용규",NULL,NULL,avg_formula)
+date_test(hanhwa_batter_2018,"이용규",NULL,NULL,avg_formula)
 }

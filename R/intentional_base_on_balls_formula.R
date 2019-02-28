@@ -1,9 +1,9 @@
 #' Intentional base on ball calculate function
 #'
-#' count intentional base on balls of player
+#' Calculates intentional base on balls in the data.
 #'
 #' @param data batter inning data
-#' @return the number of intentional base on balls
+#' @return The intentional base on balls number of the player
 #' @importFrom dplyr select
 #' @examples
 #' ## internal function

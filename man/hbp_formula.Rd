@@ -10,12 +10,11 @@ hbp_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of  Hit by pitch
+player's Hit by pitch
 }
 \description{
-count Hit by pitch of player
+Calculates the hit by pitch record in the data.
 }
 \examples{
-## internal function
-#hbp_formula(hanhwa_batter_2018)
+hbp_formula(hanhwa_batter_2018)
 }

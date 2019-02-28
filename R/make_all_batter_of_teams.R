@@ -9,8 +9,8 @@
 #' @param monthly The role of determining the monthly period of data
 #' @return Combined two team datas of all batters
 #' @examples
-#' ## internal function
-#' #make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL)
+#' make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL)
+#' @export
 
 make_all_batter_data <- function(data,team1,team2,yearly=2018,monthly=NULL){
   temp <- find_team(data,team1)

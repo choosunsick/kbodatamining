@@ -24,6 +24,5 @@ Combined two team datas of all batters
 Function: Make all batters of two team data for plotting
 }
 \examples{
-## internal function
-#make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL)
+make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL)
 }

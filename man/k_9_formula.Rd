@@ -13,9 +13,8 @@ k_9_formula(data)
 player K/9
 }
 \description{
-Calculate K/9 of player
+Calculates K/9 in the data.
 }
 \examples{
-## internal function
-#k_9_formula(hanhwa_pitcher_2018)
+k_9_formula(hanhwa_pitcher_2018)
 }

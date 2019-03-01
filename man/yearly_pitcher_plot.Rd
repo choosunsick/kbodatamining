@@ -17,5 +17,5 @@ plotting yearly pitcher data
 }
 \examples{
 ## internal function
-#yearly_pitcher_plot(make_plot_data(hanhwa_batter_2018,"이용규","정근우"))
+#yearly_pitcher_plot(make_plot4pitcher_data(hanhwa_batter_2018,"이용규","정근우"))
 }

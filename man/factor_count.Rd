@@ -9,7 +9,7 @@ factor_count(data, record_factor)
 \arguments{
 \item{data}{KBO batter inning data}
 
-\item{record_factor}{The categories of batting records you want to find}
+\item{record_factor}{This is the category of batting records to find, and it should be a string type.}
 }
 \value{
 Sum of the batter records in every innings

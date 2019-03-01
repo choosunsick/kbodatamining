@@ -19,17 +19,15 @@ oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
 \item{monthly}{The default value is NULL Possible values are a specific month.}
 }
 \value{
-Plots comparing two batter stats per year
+Plots comparing two batter stats
 }
 \description{
 This function draws a plot that compares two batters based on one season batter data.
 This function has an option for yearly and monthly.
 default: Based on the 2018 season, the month argument is NULL
 If you put specific year in the yearly parameter, draws a batting comparison plot for the matched year.
-If you put specific month in the monthly parameter,
-draws a batting comparison plot for the matched 2018 year and specific month.
-If you put specific year and month in two parameters,
-draws a batting comparison plot for the matched specific year and month.
+If you put specific month in the monthly parameter, draws a batting comparison plot for the matched 2018 year and specific month.
+If you put specific year and month in two parameters, draws a batting comparison plot for the matched specific year and month.
 If you are using mac and Hangul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 }
 \examples{

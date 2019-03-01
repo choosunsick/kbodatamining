@@ -23,7 +23,7 @@ yearly_compare_pitcher <- function(data,playername1,playername2,monthly=NULL){
   if(NROW(unique(substr(data$date,1,4)))==1){
     stop("It is not an annual data source and Use the oneseason_compare_pitcher function.")
   }
-  data <- make_pitcher_data(data,playername1,playername2,yearly = NULL,monthly)
+  data <- make_plot4pitcher_data(data,playername1,playername2,yearly = NULL,monthly)
   plot <- yearly_pitcher_plot(data)
   #if(details==TRUE){
   #  return(list(data,plot))

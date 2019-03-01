@@ -2,7 +2,7 @@
 % Please edit documentation in R/onebase_formula.R
 \name{onebase_formula}
 \alias{onebase_formula}
-\title{1B calculate function}
+\title{1B calculating function}
 \usage{
 onebase_formula(data)
 }
@@ -10,12 +10,11 @@ onebase_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of 1B
+player 1B
 }
 \description{
-count single hit of player
+Calculates the player's single hit.
 }
 \examples{
-## internal function
-#onebase_formula(hanhwa_batter_2018)
+onebase_formula(hanhwa_batter_2018)
 }

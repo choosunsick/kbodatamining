@@ -1,13 +1,13 @@
-#' Make plotting data
+#' Combines data from two batter boxscore
 #'
-#' Function: Make Batter's Data for plotting
+#' Function: Create data that combines data from two players
 #'
 #' @param data KBO batter data
 #' @param playername1 The first of the players you want to compare
 #' @param playername2 The second of the players you want to compare
-#' @param yearly The role of determining the annual period of data
-#' @param monthly The role of determining the monthly period of data
-#' @return Combined data of two players
+#' @param yearly Determines the yearly period of the data.
+#' @param monthly Determines the monthly period of the data.
+#' @return Combined data of two player boxscore
 #' @examples
 #' ## internal function
 #' #make_batter_data(hanhwa_batter_2018,"이용규","정근우")

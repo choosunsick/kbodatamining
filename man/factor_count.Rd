@@ -18,10 +18,8 @@ Sum of the batter records in every innings
 This function counts the number of batting records you put in.
 }
 \examples{
-## internal function
-#lee <- find_player(hanhwa_batter_2018,"이용규")
-#inning <- c('one','two','three','four','five','six','seven','eight',
-# 'nine','ten','eleven','twelve')
-# inning_data <- subset(lee,select=inning)
-# factor_count(data=inning_data,record_factor="10")
+lee <- find_player(hanhwa_batter_2018,"이용규")
+inning <- c('one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve')
+inning_data <- subset(lee,select=inning)
+factor_count(data=inning_data,record_factor="10")
 }

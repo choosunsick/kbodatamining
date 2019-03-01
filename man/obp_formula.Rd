@@ -13,9 +13,8 @@ obp_formula(data)
 player OBP
 }
 \description{
-Calculate OBP of player
+OBP calculation of player
 }
 \examples{
-## internal function
-#obp_formula(hanhwa_batter_2018)
+obp_formula(hanhwa_batter_2018)
 }

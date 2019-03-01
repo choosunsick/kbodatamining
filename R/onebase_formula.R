@@ -1,13 +1,14 @@
-#' 1B calculate function
+#' 1B calculating function
 #'
-#' count single hit of player
+#' Calculates the player's single hit.
 #'
 #' @param data batter inning data
-#' @return the number of 1B
+#' @return player 1B
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #onebase_formula(hanhwa_batter_2018)
+#' onebase_formula(hanhwa_batter_2018)
+#' @export
+
 onebase_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

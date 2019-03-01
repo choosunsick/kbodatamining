@@ -2,7 +2,7 @@
 % Please edit documentation in R/make_plot_data.R
 \name{make_batter_data}
 \alias{make_batter_data}
-\title{Make plotting data}
+\title{Combines data from two batter boxscore}
 \usage{
 make_batter_data(data, playername1, playername2, yearly = NULL,
   monthly = NULL)
@@ -14,15 +14,15 @@ make_batter_data(data, playername1, playername2, yearly = NULL,
 
 \item{playername2}{The second of the players you want to compare}
 
-\item{yearly}{The role of determining the annual period of data}
+\item{yearly}{Determines the yearly period of the data.}
 
-\item{monthly}{The role of determining the monthly period of data}
+\item{monthly}{Determines the monthly period of the data.}
 }
 \value{
-Combined data of two players
+Combined data of two player boxscore
 }
 \description{
-Function: Make Batter's Data for plotting
+Function: Create data that combines data from two players
 }
 \examples{
 ## internal function

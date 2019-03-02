@@ -10,12 +10,11 @@ twobase_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of 2B
+data's 2B
 }
 \description{
-count Double of player
+Calculates the data's Double
 }
 \examples{
-## internal function
-#twobase_formula(hanhwa_batter_2018)
+twobase_formula(hanhwa_batter_2018)
 }

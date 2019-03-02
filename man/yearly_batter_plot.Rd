@@ -17,5 +17,5 @@ plotting yearly batter data
 }
 \examples{
 ## internal function
-#yearly_batter_plot(make_plot_data(hanhwa_batter_2018,"이용규","정근우"))
+#yearly_batter_plot(make_batter_data_4plot(hanhwa_batter_2018,"이용규","정근우"))
 }

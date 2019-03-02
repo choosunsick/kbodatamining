@@ -3,7 +3,7 @@
 #' Calculates innings pitched in the data.
 #'
 #' @param data KBO pitcher data
-#' @return player IP
+#' @return data's IP
 #' @examples
 #' ip_formula(hanhwa_pitcher_2018)
 #' @export

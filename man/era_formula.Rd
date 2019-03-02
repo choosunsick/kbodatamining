@@ -10,7 +10,7 @@ era_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player ERA
+data's ERA
 }
 \description{
 Calculates the ERA of the pitcher from the data

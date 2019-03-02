@@ -1,6 +1,6 @@
 #' Complete game calculate function
 #'
-#' Calculate Complete game
+#' Calculate Complete game of team
 #'
 #' @param data KBO pitcher data
 #' @param team KBO team name

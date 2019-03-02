@@ -10,12 +10,11 @@ p_ip_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player P/IP
+data's P/IP
 }
 \description{
-Calculate P/IP of player
+Calculate P/IP in the data
 }
 \examples{
-## internal function
-#p_ip_formula(hanhwa_pitcher_2018)
+p_ip_formula(hanhwa_pitcher_2018)
 }

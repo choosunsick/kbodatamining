@@ -2,7 +2,7 @@
 % Please edit documentation in R/so_formula.R
 \name{so_formula}
 \alias{so_formula}
-\title{SO calculate formula}
+\title{StrikeOut(SO) calculate formula}
 \usage{
 so_formula(data)
 }
@@ -10,15 +10,11 @@ so_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-count SO
+data's SO
 }
 \description{
-SO calculate function
-}
-\details{
-count SO of player
+This function calculates the strikeout in which the baseball player was hit in the data.
 }
 \examples{
-## internal function
-#so_formula(hanhwa_batter_2018)
+so_formula(hanhwa_batter_2018)
 }

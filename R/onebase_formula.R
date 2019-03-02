@@ -1,9 +1,9 @@
 #' 1B calculating function
 #'
-#' Calculates the player's single hit.
+#' Calculates the data's single hit.
 #'
 #' @param data batter inning data
-#' @return player 1B
+#' @return data's 1B
 #' @importFrom dplyr select
 #' @examples
 #' onebase_formula(hanhwa_batter_2018)

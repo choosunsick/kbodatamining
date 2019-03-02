@@ -1,13 +1,13 @@
-#' Sacrifice hit calculate function
+#' Sacrifice fly calculate function
 #'
-#' count Sacrifice fly of player
+#' Calculate Sacrifice fly in the data
 #'
 #' @param data batter inning data
-#' @return the number of Sacrifice fly
+#' @return data's Sacrifice fly
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #sf_formula(hanhwa_batter_2018)
+#' sf_formula(hanhwa_batter_2018)
+#' @export
 sf_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

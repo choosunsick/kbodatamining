@@ -12,10 +12,10 @@ cgs_calculate(data, team)
 \item{team}{KBO team name}
 }
 \value{
-Complete game Shutout dataframe
+Complete game Shutout player and cgs count dataframe
 }
 \description{
-Calculate Complete game Shutout
+Calculate Complete game Shutout of data
 }
 \examples{
 cgs_calculate(hanhwa_pitcher_2018,"한화")

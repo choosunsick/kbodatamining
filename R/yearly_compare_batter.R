@@ -23,12 +23,8 @@ yearly_compare_batter <- function(data,playername1,playername2,monthly=NULL){
   if(NROW(unique(substr(data$date,1,4)))==1){
     stop("It is not an annual data source and Use the oneseason_compare_batter function.")
   }
-  data <- make_plot4batter_data(data,playername1,playername2,yearly = NULL,monthly)
+  data <- make_batter_data_4plot(data,playername1,playername2,yearly = NULL,monthly)
   plot <- yearly_batter_plot(data)
-  #if(details==TRUE){
-  #  return(list(data,plot))
-  #}
-  #else{
-    return(plot)
-  #}
+  return(plot)
+
 }

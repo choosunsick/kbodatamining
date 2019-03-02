@@ -1,10 +1,10 @@
 #' Make scoreboard dataframe
 #'
-#' It shows the scoreboard of the KBO game.
+#' This function creates a scoreboard for that information based on json data and gameid.
 #'
-#' @param jsondata KBO data json file
-#' @param gameid KBO game date and versus infomation
-#' @return the baseball match of gameid appears in scoreboard dataframe.
+#' @param jsondata You can try the function by importing the file from the json_sample folder. Alternatively, you can create a json-formatted KBO data file by referring to the Readme file.
+#' @param gameid KBO game date and versus infomation, You can get this information by importing the name of the json file.
+#' @return gameid's baseball game appears as a scoreboard data frame.
 #' @examples
 #' ## not run
 #' # jsondata <- jsonlite::fromJSON("./json_sample/Hanhwa_normalseason_2018.json")

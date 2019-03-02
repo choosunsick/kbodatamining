@@ -10,10 +10,10 @@ obp_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-player OBP
+data's OBP
 }
 \description{
-OBP calculation of player
+OBP calculation in the data
 }
 \examples{
 obp_formula(hanhwa_batter_2018)

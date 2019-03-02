@@ -10,7 +10,7 @@ avg_formula(data)
 \item{data}{KBO batter data}
 }
 \value{
-AVG
+data's AVG
 }
 \description{
 Calculates AVG from data

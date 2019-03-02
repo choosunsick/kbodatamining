@@ -2,7 +2,7 @@
 % Please edit documentation in R/sacrifice_fly_formula.R
 \name{sf_formula}
 \alias{sf_formula}
-\title{Sacrifice hit calculate function}
+\title{Sacrifice fly calculate function}
 \usage{
 sf_formula(data)
 }
@@ -10,12 +10,11 @@ sf_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of Sacrifice fly
+data's Sacrifice fly
 }
 \description{
-count Sacrifice fly of player
+Calculate Sacrifice fly in the data
 }
 \examples{
-## internal function
-#sf_formula(hanhwa_batter_2018)
+sf_formula(hanhwa_batter_2018)
 }

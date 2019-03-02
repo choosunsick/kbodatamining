@@ -10,12 +10,11 @@ slg_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-player Slugging average
+data's Slugging average
 }
 \description{
-Calculate Slugging average of player
+Calculate Slugging average in the data
 }
 \examples{
-## internal function
-#obp_formula(hanhwa_batter_2018)
+slg_formula(hanhwa_batter_2018)
 }

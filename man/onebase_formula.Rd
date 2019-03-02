@@ -10,10 +10,10 @@ onebase_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-player 1B
+data's 1B
 }
 \description{
-Calculates the player's single hit.
+Calculates the data's single hit.
 }
 \examples{
 onebase_formula(hanhwa_batter_2018)

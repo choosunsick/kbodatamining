@@ -21,7 +21,7 @@ find_etcname(jsondata, gameid, name1, name2, name3)
 find items etc info
 }
 \description{
-find etc name.
+find etc name from jsondata
 }
 \examples{
 ## internal function

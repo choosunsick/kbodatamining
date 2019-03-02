@@ -1,15 +1,16 @@
-#' yearly month record show
+#' Annual record for the entered month
 #'
-#' It shows the yearly-month batter record.
+#' It shows the record of the month entered in every year of the entered player
 #'
-#' @param data default is hanhwa's batter data, You can include the entire KBO data if you wish.
-#' @param name The name of the batter or the team you want
+#' @param data KBO datas with at least one year of data
+#' @param name The name of the player or the team you want
 #' @param recordname The name of the record you want
 #' @param month The month you want to find
-#' @return show yearly-month batter record
+#' @return the record of the month entered in every year of the entered player
 #' @examples
 #' ## internal function
-#' #yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula)
+#' #yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula,"05")
+#' #yearly_month_record(hanhwa_batter_2018,"한화",avg_formula,"05")
 yearly_month_record <- function(data,name,recordname,month){
   if(name %in% unique(kbodatamining::hanhwa_batter_2018$team)){
     subset_data <- find_team(data,name)

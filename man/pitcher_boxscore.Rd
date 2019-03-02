@@ -2,13 +2,13 @@
 % Please edit documentation in R/pitcher_boxscore.R
 \name{pitcher_boxscore}
 \alias{pitcher_boxscore}
-\title{The box score of the pitcher player's period}
+\title{The box score of the pitcher player}
 \usage{
 pitcher_boxscore(data = kbodatamining::hanhwa_pitcher_2018, name,
   yearly = NULL, monthly = NULL)
 }
 \arguments{
-\item{data}{Default data is hanhwa_pitcher_2018 You can put other kbo pitcher data if you want.}
+\item{data}{Default data is hanhwa_pitcher_2018 You can put other KBO pitcher data if you want.}
 
 \item{name}{The name of the pitcher you want}
 

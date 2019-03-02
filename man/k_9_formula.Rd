@@ -10,7 +10,7 @@ k_9_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player K/9
+data's K/9
 }
 \description{
 Calculates K/9 in the data.

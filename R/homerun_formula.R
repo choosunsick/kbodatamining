@@ -3,7 +3,7 @@
 #' Calculates Homerun in the data.
 #'
 #' @param data batter inning data
-#' @return player's Homerun
+#' @return data's Homerun
 #' @importFrom dplyr select
 #' @examples
 #' homerun_formula(hanhwa_batter_2018)

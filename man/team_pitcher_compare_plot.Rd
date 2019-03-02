@@ -2,20 +2,20 @@
 % Please edit documentation in R/team_pitcher_compare_plot.R
 \name{team_pitcher_compare_plot}
 \alias{team_pitcher_compare_plot}
-\title{Compares the hits of two teams}
+\title{Compares the pitching of two teams}
 \usage{
 team_pitcher_compare_plot(data)
 }
 \arguments{
-\item{data}{two teams of batter's merged data}
+\item{data}{two teams of pitcher's merged data}
 }
 \value{
 A plot comparing records(ERA,K(SO),OBA,P/IP)
 }
 \description{
-A plotting function that compares the hits of two teams
+A plotting function that compares the pitching of two teams.
+We compare pitchers who have played in more than three games on each team.
 }
 \examples{
-## internal function
-#team_pitcher_compare_plot(make_all_pitcher_data(KBO_full_data,"한화","LG",2018,NULL))
+team_pitcher_compare_plot(make_all_pitcher_data(hanhwa_pitcher_2018,"한화","LG",2018,NULL))
 }

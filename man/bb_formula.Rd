@@ -10,7 +10,7 @@ bb_formula(data)
 \item{data}{KBO batter inning data}
 }
 \value{
-the number of base on balls
+data's base on balls
 }
 \description{
 Calculates base on balls from data

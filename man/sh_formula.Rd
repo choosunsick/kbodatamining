@@ -10,12 +10,11 @@ sh_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of Sacrifice hit
+data's Sacrifice hit
 }
 \description{
-count Sacrifice hit of player
+Calculate Sacrifice hit in the data
 }
 \examples{
-## internal function
-#sh_formula(hanhwa_batter_2018)
+sh_formula(hanhwa_batter_2018)
 }

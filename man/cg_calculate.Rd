@@ -15,7 +15,7 @@ cg_calculate(data, team)
 Complete game player and cg count dataframe
 }
 \description{
-Calculate Complete game
+Calculate Complete game of team
 }
 \examples{
 cg_calculate(hanhwa_pitcher_2018,"한화")

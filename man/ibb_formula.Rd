@@ -10,12 +10,11 @@ ibb_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-The intentional base on balls number of the player
+Ibb counts from data
 }
 \description{
 Calculates intentional base on balls in the data.
 }
 \examples{
-## internal function
-#ibb_formula(hanhwa_batter_2018)
+ibb_formula(hanhwa_batter_2018)
 }

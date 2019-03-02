@@ -1,13 +1,13 @@
 #' Sacrifice hit calculate function
 #'
-#' count Sacrifice hit of player
+#' Calculate Sacrifice hit in the data
 #'
 #' @param data batter inning data
-#' @return the number of Sacrifice hit
+#' @return data's Sacrifice hit
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #sh_formula(hanhwa_batter_2018)
+#' sh_formula(hanhwa_batter_2018)
+#' @export
 sh_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

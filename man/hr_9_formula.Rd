@@ -10,7 +10,7 @@ hr_9_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player's HR / 9
+data's HR / 9
 }
 \description{
 Calculates Homerun / 9 in the data.

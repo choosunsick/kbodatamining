@@ -10,7 +10,7 @@ ip_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player IP
+data's IP
 }
 \description{
 Calculates innings pitched in the data.

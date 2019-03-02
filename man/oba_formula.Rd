@@ -10,12 +10,11 @@ oba_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player OBA
+data's OBA
 }
 \description{
-Calculate OBA of player
+Calculate OBA in the data
 }
 \examples{
-## internal function
-#oba_formula(hanhwa_pitcher_2018[hanhwa_pitcher_2018$team=="한화",])
+oba_formula(hanhwa_pitcher_2018[hanhwa_pitcher_2018$team=="한화",])
 }

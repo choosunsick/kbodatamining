@@ -7,15 +7,15 @@
 scoreboard(jsondata, gameid)
 }
 \arguments{
-\item{jsondata}{KBO data json file}
+\item{jsondata}{You can try the function by importing the file from the json_sample folder. Alternatively, you can create a json-formatted KBO data file by referring to the Readme file.}
 
-\item{gameid}{KBO game date and versus infomation}
+\item{gameid}{KBO game date and versus infomation, You can get this information by importing the name of the json file.}
 }
 \value{
-the baseball match of gameid appears in scoreboard dataframe.
+gameid's baseball game appears as a scoreboard data frame.
 }
 \description{
-It shows the scoreboard of the KBO game.
+This function creates a scoreboard for that information based on json data and gameid.
 }
 \examples{
 ## not run

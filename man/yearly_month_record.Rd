@@ -2,26 +2,27 @@
 % Please edit documentation in R/yearly_month_record.R
 \name{yearly_month_record}
 \alias{yearly_month_record}
-\title{yearly month record show}
+\title{Annual record for the entered month}
 \usage{
 yearly_month_record(data, name, recordname, month)
 }
 \arguments{
-\item{data}{default is hanhwa's batter data, You can include the entire KBO data if you wish.}
+\item{data}{KBO datas with at least one year of data}
 
-\item{name}{The name of the batter or the team you want}
+\item{name}{The name of the player or the team you want}
 
 \item{recordname}{The name of the record you want}
 
 \item{month}{The month you want to find}
 }
 \value{
-show yearly-month batter record
+the record of the month entered in every year of the entered player
 }
 \description{
-It shows the yearly-month batter record.
+It shows the record of the month entered in every year of the entered player
 }
 \examples{
 ## internal function
-#yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula)
+#yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula,"05")
+#yearly_month_record(hanhwa_batter_2018,"한화",avg_formula,"05")
 }

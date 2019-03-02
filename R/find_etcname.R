@@ -1,6 +1,6 @@
 #' Find etc name
 #'
-#' find etc name.
+#' find etc name from jsondata
 #'
 #' @param jsondata KBO data json file
 #' @param gameid KBO game date and versus infomation

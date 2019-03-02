@@ -10,7 +10,7 @@ homerun_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-player's Homerun
+data's Homerun
 }
 \description{
 Calculates Homerun in the data.

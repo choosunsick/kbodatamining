@@ -10,10 +10,10 @@ gidp_formula(data)
 \item{data}{KBO batter inning data}
 }
 \value{
-The player's GIDP
+data's GIDP
 }
 \description{
-Calculates the ground into double play record in the data.
+It is calculated as double play record of data..
 }
 \examples{
 gidp_formula(hanhwa_batter_2018)

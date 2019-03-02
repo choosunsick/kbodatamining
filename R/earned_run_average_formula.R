@@ -3,7 +3,7 @@
 #' Calculates the ERA of the pitcher from the data
 #'
 #' @param data KBO pitcher data
-#' @return player ERA
+#' @return data's ERA
 #' @examples
 #' era_formula(hanhwa_pitcher_2018)
 #' @export

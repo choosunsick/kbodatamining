@@ -25,6 +25,5 @@ Combined two team datas of all pitchers
 Function: Make all pitchers of two team data for plotting
 }
 \examples{
-## internal function
-#make_all_pitcher_data(KBO_full_data,"한화","LG",2018,NULL)
+make_all_pitcher_data(hanhwa_pitcher_2018,"한화","LG",2018,NULL)
 }

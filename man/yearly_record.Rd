@@ -7,19 +7,20 @@
 yearly_record(data, name, recordname)
 }
 \arguments{
-\item{data}{default is hanhwa's batter data, You can include the entire KBO data if you wish.}
+\item{data}{KBO datas with at least one year of data}
 
-\item{name}{The name of the batter or the team you want}
+\item{name}{The name of the player or the team you want}
 
 \item{recordname}{The name of the record you want}
 }
 \value{
-calculate yearly batter record
+calculate yearly record
 }
 \description{
-It shows the yearly batter record
+It shows the yearly record of the entered player
 }
 \examples{
 ## internal function
 #yearly_record(hanhwa_batter_2018,"이용규",avg_formula)
+#yearly_record(hanhwa_batter_2018,"한화",avg_formula)
 }

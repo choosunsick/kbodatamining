@@ -1,4 +1,4 @@
-#' The box score of the pitcher player's period
+#' The box score of the pitcher player
 #'
 #' This function creates a box score for the pitcher for the year or period.
 #' This function has an option for yearly and monthly.
@@ -6,7 +6,7 @@
 #' If you put a year in the yearly parameter, it calculates the corresponding year box score.
 #' If you put a month in the monthly parameter, it calculates the corresponding yearly-month box score.
 #' If you put a year and a month in two parameters, the box score for the specific time you put in is created.
-#' @param data Default data is hanhwa_pitcher_2018 You can put other kbo pitcher data if you want.
+#' @param data Default data is hanhwa_pitcher_2018 You can put other KBO pitcher data if you want.
 #' @param name The name of the pitcher you want
 #' @param yearly The default value is NULL Possible values are a specific year.
 #' @param monthly The default value is NULL Possible values are a specific month.

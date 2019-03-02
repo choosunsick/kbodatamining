@@ -1,15 +1,13 @@
-#' SO calculate formula
+#' StrikeOut(SO) calculate formula
 #'
-#' SO calculate function
-#'
-#' count SO of player
+#' This function calculates the strikeout in which the baseball player was hit in the data.
 #'
 #' @param data batter inning data
-#' @return count SO
+#' @return data's SO
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #so_formula(hanhwa_batter_2018)
+#' so_formula(hanhwa_batter_2018)
+#' @export
 so_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

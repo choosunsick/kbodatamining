@@ -14,8 +14,8 @@ A plot comparing records(AVG,OBP,SLG,BABIP)
 }
 \description{
 A plotting function that compares the hits of two teams
+We compare batters who have played in more than ten games on each team.
 }
 \examples{
-## internal function
-#team_batter_compare_plot(make_all_batter_data(KBO_full_data,"한화","LG",2018,NULL))
+team_batter_compare_plot(make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL))
 }

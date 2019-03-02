@@ -10,12 +10,11 @@ threebase_formula(data)
 \item{data}{batter inning data}
 }
 \value{
-the number of 3B
+data's 3B
 }
 \description{
-count Triples of player
+Calculates the data's Triples.
 }
 \examples{
-## internal function
-#threebase_formula(hanhwa_batter_2018)
+threebase_formula(hanhwa_batter_2018)
 }

@@ -1,13 +1,13 @@
 #' The number of Plate appearance calculate function
 #'
-#' Calculate PA of player
+#' Calculate PA in the data
 #'
 #' @param data KBO batter inning data
-#' @return player PA
+#' @return data's PA
 #' @importFrom dplyr select
 #' @examples
-#' ## internal function
-#' #pit_formula(hanhwa_batter_2018)
+#' pa_formula(hanhwa_batter_2018)
+#' @export
 pa_formula <- function(data){
   inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
   data <- select(data,inning)

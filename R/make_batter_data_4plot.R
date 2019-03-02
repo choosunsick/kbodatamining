@@ -9,10 +9,10 @@
 #' @param monthly The role of determining the monthly period of data
 #' @return Combined boxscore data for two players
 #' @examples
-#' make_plot4batter_data(hanhwa_batter_2018,"이용규","정근우")
+#' make_batter_data_4plot(hanhwa_batter_2018,"이용규","정근우")
 #' @export
 
-make_plot4batter_data <- function(data,playername1,playername2,yearly=NULL,monthly=NULL){
+make_batter_data_4plot <- function(data,playername1,playername2,yearly=NULL,monthly=NULL){
   player_1 <- kbodatamining::batter_boxscore(data,playername1,yearly,monthly)
   player_2 <- kbodatamining::batter_boxscore(data,playername2,yearly,monthly)
   return(rbind(player_1,player_2))

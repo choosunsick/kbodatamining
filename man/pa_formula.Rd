@@ -10,12 +10,11 @@ pa_formula(data)
 \item{data}{KBO batter inning data}
 }
 \value{
-player PA
+data's PA
 }
 \description{
-Calculate PA of player
+Calculate PA in the data
 }
 \examples{
-## internal function
-#pit_formula(hanhwa_batter_2018)
+pa_formula(hanhwa_batter_2018)
 }

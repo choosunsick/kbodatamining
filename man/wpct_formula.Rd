@@ -2,7 +2,7 @@
 % Please edit documentation in R/winning_percentage_formula.R
 \name{wpct_formula}
 \alias{wpct_formula}
-\title{A pitcher's winning percentage calculate function}
+\title{Winning Percentage(WPCT) calculate function}
 \usage{
 wpct_formula(data)
 }
@@ -10,12 +10,11 @@ wpct_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-player WPCT
+data's WPCT
 }
 \description{
-Calculate WPCT of player
+Calculate WPCT in the data
 }
 \examples{
-## internal function
-#wpct_formula(hanhwa_pitcher_2018)
+wpct_formula(hanhwa_pitcher_2018)
 }

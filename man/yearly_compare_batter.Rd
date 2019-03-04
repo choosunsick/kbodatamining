@@ -7,26 +7,25 @@
 yearly_compare_batter(data, playername1, playername2, monthly = NULL)
 }
 \arguments{
-\item{data}{You can put yearly KBO batter data.}
+\item{data}{KBO batter data over 2 seasons}
 
 \item{playername1}{Name of the batter you want to compare}
 
 \item{playername2}{Name of the batter you want to compare}
 
-\item{monthly}{The default value is NULL Possible values are a specific month.}
+\item{monthly}{The default value is NULL, Possible values are a specific month string such as "05".}
 }
 \value{
-Plots comparing two batter stats per year
+Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
 }
 \description{
 This function draws a plot that compares two batters based on the yearly batter data.
 This function has an option monthly.
-If you put in a specific month for monthly parameter,
-you will compare the batters with the put in month data
+If you put in a specific month for monthly parameter, you will compare the batters with the put in month data
+## You can refer to the Readme file to obtain the annual KBO data
 }
 \examples{
 ## not run
-## You can refer to the Readme file to obtain the annual KBO data
 ## default:monthly=NULL
 ## yearly_compare_batter(yearly_KBO_data,"이용규","정근우")
 ## monthly="05

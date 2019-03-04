@@ -2,20 +2,21 @@
 % Please edit documentation in R/yearly_batter_plot.R
 \name{yearly_batter_plot}
 \alias{yearly_batter_plot}
-\title{Yearly batter data plotting}
+\title{Annual hit record plot}
 \usage{
 yearly_batter_plot(data)
 }
 \arguments{
-\item{data}{two batter player's merged data}
+\item{data}{You can use the `make_batter_data_4plot()` function to create  merged two batters data.}
 }
 \value{
-A plot comparing four records(G,AVG,OPS,BABIP)
+Four plot comparing four records(G,AVG,OPS,BABIP) of each player
 }
 \description{
-plotting yearly batter data
+Compare the four records of the two players in the data.
+This function requires data that has a duration of at least two seasons.
 }
 \examples{
 ## internal function
-#yearly_batter_plot(make_batter_data_4plot(hanhwa_batter_2018,"이용규","정근우"))
+#yearly_batter_plot(make_batter_data_4plot(Yearly_KBO_DATA,"이용규","정근우"))
 }

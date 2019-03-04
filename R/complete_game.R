@@ -14,7 +14,7 @@ cg_calculate <- function(data,team){
   cg_list <- data.frame()
   for(i in unique(data$date)){
     if(NROW(data[data$date==i,])==1){
-      cg_list <- rbind(cg_list,data.frame(name=data$name[data$date==i],cg=1))
+      cg_list <- rbind(cg_list,data.frame(year=substr(data$date[data$date==i],1,4),team=team,name=data$name[data$date==i],cg=1))
     }
   }
   return(cg_list)

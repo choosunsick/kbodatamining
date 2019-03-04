@@ -44,5 +44,9 @@ date_test <- function(data,name,yearly,monthly,recordname){
   if(NROW(temp)==0){
     stop("There is no data for the time period you put.")
   }
+  if("record.team" %in% colnames(temp)){
+    temp$record.team <- as.character(temp$record.team)
+  }
+  temp$period <- as.character(temp$period)
   return(temp)
 }

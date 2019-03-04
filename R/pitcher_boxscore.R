@@ -21,25 +21,13 @@
 #' ## yearly=2018, monthly="05"
 #' pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018,monthly="05")
 #' @export
-
+#완봉 관련해서 전체 데이터가 들어갔을 때도 적용되겠금 만들어야함
+#봐서 중간 부분 함수로 빼던가 해야함
+#팀일 때 선수일때 구분해서 완봉 기록 매칭해주는 거 만들어야함
 pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,name,yearly=NULL,monthly=NULL){
   boxscore <- date_test(data,name,yearly,monthly,pitcher_statistics)
-  cg_list <- cg_calculate(data,boxscore$record.team)
-  cgs_list <- cgs_calculate(data,boxscore$record.team)
-  if(name %in% unique(kbodatamining::hanhwa_pitcher_2018$team)){
-    cg <- sum(cg_list$cg)
-    cgs <- sum(cgs_list$cgs)
-    boxscore <- cbind(boxscore,cg,cgs)
-    colnames(boxscore)<-c("period","team","g","away","home","win","lose","draw","wpct","sv","hld","ip","r","er","k","bb&hbp","pit",
-                          "tbf","ha","hra","era","p_ip","k_9","hr_9","oba","cg","cgs")
-  }
-  else{
-    cg <- ifelse(any(unique(cg_list$name))==name,cg_list$cg[cg_list$name==name],0)
-    cgs <- ifelse(any(unique(cgs_list$name))==name,cgs_list$cgs[cgs_list$name==name],0)
-    boxscore <- cbind(name,boxscore,cg,cgs)
-    colnames(boxscore)<-c("name","period","team","g","away","home","win","lose","draw","wpct","sv","hld","ip","r","er","k","bb&hbp","pit",
-                          "tbf","ha","hra","era","p_ip","k_9","hr_9","oba","cg","cgs")
-
-  }
+  cg_list <- bind_cg_list(data,boxscore$record.team)
+  cgs_list <- bind_cgs_list(data,boxscore$record.team)
+  boxscore <- boxscore_test(name,boxscore,cg_list,cgs_list)
   return(boxscore)
 }

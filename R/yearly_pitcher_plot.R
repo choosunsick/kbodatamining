@@ -10,9 +10,12 @@
 #' @importFrom rlang .data
 #' @examples
 #' ## internal function
-#' #yearly_pitcher_plot(make_plot4pitcher_data(hanhwa_batter_2018,"이용규","정근우"))
+#' #yearly_pitcher_plot(make_pitcher_data_4plot(Yearly_KBO_DATA,"정우람","이태양"))
 
 yearly_pitcher_plot <- function(data){
+  if(NROW(unique(substr(data$date,1,4)))==1){
+    stop("It is not an annual data source and Use more than two years of KBO pitcher data.")
+  }
   g_plot <- ggplot2::ggplot(data = data,aes(x=.data$period,y=.data$g,group=.data$name,fill=.data$name))+
     ggplot2::geom_bar(stat = "identity",position = "dodge")+
     theme(axis.text.x= element_text(angle=70, hjust=1))+ggtitle("Compare games")+

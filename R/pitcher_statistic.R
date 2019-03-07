@@ -9,7 +9,7 @@
 #' #pitcher_statistics(find_player(hanhwa_pitcher_2018,"정우람"))
 pitcher_statistics <- function(data){
   team <- unique(data$team)
-  team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>2,paste(team[1],team[2],sep = ""),"NO game participation"))
+  team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>=2,paste(team[1],",",team[2],sep = ""),"NO game participation"))
   g <- NROW(unique(data$date))+NROW(unique(data$date[data$doubleheader!=0]))
   away <- NROW(unique(data$date[data$away==team]))
   home <- NROW(unique(data$date[data$home==team]))

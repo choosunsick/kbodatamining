@@ -1,4 +1,4 @@
-#'Plot comparing two batter stats
+#' Plot comparing two batter stats
 #'
 #' This function draws a plot that compares two batters based on the yearly batter data.
 #' This function has an option monthly.

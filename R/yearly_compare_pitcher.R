@@ -8,8 +8,7 @@
 #' @param playername1 Name of the pitcher you want to compare
 #' @param playername2 Name of the pitcher you want to compare
 #' @param monthly The default value is NULL Possible values are a specific month.
-# @param details The default value is FALSE, and if it is TRUE, it shows the data to be compared.
-#' @return Plots comparing two pitcher stats per year
+#' @return Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
 #' @examples
 #' ## not run
 #' ## You can refer to the Readme file to obtain the annual KBO data

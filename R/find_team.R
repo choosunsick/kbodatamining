@@ -5,11 +5,21 @@
 #' @param data KBO data with playername
 #' @param team The team you want to find
 #' @return The batter data only the team you want to find
+#' @importFrom stringr str_split str_detect
 #' @examples
 #' find_team(hanhwa_batter_2018,"한화")
 #' @export
 find_team <- function(data,team){
-  team_data <- data[data$team == team,]
+
+  if(str_detect(string = team,",")){
+    team_data <- data.frame()
+    for(i in str_split(string = team,",",simplify = T)){
+      team_data <- rbind(team,data,data[data$team == i,])
+    }
+  }
+  else{
+    team_data <- data[data$team == team,]
+  }
   if(NROW(team_data)==0){
     stop("There is no data for team.")
   }

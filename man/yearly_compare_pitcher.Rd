@@ -16,7 +16,7 @@ yearly_compare_pitcher(data, playername1, playername2, monthly = NULL)
 \item{monthly}{The default value is NULL Possible values are a specific month.}
 }
 \value{
-Plots comparing two pitcher stats per year
+Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
 }
 \description{
 This function draws a plot that compares two pitcher based on the yearly pitcher data.

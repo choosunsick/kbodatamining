@@ -7,13 +7,13 @@
 yearly_compare_pitcher(data, playername1, playername2, monthly = NULL)
 }
 \arguments{
-\item{data}{You can put yearly KBO pitcher data.}
+\item{data}{KBO pitcher data over 2 seasons}
 
 \item{playername1}{Name of the pitcher you want to compare}
 
 \item{playername2}{Name of the pitcher you want to compare}
 
-\item{monthly}{The default value is NULL Possible values are a specific month.}
+\item{monthly}{The default value is NULL, Possible values are a specific month string such as "05"}
 }
 \value{
 Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
@@ -21,8 +21,8 @@ Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
 \description{
 This function draws a plot that compares two pitcher based on the yearly pitcher data.
 This function has an option monthly.
-If you put in a specific month for monthly parameter,
-you will compare the pitchers with the put in month data
+If you put in a specific month for monthly parameter, you will compare the pitchers with the put in month data
+## You can refer to the Readme file to obtain the annual KBO data
 }
 \examples{
 ## not run

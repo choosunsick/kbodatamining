@@ -23,7 +23,7 @@
 #' @export
 batter_boxscore <- function(data=kbodatamining::hanhwa_batter_2018,name,yearly=NULL,monthly=NULL){
   boxscore <- date_test(data,name,yearly,monthly,batter_statistics)
-  if(name %in% unique(kbodatamining::hanhwa_batter_2018$team)){
+  if(name_test(name)=="team"){
     colnames(boxscore)<-c("period","team","g","away","home","pa","ab","h","r","rbi","1B","2B","3B","hr","tb","bb","hbp",
                           "ibb","so","gidp","sh","sf","avg","obp","slg","ops","babip")
   }

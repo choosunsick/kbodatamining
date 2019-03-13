@@ -13,7 +13,7 @@ yearly_compare_batter(data, playername1, playername2, monthly = NULL)
 
 \item{playername2}{Name of the batter you want to compare}
 
-\item{monthly}{The default value is NULL, Possible values are a specific month string such as "05".}
+\item{monthly}{The default value is NULL, Possible values are a specific month string such as "05"}
 }
 \value{
 Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered

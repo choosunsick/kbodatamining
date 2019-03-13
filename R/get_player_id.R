@@ -1,4 +1,4 @@
-#' get player id
+#' Get player id
 #'
 #' This function creates a player id for the players in the data.
 #'
@@ -6,10 +6,11 @@
 #' @param idlist The ID list contains the batter and pitcher ID list files in the player_id_list folder.
 #' @return Data with player id
 #' @examples
-#' batter_id  <- read.csv(./player_id_list/batter_id_full.csv)
-#' id_2018<- batter_id[substr(batter_id$date,1,4)==2018,]
-#' id_hanhwa_2018<- id_2018[id_2018$away=="한화"|id_2018$home=="한화",]
-#' get_player_id(hanhwa_batter_2018,"id_hanhwa_2018")
+#' #notrun
+#' #batter_id  <- read.csv("./player_id_list/batter_id_full.csv",stringsAsFactors = F)
+#' #id_2018<- batter_id[substr(batter_id$date,1,4)==2018,]
+#' #id_hanhwa_2018<- id_2018[id_2018$away=="한화"|id_2018$home=="한화",]
+#' #get_player_id(hanhwa_batter_2018,"id_hanhwa_2018")
 #' @export
 
 get_player_id <- function(data,idlist){

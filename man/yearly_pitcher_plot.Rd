@@ -2,7 +2,7 @@
 % Please edit documentation in R/yearly_pitcher_plot.R
 \name{yearly_pitcher_plot}
 \alias{yearly_pitcher_plot}
-\title{Yearly pitcher data plotting}
+\title{Annual pitch record plot}
 \usage{
 yearly_pitcher_plot(data)
 }
@@ -13,9 +13,10 @@ yearly_pitcher_plot(data)
 A plot comparing four records(G,ERA,K,IP)
 }
 \description{
-plotting yearly pitcher data
+Compare the four records of the two players in the data.
+This function requires data that has a duration of at least two seasons.
 }
 \examples{
 ## internal function
-#yearly_pitcher_plot(make_pitcher_data_4plot(Yearly_KBO_DATA,"정우람","이태양"))
+#yearly_pitcher_plot(make_pitcher_data_4plot(Yearly_KBO_DATA,"정우람","송은범"))
 }

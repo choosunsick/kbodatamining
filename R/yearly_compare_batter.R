@@ -7,7 +7,7 @@
 #' @param data KBO batter data over 2 seasons
 #' @param playername1 Name of the batter you want to compare
 #' @param playername2 Name of the batter you want to compare
-#' @param monthly The default value is NULL, Possible values are a specific month string such as "05".
+#' @param monthly The default value is NULL, Possible values are a specific month string such as "05"
 #' @return Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
 #' @examples
 #' ## not run

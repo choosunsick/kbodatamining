@@ -28,7 +28,7 @@ you will compare the pitchers with the put in month data
 ## not run
 ## You can refer to the Readme file to obtain the annual KBO data
 ## default:monthly=NULL
-## yearly_compare_pitcher(yearly_KBO_data,"정우람","이태양")
+## yearly_compare_pitcher(yearly_KBO_data,"정우람","송은범")
 ## monthly="05
 ## yearly_compare_pitcher(yearly_KBO_data,"정우람","이태양",monthly="05")
 }

@@ -1,6 +1,7 @@
-#' Yearly pitcher data plotting
+#' Annual pitch record plot
 #'
-#' plotting yearly pitcher data
+#' Compare the four records of the two players in the data.
+#' This function requires data that has a duration of at least two seasons.
 #'
 #' @param data two pitcher player's merged data
 #' @return A plot comparing four records(G,ERA,K,IP)
@@ -10,7 +11,7 @@
 #' @importFrom rlang .data
 #' @examples
 #' ## internal function
-#' #yearly_pitcher_plot(make_pitcher_data_4plot(Yearly_KBO_DATA,"정우람","이태양"))
+#' #yearly_pitcher_plot(make_pitcher_data_4plot(Yearly_KBO_DATA,"정우람","송은범"))
 
 yearly_pitcher_plot <- function(data){
   if(NROW(unique(substr(data$date,1,4)))==1){

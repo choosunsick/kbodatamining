@@ -30,6 +30,7 @@
 \item{hr}{hr, Home runs allowed}
 \item{ab}{ab, AB: At Bat}
 \item{tbf}{tbf, TBF:Total Batters Faced}
+\item{id}{id, Player id}
 }}
 \source{
 \url{https://github.com/LOPES-HUFS/KBO_Data_Wrangling}

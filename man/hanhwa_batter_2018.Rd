@@ -29,6 +29,7 @@
 \item{away}{away, Awayteam}
 \item{home}{home, Awayteam}
 \item{doubleheader}{doubleheader, Whether it is a double-header game or not}
+\item{id}{id, Player id}
  }}
 \source{
 \url{https://github.com/LOPES-HUFS/KBO_Data_Wrangling}

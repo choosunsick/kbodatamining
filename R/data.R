@@ -27,6 +27,7 @@
 #' \item{away}{away, Awayteam}
 #' \item{home}{home, Awayteam}
 #' \item{doubleheader}{doubleheader, Whether it is a double-header game or not}
+#' \item{id}{id, Player id}
 #'  }
 #' @source \url{https://github.com/LOPES-HUFS/KBO_Data_Wrangling}
 "hanhwa_batter_2018"
@@ -61,6 +62,7 @@
 #' \item{hr}{hr, Home runs allowed}
 #' \item{ab}{ab, AB: At Bat}
 #' \item{tbf}{tbf, TBF:Total Batters Faced}
+#' \item{id}{id, Player id}
 #' }
 #' @source \url{https://github.com/LOPES-HUFS/KBO_Data_Wrangling}
 "hanhwa_pitcher_2018"

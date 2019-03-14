@@ -8,9 +8,10 @@ colnames(hanhwa_batter_2018) <- c('date','away','home','doubleheader','name','te
                                   'one','two','three','four','five','six','seven','eight','nine',
                                   'ten','eleven','twelve','ab','h','r','rbi')
 
-id_2018<- batter_id[substr(batter_id$date,1,4)==2018,]
-id_hanhwa_2018<- id_2018[id_2018$away=="한화"|id_2018$home=="한화",]
-hanhwa_batter_2018 <- get_player_id(hanhwa_batter_2018,id_hanhwa_2018)
-hanhwa_batter_2018[order(hanhwa_batter_2018$date,decreasing = F),]
+batter_id_2018 <- batter_id[substr(batter_id$date,1,4)==2018,]
+batter_id_hanhwa_2018 <- batter_id_2018[batter_id_2018$away=="한화"|batter_id_2018$home=="한화",]
+hanhwa_batter_2018 <- get_player_id(hanhwa_batter_2018,batter_id_hanhwa_2018)
+hanhwa_batter_2018 <- hanhwa_batter_2018[order(hanhwa_batter_2018$date,decreasing = F),]
 write.csv(hanhwa_batter_2018,"data-raw/hanhwa_batter_2018.csv",row.names = F)
+
 usethis::use_data(hanhwa_batter_2018,overwrite = TRUE)

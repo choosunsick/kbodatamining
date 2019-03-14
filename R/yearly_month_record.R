@@ -12,7 +12,7 @@
 #' #yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula,"05")
 #' #yearly_month_record(hanhwa_batter_2018,"한화",avg_formula,"05")
 yearly_month_record <- function(data,name,recordname,month){
-  if(name %in% unique(kbodatamining::hanhwa_batter_2018$team)){
+  if(name_test(name)=="team"){
     subset_data <- find_team(data,name)
   }
   else{

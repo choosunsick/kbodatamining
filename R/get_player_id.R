@@ -19,5 +19,6 @@ get_player_id <- function(data,idlist){
   data$id[which(data$away==idlist$away)] <- idlist$id[which(data$away==idlist$away)]
   data$id[data$id==""][order(data$away[data$id==""],decreasing = F)] <-
     idlist$id[which(data$away!=idlist$away)][order(idlist$away[which(data$away!=idlist$away)],decreasing = F)]
+  data <- data[order(data$date,decreasing = F),]
   return(data)
 }

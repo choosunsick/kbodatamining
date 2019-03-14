@@ -10,6 +10,9 @@
 #' @export
 find_player <- function(data,playername){
   player_data <- data[data$name == playername,]
+  if(NROW(unique(player_data$id))!=1){
+    warning("This person is presumed to have the same name.")
+  }
   if(NROW(player_data)==0){
     stop("There is no data for player.")
   }

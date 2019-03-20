@@ -13,7 +13,7 @@ name_test(name)
 name tag
 }
 \description{
-This function identifies whether name parameter is a team name or player name.
+This function identifies whether name parameter is a team name or a player name.
 }
 \examples{
 ## internal function

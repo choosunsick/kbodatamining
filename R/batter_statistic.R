@@ -1,8 +1,8 @@
 #' Make Batter statistic
 #'
-#' Function: Make Batter's statistic From the KBO data
+#' Function: Make Batter's statistic From the KBO batter data
 #'
-#' @param data KBO batter record data
+#' @param data KBO batter data
 #' @return Batter's statistic
 #' @examples
 #' ## internal function

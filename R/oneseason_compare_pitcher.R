@@ -3,13 +3,13 @@
 #' This function draws a plot that compares two pitchers based on one season batter data.
 #' This function has an option for yearly and monthly.
 #' default: Based on the 2018 season, the month argument is NULL
-#' If you put specific year in the yearly parameter, draws a batting comparison plot for the matched year.
+#' If you put specific year in the yearly parameter, this function draws a pitching comparing plot of the corresponding year .
 #' If you put specific month in the monthly parameter, draws a pitching comparison plot for the matched 2018 year and specific month.
 #' If you put specific year and month in two parameters, draws a pitching comparison plot for the matched specific year and month.
-#' If you are using mac and Hangul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
-#' @param data Default data is hanhwa_pitcher_2018 You can put other kbo batter data if you want.
-#' @param playername1 Name of the pitcher you want to compare
-#' @param playername2 Name of the pitcher you want to compare
+#' If you are using MAC and Hangeul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
+#' @param data Default data is hanhwa_pitcher_2018 You can put other KBO pitcher data if you want.
+#' @param playername1 Name of the batter you want to compare with playername1
+#' @param playername2 NName of the batter you want to compare with playername2
 #' @param yearly The default value is NULL Possible values are a specific year.
 #' @param monthly The default value is NULL Possible values are a specific month.
 #' @return Plots comparing two pitcher stats

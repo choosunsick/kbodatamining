@@ -8,8 +8,8 @@
 #' If you put specific year and month in two parameters, draws a batting comparison plot for the matched specific year and month.
 #' If you are using MAC and Hangeul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 #' @param data Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.
-#' @param playername1 Name of the batter you want to compare with playername2
-#' @param playername2 Name of the batter you want to compare with playername1
+#' @param playername1 Name of the batter you want to compare with playername1
+#' @param playername2 Name of the batter you want to compare with playername2
 #' @param yearly The default value is 2018 Possible values are a specific year.
 #' @param monthly The default value is NULL Possible values are a specific month.
 #' @importFrom ggplot2 ggplot geom_bar theme ggtitle xlab ylab aes labs

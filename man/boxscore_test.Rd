@@ -2,7 +2,7 @@
 % Please edit documentation in R/boxtest.R
 \name{boxscore_test}
 \alias{boxscore_test}
-\title{Inspection to distitinguish player names from team names}
+\title{Makes the complete pitcher's box score.}
 \usage{
 boxscore_test(name, boxscore, cg_list, cgs_list)
 }
@@ -16,12 +16,12 @@ boxscore_test(name, boxscore, cg_list, cgs_list)
 \item{cgs_list}{The result value of the bind_cgs_list function}
 }
 \value{
-Annual box score records for players or teams
+complete pitcher box score
 }
 \description{
-Creates a box score to distinguish whether the name is a team name or not.
+Creating a complete box score with CG_list, CGS_list, and boxed score
 }
 \examples{
 ## internal function
-#name_test("한화",boxscore,cg_list,cgs_list)
+#boxscore_test("한화",boxscore,cg_list,cgs_list)
 }

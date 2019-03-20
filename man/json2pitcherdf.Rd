@@ -12,20 +12,23 @@ json2pitcherdf(jsondata, gameid)
 \item{gameid}{KBO game date and versus infomation}
 }
 \value{
-A game consists of a pitcher data frame.
+the pitcher dataframe data that is changed from json data file
 }
 \description{
-A function that creates a json file as a pitcher data frame.
+This function changes pitcher data in json file to dataframe data
 }
-\examples{
+\details{
 ## You can read the json file in the json_sample folder and use it.
 ## You can use the fromJSON function of the jsonlite package to read the json file.
 ## You can also get the KBO full game json file.
-## You can import it from the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project.
+## You can extract it from the "https://github.com/LOPES-HUFS/KBO_Data_Wrangling" project
 ## And working the code in the notebook file.
 ## If you get a json file through one of the above methods,
-## you can open it and use it as an argument to the function.
-## The gameid argument can be obtained using the default function names.
-## jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
+## you can open it and use it as an paremeter to the function.
+## The gameid paremeter can be obtained using the default function names.
+}
+\examples{
+## not run
+# jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
 # json2pitcherdf(jsondata,names(jsondata)[1])
 }

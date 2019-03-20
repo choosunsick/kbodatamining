@@ -2,28 +2,28 @@
 % Please edit documentation in R/date_test.R
 \name{date_test}
 \alias{date_test}
-\title{yearly and monthly argument test}
+\title{yearly and monthly parameter test}
 \usage{
 date_test(data, name, id, yearly, monthly, recordname)
 }
 \arguments{
-\item{data}{Default is hanhwa's batter data, You can include the entire KBO data if you wish.}
+\item{data}{KBO batter data or KBO pitcher data}
 
 \item{name}{The name of the batter or the team you want}
 
-\item{id}{Default is NULL, but you can put in Player id of player with same name}
+\item{id}{This is not a required parameter. The ID parameter is a numeric type.}
 
-\item{yearly}{Default is NULL, but you can put in the year}
+\item{yearly}{The default value is NULL. Possible value is a specific year.}
 
-\item{monthly}{Default is NULL, but you can put in the month}
+\item{monthly}{The default value is NULL. Possible value is a specific month.}
 
 \item{recordname}{The name of the record you want}
 }
 \value{
-Record dataframe by period according to test
+yearly, monthly by checking according to the parameter.
 }
 \description{
-Tests whether the two arguments are null.
+Tests whether the two parameters are null.
 }
 \examples{
 date_test(hanhwa_batter_2018,"이용규",NULL,NULL,NULL,avg_formula)

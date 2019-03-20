@@ -1,16 +1,16 @@
-#' Inspection to distitinguish player names from team names
+#' Makes the complete pitcher's box score.
 #'
-#' Creates a box score to distinguish whether the name is a team name or not.
+#' Creating a complete box score with CG_list, CGS_list, and boxed score
 #'
 #' @param name KBO pitcher name or KBO Team
 #' @param boxscore The result value of the pitcher_statistics function
 #' @param cg_list The result value of the bind_cg_list function
 #' @param cgs_list The result value of the bind_cgs_list function
-#' @return Annual box score records for players or teams
+#' @return complete pitcher box score
 #' @examples
 #' ## internal function
-#' #name_test("한화",boxscore,cg_list,cgs_list)
-##테스트 해볼것 모든팀 테스트 해야함, 일부 선수들로 테스트 일단 함수상 오류는 없음
+#' #boxscore_test("한화",boxscore,cg_list,cgs_list)
+
 boxscore_test <- function(name,boxscore,cg_list,cgs_list){
   if(name_test(name)=='team'){
     cg <- team_disposal(cg_list,boxscore,name)

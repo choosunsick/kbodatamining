@@ -10,9 +10,9 @@ oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
 \arguments{
 \item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
 
-\item{playername1}{Name of the batter you want to compare with playername2}
+\item{playername1}{Name of the batter you want to compare with playername1}
 
-\item{playername2}{Name of the batter you want to compare with playername1}
+\item{playername2}{Name of the batter you want to compare with playername2}
 
 \item{yearly}{The default value is 2018 Possible values are a specific year.}
 

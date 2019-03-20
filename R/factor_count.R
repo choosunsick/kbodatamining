@@ -2,8 +2,8 @@
 #'
 #' This function counts the number of batting records you put in.
 #'
-#' @param data KBO batter inning data
-#' @param record_factor This is the category of batting records to find, and it should be a string type.
+#' @param data KBO batter data
+#' @param record_factor This is the category of batting to find, and it should be a string type.
 #' @return Sum of the batter records in every innings
 #' @examples
 #' lee <- find_player(hanhwa_batter_2018,"이용규",NULL)

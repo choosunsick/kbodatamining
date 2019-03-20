@@ -1,14 +1,14 @@
-#' yearly and monthly argument test
+#' yearly and monthly parameter test
 #'
-#' Tests whether the two arguments are null.
+#' Tests whether the two parameters are null.
 #'
-#' @param data Default is hanhwa's batter data, You can include the entire KBO data if you wish.
+#' @param data KBO batter data or KBO pitcher data
 #' @param name The name of the batter or the team you want
-#' @param id  Default is NULL, but you can put in Player id of player with same name
-#' @param yearly Default is NULL, but you can put in the year
-#' @param monthly Default is NULL, but you can put in the month
+#' @param id This is not a required parameter. The ID parameter is a numeric type.
+#' @param yearly The default value is NULL. Possible value is a specific year.
+#' @param monthly The default value is NULL. Possible value is a specific month.
 #' @param recordname The name of the record you want
-#' @return Record dataframe by period according to test
+#' @return yearly, monthly by checking according to the parameter.
 #' @importFrom dplyr filter %>%
 #' @importFrom rlang .data
 #' @examples

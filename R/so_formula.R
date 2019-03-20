@@ -1,9 +1,9 @@
 #' StrikeOut(SO) calculate formula
 #'
-#' This function calculates the strikeout in which the baseball player was hit in the data.
+#' Counting StrikeOut in which the baseball player was hit in the data.
 #'
-#' @param data batter inning data
-#' @return data's SO
+#' @param data KBO batter data
+#' @return SO from data
 #' @importFrom dplyr select
 #' @examples
 #' so_formula(hanhwa_batter_2018)

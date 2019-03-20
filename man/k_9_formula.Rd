@@ -2,7 +2,7 @@
 % Please edit documentation in R/k_9_formula.R
 \name{k_9_formula}
 \alias{k_9_formula}
-\title{K/9 calculate function}
+\title{K/9 formula}
 \usage{
 k_9_formula(data)
 }
@@ -10,10 +10,10 @@ k_9_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-data's K/9
+K/9 from data
 }
 \description{
-Calculates K/9 in the data.
+Calculating K/9 from data.
 }
 \examples{
 k_9_formula(hanhwa_pitcher_2018)

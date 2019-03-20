@@ -1,9 +1,9 @@
 #' Check name tag
 #'
-#' This function identifies whether the name is a team name or not
+#' This function identifies whether name parameter is a team name or player name.
 #'
 #' @param name KBO player name or KBO Team name
-#' @return check name tag
+#' @return name tag
 #' @examples
 #' ## internal function
 #' #name_test("한화")

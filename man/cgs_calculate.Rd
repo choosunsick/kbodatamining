@@ -2,7 +2,7 @@
 % Please edit documentation in R/complete_game_shutout.R
 \name{cgs_calculate}
 \alias{cgs_calculate}
-\title{Complete game Shutout calculate function}
+\title{Complete Game Shutout count}
 \usage{
 cgs_calculate(data, team)
 }
@@ -12,10 +12,10 @@ cgs_calculate(data, team)
 \item{team}{KBO team name}
 }
 \value{
-Complete game Shutout player and cgs count dataframe
+List of players who achieved Complete Game Shutout
 }
 \description{
-Calculate Complete game Shutout of data
+Creating a list of players who have achieve Complete Game Shutout on the team.
 }
 \examples{
 cgs_calculate(hanhwa_pitcher_2018,"한화")

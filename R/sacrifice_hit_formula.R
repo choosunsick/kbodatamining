@@ -1,9 +1,9 @@
-#' Sacrifice hit calculate function
+#' Sacrifice Hit formula
 #'
-#' Calculate Sacrifice hit in the data
+#' Calculating Sacrifice Hit from data
 #'
-#' @param data batter inning data
-#' @return data's Sacrifice hit
+#' @param data KBO batter data
+#' @return Sacrifice Hit from data
 #' @importFrom dplyr select
 #' @examples
 #' sh_formula(hanhwa_batter_2018)

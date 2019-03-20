@@ -7,13 +7,13 @@
 so_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's SO
+SO from data
 }
 \description{
-This function calculates the strikeout in which the baseball player was hit in the data.
+Counting StrikeOut in which the baseball player was hit in the data.
 }
 \examples{
 so_formula(hanhwa_batter_2018)

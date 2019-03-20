@@ -1,9 +1,9 @@
-#' Base on balls calculate function
+#' Base on balls count
 #'
-#' Calculates base on balls from data
+#' Counting base on balls from data
 #'
-#' @param data KBO batter inning data
-#' @return data's base on balls
+#' @param data KBO batter data
+#' @return base on balls from data
 #' @importFrom dplyr select
 #' @examples
 #' bb_formula(hanhwa_batter_2018)

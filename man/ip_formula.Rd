@@ -2,7 +2,7 @@
 % Please edit documentation in R/innings_pitched_formula.R
 \name{ip_formula}
 \alias{ip_formula}
-\title{Innings pitched calculate function}
+\title{Innings Pitched formula}
 \usage{
 ip_formula(data)
 }
@@ -10,10 +10,10 @@ ip_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-data's IP
+IP from data
 }
 \description{
-Calculates innings pitched in the data.
+Calculating Innings Pitched from data.
 }
 \examples{
 ip_formula(hanhwa_pitcher_2018)

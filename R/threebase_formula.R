@@ -1,9 +1,9 @@
-#' 3B calculate function
+#' 3B count
 #'
-#' Calculates the data's Triples.
+#' Counting Triples from data
 #'
-#' @param data batter inning data
-#' @return data's 3B
+#' @param data KBO batter data
+#' @return 3B from data
 #' @importFrom dplyr select
 #' @examples
 #' threebase_formula(hanhwa_batter_2018)

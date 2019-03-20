@@ -2,18 +2,18 @@
 % Please edit documentation in R/sacrifice_fly_formula.R
 \name{sf_formula}
 \alias{sf_formula}
-\title{Sacrifice fly calculate function}
+\title{Sacrifice Fly formula}
 \usage{
 sf_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's Sacrifice fly
+Sacrifice Fly from data
 }
 \description{
-Calculate Sacrifice fly in the data
+Calculating Sacrifice Fly from data
 }
 \examples{
 sf_formula(hanhwa_batter_2018)

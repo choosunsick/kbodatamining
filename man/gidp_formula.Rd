@@ -2,18 +2,18 @@
 % Please edit documentation in R/ground_into_double_play_formula.R
 \name{gidp_formula}
 \alias{gidp_formula}
-\title{Ground into double play calculate function}
+\title{Ground Into Double Play count}
 \usage{
 gidp_formula(data)
 }
 \arguments{
-\item{data}{KBO batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's GIDP
+GIDP from the data
 }
 \description{
-It is calculated as double play record of data..
+Counting GIDP from the data
 }
 \examples{
 gidp_formula(hanhwa_batter_2018)

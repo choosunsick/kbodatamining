@@ -1,9 +1,9 @@
-#' On-base percentage calculate function
+#' On-base Percentage formula
 #'
-#' OBP calculation in the data
+#' Calculating OBP from data
 #'
-#' @param data batter inning data
-#' @return data's OBP
+#' @param data KBO batter data
+#' @return OBP from data
 #' @examples
 #' obp_formula(hanhwa_batter_2018)
 #' @export

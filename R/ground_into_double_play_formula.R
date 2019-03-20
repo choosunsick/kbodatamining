@@ -1,9 +1,9 @@
-#' Ground into double play calculate function
+#' Ground Into Double Play count
 #'
-#' It is calculated as double play record of data..
+#' Counting GIDP from the data
 #'
-#' @param data KBO batter inning data
-#' @return data's GIDP
+#' @param data KBO batter data
+#' @return GIDP from the data
 #' @importFrom dplyr select
 #' @examples
 #' gidp_formula(hanhwa_batter_2018)

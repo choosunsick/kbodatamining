@@ -2,18 +2,18 @@
 % Please edit documentation in R/homerun_formula.R
 \name{homerun_formula}
 \alias{homerun_formula}
-\title{Homerun calculate function}
+\title{Homerun count}
 \usage{
 homerun_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's Homerun
+Homerun from data
 }
 \description{
-Calculates Homerun in the data.
+Counting Homerun from data
 }
 \examples{
 homerun_formula(hanhwa_batter_2018)

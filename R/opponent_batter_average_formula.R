@@ -1,9 +1,9 @@
-#' Opponent batter average calculate function
+#' Opponent Batter Average formula
 #'
-#' Calculate OBA in the data
+#' Calculating OBA from data
 #'
 #' @param data KBO pitcher data
-#' @return data's OBA
+#' @return OBA from data
 #' @examples
 #' oba_formula(hanhwa_pitcher_2018[hanhwa_pitcher_2018$team=="한화",])
 #' @export

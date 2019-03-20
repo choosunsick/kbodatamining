@@ -2,18 +2,18 @@
 % Please edit documentation in R/sacrifice_hit_formula.R
 \name{sh_formula}
 \alias{sh_formula}
-\title{Sacrifice hit calculate function}
+\title{Sacrifice Hit formula}
 \usage{
 sh_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's Sacrifice hit
+Sacrifice Hit from data
 }
 \description{
-Calculate Sacrifice hit in the data
+Calculating Sacrifice Hit from data
 }
 \examples{
 sh_formula(hanhwa_batter_2018)

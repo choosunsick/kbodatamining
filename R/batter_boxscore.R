@@ -12,7 +12,7 @@
 #' @param id This is not a required parameter. The ID parameter is a numeric type.
 #' @param yearly The default value is NULL. Possible value is a specific year.
 #' @param monthly The default value is NULL. Possible value is a specific month.
-#' @return The box score of the year or month put in is created.
+#' @return The batter box score of the year or month put in is created.
 #' @examples
 #' ## default: yearly=NULL,monthly=NULL
 #' batter_boxscore(hanhwa_batter_2018,"이용규")

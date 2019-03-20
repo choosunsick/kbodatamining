@@ -2,18 +2,18 @@
 % Please edit documentation in R/slugging_average_formula.R
 \name{slg_formula}
 \alias{slg_formula}
-\title{Slugging average calculate function}
+\title{Slugging Average formula}
 \usage{
 slg_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's Slugging average
+Slugging Average from data
 }
 \description{
-Calculate Slugging average in the data
+Calculating Slugging Average from data
 }
 \examples{
 slg_formula(hanhwa_batter_2018)

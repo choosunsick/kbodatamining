@@ -1,9 +1,9 @@
-#' Sacrifice fly calculate function
+#' Sacrifice Fly formula
 #'
-#' Calculate Sacrifice fly in the data
+#' Calculating Sacrifice Fly from data
 #'
-#' @param data batter inning data
-#' @return data's Sacrifice fly
+#' @param data KBO batter data
+#' @return Sacrifice Fly from data
 #' @importFrom dplyr select
 #' @examples
 #' sf_formula(hanhwa_batter_2018)

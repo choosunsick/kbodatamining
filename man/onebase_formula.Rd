@@ -2,18 +2,18 @@
 % Please edit documentation in R/onebase_formula.R
 \name{onebase_formula}
 \alias{onebase_formula}
-\title{1B calculating function}
+\title{1B count}
 \usage{
 onebase_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's 1B
+1B from data
 }
 \description{
-Calculates the data's single hit.
+Counting single hit from data.
 }
 \examples{
 onebase_formula(hanhwa_batter_2018)

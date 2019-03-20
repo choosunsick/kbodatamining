@@ -1,9 +1,9 @@
-#' K/9 calculate function
+#' K/9 formula
 #'
-#' Calculates K/9 in the data.
+#' Calculating K/9 from data.
 #'
 #' @param data KBO pitcher data
-#' @return data's K/9
+#' @return K/9 from data
 #' @examples
 #' k_9_formula(hanhwa_pitcher_2018)
 #' @export

@@ -19,7 +19,7 @@ batter_boxscore(data = kbodatamining::hanhwa_batter_2018, name,
 \item{monthly}{The default value is NULL. Possible value is a specific month.}
 }
 \value{
-The box score of the year or month put in is created.
+The batter box score of the year or month put in is created.
 }
 \description{
 This function creates annual or periodical box score of the batter.

@@ -2,18 +2,18 @@
 % Please edit documentation in R/plate_appearance_formula.R
 \name{pa_formula}
 \alias{pa_formula}
-\title{The number of Plate appearance calculate function}
+\title{The number of Plate Appearance formula}
 \usage{
 pa_formula(data)
 }
 \arguments{
-\item{data}{KBO batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's PA
+PA from data
 }
 \description{
-Calculate PA in the data
+Calculating PA from data
 }
 \examples{
 pa_formula(hanhwa_batter_2018)

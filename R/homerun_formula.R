@@ -1,9 +1,9 @@
-#' Homerun calculate function
+#' Homerun count
 #'
-#' Calculates Homerun in the data.
+#' Counting Homerun from data
 #'
-#' @param data batter inning data
-#' @return data's Homerun
+#' @param data KBO batter data
+#' @return Homerun from data
 #' @importFrom dplyr select
 #' @examples
 #' homerun_formula(hanhwa_batter_2018)

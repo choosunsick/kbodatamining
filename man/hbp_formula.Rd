@@ -2,18 +2,18 @@
 % Please edit documentation in R/hit_by_pitch_formula.R
 \name{hbp_formula}
 \alias{hbp_formula}
-\title{Hit by pitch calculate function}
+\title{Hit By Pitch count}
 \usage{
 hbp_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's Hit by pitch
+Hit By Pitch from data
 }
 \description{
-Calculates the Hit by pitch record in the data.
+Counting Hit By Pitch from data
 }
 \examples{
 hbp_formula(hanhwa_batter_2018)

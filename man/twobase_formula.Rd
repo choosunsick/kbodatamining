@@ -2,18 +2,18 @@
 % Please edit documentation in R/twobase_formula.R
 \name{twobase_formula}
 \alias{twobase_formula}
-\title{2B calculate function}
+\title{2B count}
 \usage{
 twobase_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's 2B
+2B from data
 }
 \description{
-Calculates the data's Double
+Counting Double from data
 }
 \examples{
 twobase_formula(hanhwa_batter_2018)

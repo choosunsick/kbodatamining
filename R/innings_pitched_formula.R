@@ -1,9 +1,9 @@
-#' Innings pitched calculate function
+#' Innings Pitched formula
 #'
-#' Calculates innings pitched in the data.
+#' Calculating Innings Pitched from data.
 #'
 #' @param data KBO pitcher data
-#' @return data's IP
+#' @return IP from data
 #' @examples
 #' ip_formula(hanhwa_pitcher_2018)
 #' @export

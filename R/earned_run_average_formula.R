@@ -1,9 +1,9 @@
-#' Earned run average calculate function
+#' Earned Run Average count
 #'
-#' Calculates the ERA of the pitcher from the data
+#' Counting ERA from the data
 #'
 #' @param data KBO pitcher data
-#' @return data's ERA
+#' @return ERA from data
 #' @examples
 #' era_formula(hanhwa_pitcher_2018)
 #' @export

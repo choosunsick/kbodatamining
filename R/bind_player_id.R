@@ -1,6 +1,6 @@
 #' Bind player id
 #'
-#' This function creates a player id for the players in the data.
+#' This function creates a player id of the data.
 #'
 #' @param data KBO data
 #' @param idlist The ID list contains the batter and pitcher ID list files in the player_id_list folder.

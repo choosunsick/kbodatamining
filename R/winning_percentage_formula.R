@@ -1,9 +1,9 @@
-#'  Winning Percentage(WPCT) calculate function
+#'  Winning Percentage(WPCT) formula
 #'
-#' Calculate WPCT in the data
+#' Calculating WPCT from data
 #'
 #' @param data KBO pitcher data
-#' @return data's WPCT
+#' @return WPCT from data
 #' @examples
 #' wpct_formula(hanhwa_pitcher_2018)
 #' @export

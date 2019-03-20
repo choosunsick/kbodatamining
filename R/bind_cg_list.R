@@ -1,6 +1,6 @@
-#' Complete game rbind dataframe
+#' Make Complete game list
 #'
-#' The calculated Complete game data frames are grouped into one data frame.
+#' Creating a complete game list from data.
 #'
 #' @param data KBO pitcher data
 #' @param team KBO team name
@@ -10,10 +10,8 @@
 #' @export
 
 bind_cg_list <- function(data,team){
-  cg_list <- data.frame(stringsAsFactors = F)
-  for(i in unique(team)){
-    cg_list <- rbind(cg_list,cg_calculate(data,i))
-  }
+  cg_list <- do.call(rbind,lapply(unique(team),function(x)cg_calculate(data,x)))
+
   if(NROW(cg_list)!=0){
     cg_list[,1:3] <- do.call(cbind,lapply(cg_list[,1:3],function(x)as.character(x)))
   }

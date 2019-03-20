@@ -2,18 +2,18 @@
 % Please edit documentation in R/intentional_base_on_balls_formula.R
 \name{ibb_formula}
 \alias{ibb_formula}
-\title{Intentional base on ball calculate function}
+\title{Intentional Base on Balls count}
 \usage{
 ibb_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-Ibb counts from data
+IBB from data
 }
 \description{
-Calculates intentional base on balls in the data.
+Counting Intentional Base on Balls from data.
 }
 \examples{
 ibb_formula(hanhwa_batter_2018)

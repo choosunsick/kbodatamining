@@ -2,7 +2,7 @@
 % Please edit documentation in R/bind_cg_list.R
 \name{bind_cg_list}
 \alias{bind_cg_list}
-\title{Complete game rbind dataframe}
+\title{Make Complete game list}
 \usage{
 bind_cg_list(data, team)
 }
@@ -15,7 +15,7 @@ bind_cg_list(data, team)
 Complete game player and CG count data frame for all teams
 }
 \description{
-The calculated Complete game data frames are grouped into one data frame.
+Creating a complete game list from data.
 }
 \examples{
 bind_cg_list(hanhwa_pitcher_2018,"한화")

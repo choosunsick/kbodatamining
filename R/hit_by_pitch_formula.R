@@ -1,9 +1,9 @@
-#' Hit by pitch calculate function
+#' Hit By Pitch count
 #'
-#' Calculates the Hit by pitch record in the data.
+#' Counting Hit By Pitch from data
 #'
-#' @param data batter inning data
-#' @return data's Hit by pitch
+#' @param data KBO batter data
+#' @return Hit By Pitch from data
 #' @importFrom dplyr select
 #' @examples
 #' hbp_formula(hanhwa_batter_2018)

@@ -1,17 +1,18 @@
 #' The box score of the pitcher player
 #'
-#' This function creates a box score for the pitcher for the year or period.
-#' This function has an option for yearly and monthly.
+#' This function creates annual or periodical box score of the pitcher.
+#' This function has options called 'yearly' or 'monthly'.
 #' default: The player's annual box score is created.
-#' If you put a year in the yearly parameter, it calculates the corresponding year box score.
-#' If you put a month in the monthly parameter, it calculates the corresponding yearly-month box score.
-#' If you put a year and a month in two parameters, the box score for the specific time you put in is created.
-#' @param data Default data is hanhwa_pitcher_2018 You can put other KBO pitcher data if you want.
-#' @param name The name of the pitcher you want
+#' If you put a year in the yearly parameter, it calculates the box score of corresponding year.
+#' If you put a month in the monthly parameter, it calculates the corresponding monthly box score of every year.
+#' If you put a year and a month in each parameters, the box score of corresponding month you put in is created.
+#' If you are looking for a player who has the same name with other players, you need to find the player's ID and put it in the 'ID' parameter.
+#' @param data 'Hanhwa_pitcher_2018' is default data. You can put another kbo batter data if you want.
+#' @param name The name of the batter you want
 #' @param id  This is not a required parameter. The ID parameter is a numeric type.
-#' @param yearly The default value is NULL Possible values are a specific year.
-#' @param monthly The default value is NULL Possible values are a specific month.
-#' @return The box score for the year, month, or period put in is created.
+#' @param yearly The default value is NULL. Possible value is a specific year.
+#' @param monthly The default value is NULL. Possible value is a specific month.
+#' @return The pitcher box score of the year or month put in is created.
 #' @examples
 #' ## default: yearly=NULL,monthly=NULL
 #' pitcher_boxscore(hanhwa_pitcher_2018,"정우람")
@@ -22,9 +23,7 @@
 #' ## yearly=2018, monthly="05"
 #' pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018,monthly="05")
 #' @export
-#완봉 관련해서 전체 데이터가 들어갔을 때도 적용되겠금 만들어야함
-#봐서 중간 부분 함수로 빼던가 해야함
-#팀일 때 선수일때 구분해서 완봉 기록 매칭해주는 거 만들어야함
+
 pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,name,id=NULL,yearly=NULL,monthly=NULL){
   boxscore <- date_test(data,name,id,yearly,monthly,pitcher_statistics)
   cg_list <- bind_cg_list(data,boxscore$record.team)

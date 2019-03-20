@@ -2,18 +2,18 @@
 % Please edit documentation in R/on_base_percentage_formula.R
 \name{obp_formula}
 \alias{obp_formula}
-\title{On-base percentage calculate function}
+\title{On-base Percentage formula}
 \usage{
 obp_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's OBP
+OBP from data
 }
 \description{
-OBP calculation in the data
+Calculating OBP from data
 }
 \examples{
 obp_formula(hanhwa_batter_2018)

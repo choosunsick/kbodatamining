@@ -1,9 +1,9 @@
-#' The number of Plate appearance calculate function
+#' The number of Plate Appearance formula
 #'
-#' Calculate PA in the data
+#' Calculating PA from data
 #'
-#' @param data KBO batter inning data
-#' @return data's PA
+#' @param data KBO batter data
+#' @return PA from data
 #' @importFrom dplyr select
 #' @examples
 #' pa_formula(hanhwa_batter_2018)

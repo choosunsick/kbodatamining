@@ -1,9 +1,9 @@
-#' Pitches per inning pitched calculate function
+#' Pitches Per Inning Pitched formula
 #'
-#' Calculate P/IP in the data
+#' Calculating P/IP from data
 #'
 #' @param data KBO pitcher data
-#' @return data's P/IP
+#' @return P/IP from data
 #' @examples
 #' p_ip_formula(hanhwa_pitcher_2018)
 #' @export

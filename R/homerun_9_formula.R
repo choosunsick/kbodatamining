@@ -1,9 +1,9 @@
-#' Homerun / 9 calculate function
+#' Homerun / 9 formula
 #'
-#' Calculates Homerun / 9 in the data.
+#' Calculating Homerun / 9 from data
 #'
 #' @param data KBO pitcher data
-#' @return data's HR / 9
+#' @return  HR / 9 from data
 #' @examples
 #' hr_9_formula(find_team(hanhwa_pitcher_2018,"한화"))
 #' @export

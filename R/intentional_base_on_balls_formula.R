@@ -1,9 +1,9 @@
-#' Intentional base on ball calculate function
+#' Intentional Base on Balls count
 #'
-#' Calculates intentional base on balls in the data.
+#' Counting Intentional Base on Balls from data.
 #'
-#' @param data batter inning data
-#' @return Ibb counts from data
+#' @param data KBO batter data
+#' @return IBB from data
 #' @importFrom dplyr select
 #' @examples
 #' ibb_formula(hanhwa_batter_2018)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/opponent_batter_average_formula.R
 \name{oba_formula}
 \alias{oba_formula}
-\title{Opponent batter average calculate function}
+\title{Opponent Batter Average formula}
 \usage{
 oba_formula(data)
 }
@@ -10,10 +10,10 @@ oba_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-data's OBA
+OBA from data
 }
 \description{
-Calculate OBA in the data
+Calculating OBA from data
 }
 \examples{
 oba_formula(hanhwa_pitcher_2018[hanhwa_pitcher_2018$team=="한화",])

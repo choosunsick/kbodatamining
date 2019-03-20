@@ -2,18 +2,18 @@
 % Please edit documentation in R/base_on_balls_formula.R
 \name{bb_formula}
 \alias{bb_formula}
-\title{Base on balls calculate function}
+\title{Base on balls count}
 \usage{
 bb_formula(data)
 }
 \arguments{
-\item{data}{KBO batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's base on balls
+base on balls from data
 }
 \description{
-Calculates base on balls from data
+Counting base on balls from data
 }
 \examples{
 bb_formula(hanhwa_batter_2018)

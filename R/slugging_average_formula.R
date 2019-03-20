@@ -1,9 +1,9 @@
-#' Slugging average calculate function
+#' Slugging Average formula
 #'
-#' Calculate Slugging average in the data
+#' Calculating Slugging Average from data
 #'
-#' @param data batter inning data
-#' @return data's Slugging average
+#' @param data KBO batter data
+#' @return Slugging Average from data
 #' @importFrom dplyr select
 #' @examples
 #' slg_formula(hanhwa_batter_2018)

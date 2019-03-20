@@ -15,7 +15,7 @@ bind_player_id(data, idlist)
 Data with player id
 }
 \description{
-This function creates a player id for the players in the data.
+This function creates a player id of the data.
 }
 \examples{
 #notrun

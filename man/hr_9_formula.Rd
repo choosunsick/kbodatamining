@@ -2,7 +2,7 @@
 % Please edit documentation in R/homerun_9_formula.R
 \name{hr_9_formula}
 \alias{hr_9_formula}
-\title{Homerun / 9 calculate function}
+\title{Homerun / 9 formula}
 \usage{
 hr_9_formula(data)
 }
@@ -10,10 +10,10 @@ hr_9_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-data's HR / 9
+HR / 9 from data
 }
 \description{
-Calculates Homerun / 9 in the data.
+Calculating Homerun / 9 from data
 }
 \examples{
 hr_9_formula(find_team(hanhwa_pitcher_2018,"한화"))

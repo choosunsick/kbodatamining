@@ -1,10 +1,10 @@
-#' Complete game calculate function
+#' Complete game count
 #'
-#' Calculate Complete game of team
+#' Creating a list of players who have achieve Complete game on the team.
 #'
 #' @param data KBO pitcher data
 #' @param team KBO team name
-#' @return Complete game player and cg count dataframe
+#' @return List of players who achieved Complete game
 #' @examples
 #' cg_calculate(hanhwa_pitcher_2018,"한화")
 #' @export

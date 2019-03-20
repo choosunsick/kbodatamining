@@ -2,7 +2,7 @@
 % Please edit documentation in R/earned_run_average_formula.R
 \name{era_formula}
 \alias{era_formula}
-\title{Earned run average calculate function}
+\title{Earned Run Average count}
 \usage{
 era_formula(data)
 }
@@ -10,10 +10,10 @@ era_formula(data)
 \item{data}{KBO pitcher data}
 }
 \value{
-data's ERA
+ERA from data
 }
 \description{
-Calculates the ERA of the pitcher from the data
+Counting ERA from the data
 }
 \examples{
 era_formula(hanhwa_pitcher_2018)

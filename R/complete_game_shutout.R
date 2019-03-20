@@ -1,10 +1,10 @@
-#' Complete game Shutout calculate function
+#' Complete Game Shutout count
 #'
-#' Calculate Complete game Shutout of data
+#' Creating a list of players who have achieve Complete Game Shutout on the team.
 #'
 #' @param data KBO pitcher data
 #' @param team KBO team name
-#' @return Complete game Shutout player and cgs count dataframe
+#' @return List of players who achieved Complete Game Shutout
 #' @examples
 #' cgs_calculate(hanhwa_pitcher_2018,"한화")
 #' @export

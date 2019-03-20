@@ -2,7 +2,7 @@
 % Please edit documentation in R/complete_game.R
 \name{cg_calculate}
 \alias{cg_calculate}
-\title{Complete game calculate function}
+\title{Complete game count}
 \usage{
 cg_calculate(data, team)
 }
@@ -12,10 +12,10 @@ cg_calculate(data, team)
 \item{team}{KBO team name}
 }
 \value{
-Complete game player and cg count dataframe
+List of players who achieved Complete game
 }
 \description{
-Calculate Complete game of team
+Creating a list of players who have achieve Complete game on the team.
 }
 \examples{
 cg_calculate(hanhwa_pitcher_2018,"한화")

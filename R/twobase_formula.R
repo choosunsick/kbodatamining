@@ -1,9 +1,9 @@
-#' 2B calculate function
+#' 2B count
 #'
-#' Calculates the data's Double
+#' Counting Double from data
 #'
-#' @param data batter inning data
-#' @return data's 2B
+#' @param data KBO batter data
+#' @return 2B from data
 #' @importFrom dplyr select
 #' @examples
 #' twobase_formula(hanhwa_batter_2018)

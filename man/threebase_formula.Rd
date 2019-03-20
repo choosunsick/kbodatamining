@@ -2,18 +2,18 @@
 % Please edit documentation in R/threebase_formula.R
 \name{threebase_formula}
 \alias{threebase_formula}
-\title{3B calculate function}
+\title{3B count}
 \usage{
 threebase_formula(data)
 }
 \arguments{
-\item{data}{batter inning data}
+\item{data}{KBO batter data}
 }
 \value{
-data's 3B
+3B from data
 }
 \description{
-Calculates the data's Triples.
+Counting Triples from data
 }
 \examples{
 threebase_formula(hanhwa_batter_2018)

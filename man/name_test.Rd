@@ -10,10 +10,10 @@ name_test(name)
 \item{name}{KBO player name or KBO Team name}
 }
 \value{
-check name tag
+name tag
 }
 \description{
-This function identifies whether the name is a team name or not
+This function identifies whether name parameter is a team name or player name.
 }
 \examples{
 ## internal function

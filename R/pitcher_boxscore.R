@@ -8,6 +8,7 @@
 #' If you put a year and a month in two parameters, the box score for the specific time you put in is created.
 #' @param data Default data is hanhwa_pitcher_2018 You can put other KBO pitcher data if you want.
 #' @param name The name of the pitcher you want
+#' @param id  This is not a required parameter. The ID parameter is a numeric type.
 #' @param yearly The default value is NULL Possible values are a specific year.
 #' @param monthly The default value is NULL Possible values are a specific month.
 #' @return The box score for the year, month, or period put in is created.
@@ -24,8 +25,8 @@
 #완봉 관련해서 전체 데이터가 들어갔을 때도 적용되겠금 만들어야함
 #봐서 중간 부분 함수로 빼던가 해야함
 #팀일 때 선수일때 구분해서 완봉 기록 매칭해주는 거 만들어야함
-pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,name,yearly=NULL,monthly=NULL){
-  boxscore <- date_test(data,name,yearly,monthly,pitcher_statistics)
+pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,name,id=NULL,yearly=NULL,monthly=NULL){
+  boxscore <- date_test(data,name,id,yearly,monthly,pitcher_statistics)
   cg_list <- bind_cg_list(data,boxscore$record.team)
   cgs_list <- bind_cgs_list(data,boxscore$record.team)
   boxscore <- boxscore_test(name,boxscore,cg_list,cgs_list)

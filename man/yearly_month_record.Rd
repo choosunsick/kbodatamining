@@ -4,12 +4,14 @@
 \alias{yearly_month_record}
 \title{Annual record for the entered month}
 \usage{
-yearly_month_record(data, name, recordname, month)
+yearly_month_record(data, name, id, recordname, month)
 }
 \arguments{
 \item{data}{KBO datas with at least one year of data}
 
 \item{name}{The name of the player or the team you want}
+
+\item{id}{The id of the player you want}
 
 \item{recordname}{The name of the record you want}
 

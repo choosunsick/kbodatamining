@@ -1,9 +1,9 @@
-#' AVG calculate formula
+#' AVG formula
 #'
-#' Calculates AVG from data
+#' Calculating AVG from data
 #'
 #' @param data KBO batter data
-#' @return data's AVG
+#' @return AVG from data
 #' @examples
 #' avg_formula(hanhwa_batter_2018)
 #' @export

@@ -4,12 +4,14 @@
 \alias{year_month_record}
 \title{Record of players by period}
 \usage{
-year_month_record(data, name, recordname, year, month)
+year_month_record(data, name, id, recordname, year, month)
 }
 \arguments{
 \item{data}{KBO datas with at least one year of data}
 
 \item{name}{The name of the player or the team you want}
+
+\item{id}{The id of the player you want}
 
 \item{recordname}{The name of the record you want}
 

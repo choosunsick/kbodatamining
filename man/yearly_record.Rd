@@ -4,12 +4,14 @@
 \alias{yearly_record}
 \title{Yearly record show}
 \usage{
-yearly_record(data, name, recordname)
+yearly_record(data, name, id, recordname)
 }
 \arguments{
 \item{data}{KBO datas with at least one year of data}
 
 \item{name}{The name of the player or the team you want}
+
+\item{id}{The id of the player you want}
 
 \item{recordname}{The name of the record you want}
 }

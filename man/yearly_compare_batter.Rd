@@ -2,7 +2,7 @@
 % Please edit documentation in R/yearly_compare_batter.R
 \name{yearly_compare_batter}
 \alias{yearly_compare_batter}
-\title{Plot comparing two batter stats}
+\title{Plot comparing annual stats of two batters}
 \usage{
 yearly_compare_batter(data, playername1, playername2, monthly = NULL)
 }
@@ -16,13 +16,13 @@ yearly_compare_batter(data, playername1, playername2, monthly = NULL)
 \item{monthly}{The default value is NULL, Possible values are a specific month string such as "05"}
 }
 \value{
-Four plots comparing the four records(G, AVG, OPS, BABIP) of the players entered
+Four plots comparing the four records(G, AVG, OPS, BABIP) of the players' name you entered
 }
 \description{
-This function draws a plot that compares two batters based on the yearly batter data.
-This function has an option monthly.
+This function draws a plot that compares two batters based on annual batter data.
+This function has an option monthly. 변경
 If you put in a specific month for monthly parameter, you will compare the batters with the put in month data
-## You can refer to the Readme file to obtain the annual KBO data
+You can refer to the Readme file to obtain the annual KBO data
 }
 \examples{
 ## not run

@@ -2,7 +2,7 @@
 % Please edit documentation in R/avg_formula.R
 \name{avg_formula}
 \alias{avg_formula}
-\title{AVG calculate formula}
+\title{AVG formula}
 \usage{
 avg_formula(data)
 }
@@ -10,10 +10,10 @@ avg_formula(data)
 \item{data}{KBO batter data}
 }
 \value{
-data's AVG
+AVG from data
 }
 \description{
-Calculates AVG from data
+Calculating AVG from data
 }
 \examples{
 avg_formula(hanhwa_batter_2018)

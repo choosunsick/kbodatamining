@@ -5,27 +5,30 @@
 \title{The box score of the batter}
 \usage{
 batter_boxscore(data = kbodatamining::hanhwa_batter_2018, name,
-  yearly = NULL, monthly = NULL)
+  id = NULL, yearly = NULL, monthly = NULL)
 }
 \arguments{
-\item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
+\item{data}{'Hanhwa_batter_2018' is default data. You can put another kbo batter data if you want.}
 
 \item{name}{The name of the batter you want}
 
-\item{yearly}{The default value is NULL Possible values are a specific year.}
+\item{id}{This is not a required parameter. The ID parameter is a numeric type.}
 
-\item{monthly}{The default value is NULL Possible values are a specific month.}
+\item{yearly}{The default value is NULL. Possible value is a specific year.}
+
+\item{monthly}{The default value is NULL. Possible value is a specific month.}
 }
 \value{
-The box score for the year, month, or period put in is created.
+The box score of the year or month put in is created.
 }
 \description{
-This function creates a box score for the batter for the year or period.
-This function has an option for yearly and monthly.
+This function creates annual or periodical box score of the batter.
+This function has options called 'yearly' or 'monthly'.
 default: The player's annual box score is created.
-If you put a year in the yearly parameter, it calculates the corresponding year box score.
-If you put a month in the monthly parameter, it calculates the corresponding yearly-month box score.
-If you put a year and a month in two parameters, the box score for the specific time you put in is created.
+If you put a year in the yearly parameter, it calculates the box score of corresponding year.
+If you put a month in the monthly parameter, it calculates the corresponding monthly box score of every year.
+If you put a year and a month in each parameters, the box score of corresponding month you put in is created.
+If you are looking for a player who has the same name with other players, you need to find the player's ID and put it in the 'ID' parameter.
 }
 \examples{
 ## default: yearly=NULL,monthly=NULL

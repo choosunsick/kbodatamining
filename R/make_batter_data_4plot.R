@@ -13,7 +13,7 @@
 #' @export
 
 make_batter_data_4plot <- function(data,playername1,playername2,yearly=NULL,monthly=NULL){
-  player_1 <- kbodatamining::batter_boxscore(data,playername1,yearly,monthly)
-  player_2 <- kbodatamining::batter_boxscore(data,playername2,yearly,monthly)
+  player_1 <- kbodatamining::batter_boxscore(data = data,name = playername1,yearly = yearly,monthly = monthly)
+  player_2 <- kbodatamining::batter_boxscore(data = data,name = playername2,yearly = yearly,monthly = monthly)
   return(rbind(player_1,player_2))
 }

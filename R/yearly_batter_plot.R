@@ -1,9 +1,9 @@
 #' Annual hit record plot
 #'
-#' Compare the four records of the two players in the data.
-#' This function requires data that has a duration of at least two seasons.
+#' This function compares the four records of each two players from the data.
+#' This function requires data that have a duration of at least two seasons.
 #'
-#' @param data You can use the `make_batter_data_4plot()` function to create  merged two batters data.
+#' @param data You can use the `make_batter_data_4plot()` function to create merged data of two batters'.
 #' @return Four plot comparing four records(G,AVG,OPS,BABIP) of each player
 #' @importFrom ggplot2 ggplot geom_bar geom_text theme ggtitle geom_point geom_line
 #' @importFrom ggplot2 element_text xlab ylab aes labs scale_y_continuous geom_text

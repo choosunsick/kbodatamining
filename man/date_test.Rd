@@ -4,12 +4,14 @@
 \alias{date_test}
 \title{yearly and monthly argument test}
 \usage{
-date_test(data, name, yearly, monthly, recordname)
+date_test(data, name, id, yearly, monthly, recordname)
 }
 \arguments{
 \item{data}{Default is hanhwa's batter data, You can include the entire KBO data if you wish.}
 
 \item{name}{The name of the batter or the team you want}
+
+\item{id}{Default is NULL, but you can put in Player id of player with same name}
 
 \item{yearly}{Default is NULL, but you can put in the year}
 
@@ -24,5 +26,5 @@ Record dataframe by period according to test
 Tests whether the two arguments are null.
 }
 \examples{
-date_test(hanhwa_batter_2018,"이용규",NULL,NULL,avg_formula)
+date_test(hanhwa_batter_2018,"이용규",NULL,NULL,NULL,avg_formula)
 }

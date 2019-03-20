@@ -2,7 +2,7 @@
 % Please edit documentation in R/oneseason_compare_batter.R
 \name{oneseason_compare_batter}
 \alias{oneseason_compare_batter}
-\title{Plot comparing two batter stats with one season}
+\title{Plot comparing stats of two batter during one season}
 \usage{
 oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
   playername1, playername2, yearly = 2018, monthly = NULL)
@@ -10,9 +10,9 @@ oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
 \arguments{
 \item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
 
-\item{playername1}{Name of the batter you want to compare}
+\item{playername1}{Name of the batter you want to compare with playername2}
 
-\item{playername2}{Name of the batter you want to compare}
+\item{playername2}{Name of the batter you want to compare with playername1}
 
 \item{yearly}{The default value is 2018 Possible values are a specific year.}
 
@@ -22,13 +22,13 @@ oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
 Plots comparing two batter stats
 }
 \description{
-This function draws a plot that compares two batters based on one season batter data.
-This function has an option for yearly and monthly.
-default: Based on the 2018 season, the month argument is NULL
-If you put specific year in the yearly parameter, draws a batting comparison plot for the matched year.
+This function creates a plot that compares two batters based on batter data of one season.
+This function has options called 'yearly' or 'monthly'.
+default: Based on the 2018 season, the 'monthly' parameter is NULL
+If you put specific year in the yearly parameter, this function draws a batting comparing plot of the corresponding year .
 If you put specific month in the monthly parameter, draws a batting comparison plot for the matched 2018 year and specific month.
 If you put specific year and month in two parameters, draws a batting comparison plot for the matched specific year and month.
-If you are using mac and Hangul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
+If you are using MAC and Hangeul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 }
 \examples{
 ## default: yearly=2018, monthly=NULL

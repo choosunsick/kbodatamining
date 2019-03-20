@@ -4,12 +4,14 @@
 \alias{find_player}
 \title{Extracting player data}
 \usage{
-find_player(data, playername)
+find_player(data, playername, id)
 }
 \arguments{
 \item{data}{KBO data with playername}
 
 \item{playername}{The playername you want to find}
+
+\item{id}{player id you want to find}
 }
 \value{
 The batter data only the player you want to find
@@ -18,5 +20,5 @@ The batter data only the player you want to find
 find_player function creates data that contains player you want.
 }
 \examples{
-find_player(hanhwa_batter_2018,"이용규")
+find_player(hanhwa_batter_2018,"이용규",NULL)
 }

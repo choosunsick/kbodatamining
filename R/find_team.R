@@ -12,10 +12,8 @@
 find_team <- function(data,team){
 
   if(str_detect(string = team,",")){
-    team_data <- data.frame()
-    for(i in str_split(string = team,",",simplify = T)){
-      team_data <- rbind(team_data,data[data$team == i,])
-    }
+    team_list <- str_split(string = team,",",simplify = T)
+    team_data <- do.call(rbind,lapply(team_list,function(x)data[data$team == x,]))
   }
   else{
     team_data <- data[data$team == team,]

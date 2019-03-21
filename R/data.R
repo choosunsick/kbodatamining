@@ -2,7 +2,7 @@
 #'
 #' This data includes Hanhwa's and the opponent's batter record of 2018.
 #'
-#' @format A data frame with 3580 rows and 23 variables:
+#' @format A data frame with 3580 rows and 24 variables:
 #' \describe{
 #' \item{one}{one, 1 inning}
 #' \item{two}{two, 2 inning}
@@ -36,7 +36,7 @@
 #'
 #' This data includes Hanhwa's and the opponent's pitcher record of 2018.
 #'
-#' @format A data frame with 3580 rows and 21 variables:
+#' @format A data frame with 3580 rows and 25 variables:
 #' \describe{
 #' \item{date}{date, Game Date}
 #' \item{away}{away, Awayteam}

@@ -8,7 +8,7 @@
 #' @param yearly The default value is NULL. Possible value is a specific year.
 #' @param monthly The default value is NULL. Possible value is a specific month.
 #' @param recordname The name of the record you want
-#' @return yearly, monthly by checking according to the parameter.
+#' @return Baseball record data created according to 'yearly', 'monthly' parameter
 #' @importFrom dplyr filter %>%
 #' @importFrom rlang .data
 #' @examples

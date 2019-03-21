@@ -14,12 +14,12 @@ make_all_pitcher_data(data, team1, team2, yearly = 2018,
 
 \item{team2}{The second of the team you want to compare}
 
-\item{yearly}{The role of determining the annual period of data}
+\item{yearly}{The default value is 2018. The role of determining the annual period of data}
 
 \item{monthly}{The role of determining the monthly period of data}
 }
 \value{
-Combined two team datas of all pitchers
+Combined data all the pitcher data from two teams
 }
 \description{
 Function: Make all pitchers of two team data for plotting

@@ -4,7 +4,7 @@
 \name{hanhwa_pitcher_2018}
 \alias{hanhwa_pitcher_2018}
 \title{2018 season hanhwa pitchers data}
-\format{A data frame with 3580 rows and 21 variables:
+\format{A data frame with 3580 rows and 25 variables:
 \describe{
 \item{date}{date, Game Date}
 \item{away}{away, Awayteam}

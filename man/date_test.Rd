@@ -20,7 +20,7 @@ date_test(data, name, id, yearly, monthly, recordname)
 \item{recordname}{The name of the record you want}
 }
 \value{
-yearly, monthly by checking according to the parameter.
+Baseball record data created according to 'yearly', 'monthly' parameter
 }
 \description{
 Tests whether the two parameters are null.

@@ -13,12 +13,12 @@ make_all_batter_data(data, team1, team2, yearly = 2018, monthly = NULL)
 
 \item{team2}{The second of the team you want to compare}
 
-\item{yearly}{The role of determining the annual period of data}
+\item{yearly}{The default value is 2018. The role of determining the annual period of data}
 
 \item{monthly}{The role of determining the monthly period of data}
 }
 \value{
-Combined two team datas of all batters
+Combined data all the batter data from two teams
 }
 \description{
 Function: Make all batters of two team data for plotting

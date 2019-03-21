@@ -7,7 +7,7 @@
 #' @param playername2 The second of the players you want to compare
 #' @param yearly The role of determining the annual period of data
 #' @param monthly The role of determining the monthly period of data
-#' @return Combined boxscore data for two players
+#' @return Box score data combined with two players' box scores
 #' @examples
 #' make_pitcher_data_4plot(hanhwa_pitcher_2018,"정우람","이태양")
 #' @export

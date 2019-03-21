@@ -19,7 +19,7 @@ make_pitcher_data_4plot(data, playername1, playername2, yearly = NULL,
 \item{monthly}{The role of determining the monthly period of data}
 }
 \value{
-Combined boxscore data for two players
+Box score data combined with two players' box scores
 }
 \description{
 Function: Creates data that combines two pitchers.

@@ -5,9 +5,9 @@
 #' @param data KBO pitcher data
 #' @param team1 The first of the team you want to compare
 #' @param team2 The second of the team you want to compare
-#' @param yearly The role of determining the annual period of data
+#' @param yearly The default value is 2018. The role of determining the annual period of data
 #' @param monthly The role of determining the monthly period of data
-#' @return Combined two team datas of all pitchers
+#' @return Combined data all the pitcher data from two teams
 #' @examples
 #' make_all_pitcher_data(hanhwa_pitcher_2018,"한화","LG",2018,NULL)
 #' @export

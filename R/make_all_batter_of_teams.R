@@ -5,13 +5,13 @@
 #' @param data KBO batter data
 #' @param team1 The first of the team you want to compare
 #' @param team2 The second of the team you want to compare
-#' @param yearly The role of determining the annual period of data
+#' @param yearly The default value is 2018. The role of determining the annual period of data
 #' @param monthly The role of determining the monthly period of data
-#' @return Combined two team datas of all batters
+#' @return Combined data all the batter data from two teams
 #' @examples
 #' make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL)
 #' @export
-#id 할 때 뭔가 문제 발생 find team으로 안감
+
 make_all_batter_data <- function(data,team1,team2,yearly=2018,monthly=NULL){
   temp <- find_team(data,team1)
   temp_1 <- find_team(data,team2)

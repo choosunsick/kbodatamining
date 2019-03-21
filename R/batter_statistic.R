@@ -5,8 +5,8 @@
 #' @param data KBO batter data
 #' @return Batter's statistic
 #' @examples
-#' ## internal function
-#' #batter_statistics(find_player(hanhwa_batter_2018,"이용규"))
+#' ## internal function:This function creates statistical data for the batter's boxscore.
+#' #batter_statistics(find_player(hanhwa_batter_2018,"이용규",NULL))
 
 batter_statistics <- function(data){
   team <- unique(data$team)
@@ -19,18 +19,18 @@ batter_statistics <- function(data){
   h <- sum(data$h)
   r <- sum(data$r)
   rbi <- sum(data$rbi)
-  one_base <- onebase_formula(data)
-  two_base <- twobase_formula(data)
-  three_base <- threebase_formula(data)
-  hr <- homerun_formula(data)
+  one_base <- factor_count(data,"10")
+  two_base <- factor_count(data,"11")
+  three_base <- factor_count(data,"12")
+  hr <- factor_count(data,"13")
   tb <- 1*one_base+2*two_base+3*three_base+4*hr
-  bb <- bb_formula(data)
-  hbp <- hbp_formula(data)
-  ibb <- ibb_formula(data)
-  so <- so_formula(data)
-  gidp <- gidp_formula(data)
-  sh <- sh_formula(data)
-  sf <- sf_formula(data)
+  bb <- factor_count(data,"30")+factor_count(data,"32")
+  hbp <- factor_count(data,"31")
+  ibb <- factor_count(data,"32")
+  so <- factor_count(data,"20")+factor_count(data,"21")
+  gidp <- factor_count(data,"72")
+  sh <- factor_count(data,"41")+factor_count(data,"61")
+  sf <- factor_count(data,"50")
   avg <- avg_formula(data)
   obp <- obp_formula(data)
   slg <- slg_formula(data)

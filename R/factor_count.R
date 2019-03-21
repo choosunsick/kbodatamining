@@ -13,6 +13,8 @@
 #' @export
 
 factor_count <- function(data,record_factor){
+  inning <- c('one','two','three','four','five','six','seven','eight', 'nine','ten','eleven','twelve')
+  data <- subset(x=data,select = inning)
   check_one <- sum(do.call(rbind,lapply(colnames(data),function(x)grepl(record_factor,substr(data[,x],1,2)))))
   check_two <- sum(do.call(rbind,lapply(colnames(data),function(x)grepl(record_factor,substr(data[,x],5,6)))))
   return(check_one+check_two)

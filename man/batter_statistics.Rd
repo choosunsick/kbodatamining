@@ -16,6 +16,6 @@ Batter's statistic
 Function: Make Batter's statistic From the KBO batter data
 }
 \examples{
-## internal function
-#batter_statistics(find_player(hanhwa_batter_2018,"이용규"))
+## internal function:This function creates statistical data for the batter's boxscore.
+#batter_statistics(find_player(hanhwa_batter_2018,"이용규",NULL))
 }

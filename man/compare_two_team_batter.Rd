@@ -28,7 +28,7 @@ default: Based on the 2018 season, the monthly parameter is NULL.
 If you put a year in the yearly parameter, you draw a hit comparison plot of the two teams for that year.
 If you put a month in the monthly parameter, you draw a hit comparison plot of the two teams for the matched 2018 year and specific month.
 If you put a year and a month in each parameters, you draw a hit comparison plot of the two teams for the matched specific year and month.
-If you are using MAC and Hangeul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
+If you are using MAC and Hangeul fonts are broken, type `theme_set(theme_gray(base_family = "AppleGothic"))`
 }
 \examples{
 ##notrun

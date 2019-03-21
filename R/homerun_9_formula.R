@@ -10,5 +10,5 @@
 hr_9_formula <- function(data){
   ip <- sum(data$inning, data$restinning/3)
   hr_9 <- ifelse(ip>0,sum(data$hr)*9/ip,99.99)
-  return(hr_9)
+  return(round(hr_9,3))
 }

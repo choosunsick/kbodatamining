@@ -11,17 +11,22 @@
 #' @param name The name of the batter you want
 #' @param id This is not a required parameter. The ID parameter is a numeric type.
 #' @param yearly The default value is NULL. Possible value is a specific year.
-#' @param monthly The default value is NULL. Possible value is a specific month.
+#' @param monthly The default value is NULL. Possible value is a specific month. The monthly parameter is a string type.
 #' @return The batter box score of the year or month put in is created.
 #' @examples
-#' ## default: yearly=NULL,monthly=NULL
-#' batter_boxscore(hanhwa_batter_2018,"이용규")
-#' ## yearly=2018, monthly=NULL
-#' batter_boxscore(hanhwa_batter_2018,"이용규",yearly=2018)
-#' ## yearly=NULL, monthly="05"
-#' batter_boxscore(hanhwa_batter_2018,"이용규",monthly="05")
-#' ## yearly=2018, monthly="05"
-#' batter_boxscore(hanhwa_batter_2018,"이용규",yearly=2018,monthly="05")
+#' ## Example when the name parameter is a player name or a team name
+#' ## default: id=NULL, yearly=NULL, monthly=NULL
+#' batter_boxscore(data=hanhwa_batter_2018,name="이용규")
+#' batter_boxscore(data=hanhwa_batter_2018,name="한화")
+#' ## id=NULL, yearly=2018, monthly=NULL
+#' batter_boxscore(data=hanhwa_batter_2018,name="이용규",yearly=2018)
+#' batter_boxscore(data=hanhwa_batter_2018,name="한화",yearly=2018)
+#' ## id=NULL, yearly=NULL, monthly="05"
+#' batter_boxscore(data=hanhwa_batter_2018,name="이용규",monthly="05")
+#' batter_boxscore(data=hanhwa_batter_2018,name="한화",monthly="05")
+#' ## id=NULL, yearly=2018, monthly="05"
+#' batter_boxscore(data=hanhwa_batter_2018,name="이용규",id=NULL,yearly=2018,monthly="05")
+#' batter_boxscore(data=hanhwa_batter_2018,name="한화",id=NULL,yearly=2018,monthly="05")
 #' @export
 batter_boxscore <- function(data=kbodatamining::hanhwa_batter_2018,name,id=NULL,yearly=NULL,monthly=NULL){
   boxscore <- date_test(data,name,id,yearly,monthly,batter_statistics)

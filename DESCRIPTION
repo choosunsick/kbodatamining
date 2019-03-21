@@ -4,7 +4,9 @@ Title: Kbo Data Mining and Analysis with R
 Version: 0.1.0
 Date: 2019-01-31
 Authors@R: person("Sunsick", "Choo", email = "1993ss@naver.com", role = c("aut", "cre"))
-Description: This package analyzes records such as AVG and ERA through Korean baseball data. 
+Description: This package analyzes records such as AVG and ERA through Korean baseball data.
+              And The analyzed records are shown in a box score. 
+              The functions in this package draw a plot that compares players or teams based on a box score.
 Depends:
     R (>= 2.10)
 Imports:
@@ -20,4 +22,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

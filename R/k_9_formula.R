@@ -10,5 +10,5 @@
 k_9_formula <- function(data){
   ip <- sum(data$inning, data$restinning/3)
   k_9 <- ifelse(ip>0,sum(data$k)*9/ip,0)
-  return(k_9)
+  return(round(k_9,3))
 }

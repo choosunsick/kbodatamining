@@ -16,7 +16,7 @@ pitcher_boxscore(data = kbodatamining::hanhwa_pitcher_2018, name,
 
 \item{yearly}{The default value is NULL. Possible value is a specific year.}
 
-\item{monthly}{The default value is NULL. Possible value is a specific month.}
+\item{monthly}{The default value is NULL. Possible value is a specific month. The monthly parameter is a string type.}
 }
 \value{
 The pitcher box score of the year or month put in is created.
@@ -31,12 +31,13 @@ If you put a year and a month in each parameters, the box score of corresponding
 If you are looking for a player who has the same name with other players, you need to find the player's ID and put it in the 'ID' parameter.
 }
 \examples{
-## default: yearly=NULL,monthly=NULL
+## default: id=NULL, yearly=NULL, monthly=NULL
 pitcher_boxscore(hanhwa_pitcher_2018,"정우람")
-## yearly=2018, monthly=NULL
+pitcher_boxscore(hanhwa_pitcher_2018,"한화")
+## id=NULL, yearly=2018, monthly=NULL
 pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018)
-## yearly=NULL, monthly="05"
+## id=NULL, yearly=NULL, monthly="05"
 pitcher_boxscore(hanhwa_pitcher_2018,"정우람",monthly="05")
-## yearly=2018, monthly="05"
+## id=NULL, yearly=2018, monthly="05"
 pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018,monthly="05")
 }

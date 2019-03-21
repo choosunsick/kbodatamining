@@ -20,8 +20,8 @@ Four plots comparing the four records(G, AVG, OPS, BABIP) of the players' name y
 }
 \description{
 This function draws a plot that compares two batters based on annual batter data.
-This function has an option monthly. 변경
-If you put in a specific month for monthly parameter, you will compare the batters with the put in month data
+This function has options called monthly.
+If you put a month in the monthly parameter, it calculates the corresponding monthly compare plot of every year.
 You can refer to the Readme file to obtain the annual KBO data
 }
 \examples{

@@ -11,5 +11,5 @@ p_ip_formula <- function(data){
   ip <- sum(data$inning, data$restinning/3)
   pit <- sum(data$pit)
   p_ip <- ifelse(ip != 0,pit/ip,99.99)
-  return(p_ip)
+  return(round(p_ip,3))
 }

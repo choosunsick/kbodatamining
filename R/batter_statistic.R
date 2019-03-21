@@ -5,7 +5,8 @@
 #' @param data KBO Batter data
 #' @return Statistics of Batter
 #' @examples
-#' ## internal function:This function creates statistical data for the batter's boxscore.
+#' ## internal function:
+#' ## This function creates statistical data for the batter's boxscore.
 #' #batter_statistics(find_player(hanhwa_batter_2018,"이용규",NULL))
 
 batter_statistics <- function(data){
@@ -31,11 +32,12 @@ batter_statistics <- function(data){
   gidp <- factor_count(data,"72")
   sh <- factor_count(data,"41")+factor_count(data,"61")
   sf <- factor_count(data,"50")
-  avg <- avg_formula(data)
-  obp <- obp_formula(data)
-  slg <- slg_formula(data)
+  avg <- round(avg_formula(data),3)
+  obp <- round(obp_formula(data),3)
+  slg <- round(slg_formula(data),3)
   ops <- obp+slg
   babip <- ifelse(ab+sh-so-hr>0,(h-hr)/(ab+sh-so-hr),0)
+  babip <- round(babip,3)
   batterstatics <- data.frame(team,g,away,home,pa,ab,h,r,rbi,one_base,two_base,three_base,hr,
              tb,bb,hbp,ibb,so,gidp,sh,sf,avg,obp,slg,ops,babip)
   return(batterstatics)

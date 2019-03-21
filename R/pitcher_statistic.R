@@ -7,6 +7,7 @@
 #' @examples
 #' ## internal function:This function creates statistical data for the pitcher's boxscore.
 #' #pitcher_statistics(find_player(hanhwa_pitcher_2018,"정우람",NULL))
+
 pitcher_statistics <- function(data){
   team <- unique(data$team)
   team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>=2,paste(team[1],",",team[2],sep = ""),"NO game participation"))
@@ -32,7 +33,7 @@ pitcher_statistics <- function(data){
   p_ip <- p_ip_formula(data)
   k_9 <- k_9_formula(data)
   hr_9 <- hr_9_formula(data)
-  oba <- sum(data$h)/sum(data$ab)
+  oba <- round(sum(data$h)/sum(data$ab),3)
   pitcherstatistic <- data.frame(team,g,away,home,win,lose,draw,wpct,hld,sv,ip,r,er,k,bb_plus_hbp,pit,tbf,ha,hra,era,p_ip,k_9,hr_9,oba)
   return(pitcherstatistic)
 }

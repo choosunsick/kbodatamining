@@ -9,7 +9,7 @@
 #' @export
 
 era_formula <- function(data){
-  denominator <- sum(data$inning, data$restinning/3)
-  era <- ifelse(denominator!= 0,sum(data$er*9) /denominator,99.99)
+  ip <- sum(data$inning, data$restinning/3)
+  era <- ifelse(ip> 0,sum(data$er*9) /ip,99.99)
   return(era)
 }

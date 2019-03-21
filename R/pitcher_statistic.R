@@ -1,12 +1,12 @@
 #' Make Pitcher statistic
 #'
-#' Function: Make Pitcher's statistic From the KBO data
+#' Function: Make Pitcher's statistic From the KBO Pitcher data
 #'
 #' @param data KBO Pitcher data
-#' @return Pitcher's statistic
+#' @return Statistics of Pitcher
 #' @examples
-#' ## internal function
-#' #pitcher_statistics(find_player(hanhwa_pitcher_2018,"정우람"))
+#' ## internal function:This function creates statistical data for the pitcher's boxscore.
+#' #pitcher_statistics(find_player(hanhwa_pitcher_2018,"정우람",NULL))
 pitcher_statistics <- function(data){
   team <- unique(data$team)
   team <- ifelse(NROW(team)==1,team,ifelse(NROW(team)>=2,paste(team[1],",",team[2],sep = ""),"NO game participation"))
@@ -19,7 +19,7 @@ pitcher_statistics <- function(data){
   wpct <- wpct_formula(data)
   hld <- sum(data$hld)
   sv <- sum(data$sv)
-  ip <- ip_formula(data)
+  ip <- sum(data$inning, data$restinning/3)
   r <- sum(data$r)
   er <- sum(data$er)
   k <- sum(data$k)
@@ -32,7 +32,7 @@ pitcher_statistics <- function(data){
   p_ip <- p_ip_formula(data)
   k_9 <- k_9_formula(data)
   hr_9 <- hr_9_formula(data)
-  oba <- oba_formula(data)
+  oba <- sum(data$h)/sum(data$ab)
   pitcherstatistic <- data.frame(team,g,away,home,win,lose,draw,wpct,hld,sv,ip,r,er,k,bb_plus_hbp,pit,tbf,ha,hra,era,p_ip,k_9,hr_9,oba)
   return(pitcherstatistic)
 }

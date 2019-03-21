@@ -10,7 +10,6 @@
 #' find_player(hanhwa_batter_2018,"이용규",NULL)
 #' @export
 find_player <- function(data,playername,id){
-  print(id)
   if(is.null(id)==TRUE){
     player_data <- data[data$name == playername,]
     }

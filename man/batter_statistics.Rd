@@ -7,10 +7,10 @@
 batter_statistics(data)
 }
 \arguments{
-\item{data}{KBO batter data}
+\item{data}{KBO Batter data}
 }
 \value{
-Batter's statistic
+Statistics of Batter
 }
 \description{
 Function: Make Batter's statistic From the KBO batter data

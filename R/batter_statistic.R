@@ -2,8 +2,8 @@
 #'
 #' Function: Make Batter's statistic From the KBO batter data
 #'
-#' @param data KBO batter data
-#' @return Batter's statistic
+#' @param data KBO Batter data
+#' @return Statistics of Batter
 #' @examples
 #' ## internal function:This function creates statistical data for the batter's boxscore.
 #' #batter_statistics(find_player(hanhwa_batter_2018,"이용규",NULL))

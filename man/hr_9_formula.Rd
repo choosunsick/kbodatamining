@@ -16,5 +16,5 @@ HR / 9 from data
 Calculating Homerun / 9 from data
 }
 \examples{
-hr_9_formula(find_team(hanhwa_pitcher_2018,"한화"))
+hr_9_formula(hanhwa_pitcher_2018)
 }

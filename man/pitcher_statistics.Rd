@@ -10,12 +10,12 @@ pitcher_statistics(data)
 \item{data}{KBO Pitcher data}
 }
 \value{
-Pitcher's statistic
+Statistics of Pitcher
 }
 \description{
-Function: Make Pitcher's statistic From the KBO data
+Function: Make Pitcher's statistic From the KBO Pitcher data
 }
 \examples{
-## internal function
-#pitcher_statistics(find_player(hanhwa_pitcher_2018,"정우람"))
+## internal function:This function creates statistical data for the pitcher's boxscore.
+#pitcher_statistics(find_player(hanhwa_pitcher_2018,"정우람",NULL))
 }

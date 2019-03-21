@@ -15,12 +15,11 @@ find_player <- function(data,playername,id){
     }
   else{
     player_data <- data[data$name == playername&data$id==id,]
-    print(unique(player_data$id))
-    if(NROW(unique(player_data$id))!=1){
-      warning("This person is presumed to have the same name.")
-      stop("Please check all_player_id_list.csv for the player's id you want.")
   }
-}
+  if(NROW(unique(player_data$id))!=1){
+    warning("This person is presumed to have the same name.")
+    stop("Please check all_player_id_list.csv for the player's id you want.")
+  }
   if(NROW(player_data)==0){
     warning("Please check the name of the player you are looking for.")
     stop("There is no data for player.")

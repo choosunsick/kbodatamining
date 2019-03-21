@@ -1,4 +1,4 @@
-#' Compares the pitching of two teams
+#' Comparing the pitching of two teams
 #'
 #' A plotting function that compares the pitching of two teams.
 #' We compare pitchers who have played in more than three games on each team.

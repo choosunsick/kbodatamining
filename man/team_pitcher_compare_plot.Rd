@@ -2,7 +2,7 @@
 % Please edit documentation in R/team_pitcher_compare_plot.R
 \name{team_pitcher_compare_plot}
 \alias{team_pitcher_compare_plot}
-\title{Compares the pitching of two teams}
+\title{Comparing the pitching of two teams}
 \usage{
 team_pitcher_compare_plot(data)
 }

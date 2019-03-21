@@ -1,8 +1,8 @@
-#' Comparison between two teams' batters plot
+#' Comparing batter stats of two team during one season
 #'
-#' A plotting function that compares the batter stat of two teams
+#' A plotting function that compares the batter stat of two teams during one season
 #' This function has options called 'yearly' or 'monthly'.
-#' default: Based on the 2018 season, the monthly parameter is NULL.
+#' default: the yearly parameter is 2018, the monthly parameter is NULL.
 #' If you put a year in the yearly parameter, you draw a hit comparison plot of the two teams for that year.
 #' If you put a month in the monthly parameter, you draw a hit comparison plot of the two teams for the matched 2018 year and specific month.
 #' If you put a year and a month in each parameters, you draw a hit comparison plot of the two teams for the matched specific year and month.
@@ -16,12 +16,13 @@
 #' @examples
 #' ##notrun
 #' ## default: yearly=2018, monthly=NULL
-#' #compare_two_team_batter(KBO_full_data,"한화","LG",yearly=2018)
+#' #compare_batter_of_teams(KBO_full_data,"한화","LG",yearly=2018,monthly=NULL)
 #' ## yearly=2018, monthly="05"
-#' #compare_two_team_batter(KBO_full_data,"한화","LG",yearly=2018,monthly="05")
+#' #compare_batter_of_teams(KBO_full_data,"한화","LG",yearly=2018,monthly="05")
 #' @export
 
-compare_two_team_batter <- function(data,team1,team2,yearly=2018,monthly=NULL){
+compare_batter_of_teams <- function(data,team1,team2,yearly=2018,monthly=NULL){
+  data <- data[substr(data$date,1,4)==yearly,]
   data <- make_all_batter_data(data,team1,team2,yearly,monthly)
   plot <- team_batter_compare_plot(data)
   return(plot)

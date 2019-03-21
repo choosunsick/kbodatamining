@@ -34,6 +34,7 @@ pitcher_statistics <- function(data){
   k_9 <- k_9_formula(data)
   hr_9 <- hr_9_formula(data)
   oba <- round(sum(data$h)/sum(data$ab),3)
-  pitcherstatistic <- data.frame(team,g,away,home,win,lose,draw,wpct,hld,sv,ip,r,er,k,bb_plus_hbp,pit,tbf,ha,hra,era,p_ip,k_9,hr_9,oba)
+  pitcherstatistic <- data.frame(team,g,away,home,win,lose,draw,wpct,hld,sv,ip,r,er,k,
+                                 bb_plus_hbp,pit,tbf,ha,hra,era,p_ip,k_9,hr_9,oba)
   return(pitcherstatistic)
 }

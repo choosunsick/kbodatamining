@@ -4,8 +4,7 @@
 \alias{make_all_pitcher_data}
 \title{Make all pitchers of two team data for plotting}
 \usage{
-make_all_pitcher_data(data, team1, team2, yearly = 2018,
-  monthly = NULL)
+make_all_pitcher_data(data, team1, team2, yearly, monthly)
 }
 \arguments{
 \item{data}{KBO pitcher data}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/make_all_pitcher_of_teams.R
 \name{make_all_pitcher_data}
 \alias{make_all_pitcher_data}
-\title{Make all pitchers of two team data for plotting}
+\title{All pitchers' data for plotting}
 \usage{
 make_all_pitcher_data(data, team1, team2, yearly, monthly)
 }
@@ -21,7 +21,7 @@ make_all_pitcher_data(data, team1, team2, yearly, monthly)
 Combined data all the pitcher data from two teams
 }
 \description{
-Function: Make all pitchers of two team data for plotting
+Function: Make data of all pitchers from two teams for plotting
 }
 \examples{
 make_all_pitcher_data(hanhwa_pitcher_2018,"한화","LG",2018,NULL)

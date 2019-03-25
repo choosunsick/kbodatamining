@@ -1,9 +1,9 @@
 #' Comparing the pitching of two teams
 #'
 #' A plotting function that compares the pitching of two teams.
-#' We compare pitchers who have played in more than three games on each team.
+#' We compare stats of pitchers who have played in more than three games on each team.
 #'
-#' @param data two teams of pitcher's merged data
+#' @param data data of all pitchers from two teams
 #' @return A plot comparing records(ERA,K(SO),OBA,P/IP)
 #' @importFrom ggplot2 ggplot geom_segment scale_x_continuous ggtitle scale_colour_manual aes geom_point
 #' @importFrom ggplot2 xlab ylab theme element_text

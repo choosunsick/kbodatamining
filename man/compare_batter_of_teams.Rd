@@ -2,7 +2,7 @@
 % Please edit documentation in R/oneseason_team_batters_compare.R
 \name{compare_batter_of_teams}
 \alias{compare_batter_of_teams}
-\title{Comparing batter stats of two team during one season}
+\title{Comparing batter stats of two teams during one season}
 \usage{
 compare_batter_of_teams(data, team1, team2, yearly = 2018,
   monthly = NULL)
@@ -22,7 +22,7 @@ compare_batter_of_teams(data, team1, team2, yearly = 2018,
 Plot to compare batting records of two teams
 }
 \description{
-A plotting function that compares the batter stat of two teams during one season
+A plotting function that compares batter stats of two teams during one season
 This function has options called 'yearly' or 'monthly'.
 default: the yearly parameter is 2018, the monthly parameter is NULL.
 If you put a year in the yearly parameter, you draw a hit comparison plot of the two teams for that year.

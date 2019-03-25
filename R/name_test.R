@@ -1,6 +1,6 @@
 #' Check name tag
 #'
-#' This function identifies whether name parameter is a team name or a player name.
+#' This function identifies whether 'name' parameter is a team name or a player name.
 #'
 #' @param name KBO player name or KBO Team name
 #' @return name tag

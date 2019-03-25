@@ -17,8 +17,8 @@ make_all_pitcher_data <- function(data,team1,team2,yearly,monthly){
   temp_1 <- find_team(data,team2)
   id_1 <- unique(temp$id)
   id_2 <- unique(temp_1$id)
-  pitchers_data_1 <- do.call(rbind,lapply(1:NROW(id_1),function(x)pitcher_boxscore(data = temp,name = unique(temp$name[temp$id==id_1[x]]) ,id=id_1[x],yearly,monthly)))
-  pitchers_data_2 <- do.call(rbind,lapply(1:NROW(id_2),function(x)pitcher_boxscore(data = temp_1,name = unique(temp_1$name[temp_1$id==id_2[x]]),id=id_2[x],yearly,monthly)))
-  pitchers_data <- rbind(pitchers_data_1,pitchers_data_2)
+  pitchers_team_data_1 <- do.call(rbind,lapply(1:NROW(id_1),function(x)pitcher_boxscore(data = temp,name = unique(temp$name[temp$id==id_1[x]]) ,id=id_1[x],yearly,monthly)))
+  pitchers_team_data_2 <- do.call(rbind,lapply(1:NROW(id_2),function(x)pitcher_boxscore(data = temp_1,name = unique(temp_1$name[temp_1$id==id_2[x]]),id=id_2[x],yearly,monthly)))
+  pitchers_data <- rbind(pitchers_team_data_1,pitchers_team_data_2)
   return(pitchers_data)
 }

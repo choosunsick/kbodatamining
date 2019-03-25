@@ -1,10 +1,10 @@
 #' Comparing the hits of two teams
 #'
 #' A plotting function that compares the hits of two teams
-#' We compare batters who have played in more than ten games on each team.
+#' We compare stats of batters who have played more than ten games on each team.
 #'
-#' @param data two teams of batter's merged data
-#' @return A plot comparing records(AVG,OBP,SLG,BABIP)
+#' @param data data of all batters from two teams
+#' @return A plot that compares records(AVG,OBP,SLG,BABIP)
 #' @importFrom ggplot2 ggplot geom_segment scale_x_continuous ggtitle scale_colour_manual aes geom_point
 #' @importFrom ggplot2 xlab ylab theme element_text
 #' @importFrom gridExtra grid.arrange

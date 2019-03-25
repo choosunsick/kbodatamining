@@ -26,7 +26,9 @@
 #' @export
 
 oneseason_compare_batter <- function(data=kbodatamining::hanhwa_batter_2018,playername1,playername2,yearly=2018,monthly=NULL){
-  data <- make_batter_data_4plot(data,playername1,playername2,yearly,monthly)
+  player_1 <- kbodatamining::batter_boxscore(data = data,name = playername1,yearly = yearly,monthly = monthly)
+  player_2 <- kbodatamining::batter_boxscore(data = data,name = playername2,yearly = yearly,monthly = monthly)
+  data <- rbind(player_1,player_2)
   stat_data <- filter(melt(data,1:3),.data$variable %in% colnames(data)[1:23])
   stat_plot <- ggplot(data = stat_data,aes(x=.data$variable,y=.data$value,fill=.data$name))+
     geom_bar(stat="identity",position = "dodge")+theme(axis.text.x= element_text(angle=30, hjust=1))+

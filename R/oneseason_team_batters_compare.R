@@ -1,6 +1,6 @@
-#' Comparing batter stats of two team during one season
+#' Comparing batter stats of two teams during one season
 #'
-#' A plotting function that compares the batter stat of two teams during one season
+#' A plotting function that compares batter stats of two teams during one season
 #' This function has options called 'yearly' or 'monthly'.
 #' default: the yearly parameter is 2018, the monthly parameter is NULL.
 #' If you put a year in the yearly parameter, you draw a hit comparison plot of the two teams for that year.

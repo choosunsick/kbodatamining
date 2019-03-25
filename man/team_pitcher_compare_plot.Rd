@@ -7,14 +7,14 @@
 team_pitcher_compare_plot(data)
 }
 \arguments{
-\item{data}{two teams of pitcher's merged data}
+\item{data}{data of all pitchers from two teams}
 }
 \value{
 A plot comparing records(ERA,K(SO),OBA,P/IP)
 }
 \description{
 A plotting function that compares the pitching of two teams.
-We compare pitchers who have played in more than three games on each team.
+We compare stats of pitchers who have played in more than three games on each team.
 }
 \examples{
 team_pitcher_compare_plot(make_all_pitcher_data(hanhwa_pitcher_2018,"한화","LG",2018,NULL))

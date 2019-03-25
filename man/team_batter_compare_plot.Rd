@@ -7,14 +7,14 @@
 team_batter_compare_plot(data)
 }
 \arguments{
-\item{data}{two teams of batter's merged data}
+\item{data}{data of all batters from two teams}
 }
 \value{
-A plot comparing records(AVG,OBP,SLG,BABIP)
+A plot that compares records(AVG,OBP,SLG,BABIP)
 }
 \description{
 A plotting function that compares the hits of two teams
-We compare batters who have played in more than ten games on each team.
+We compare stats of batters who have played more than ten games on each team.
 }
 \examples{
 team_batter_compare_plot(make_all_batter_data(hanhwa_batter_2018,"한화","LG",2018,NULL))

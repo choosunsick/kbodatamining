@@ -13,6 +13,7 @@
 player_disposal <- function(data,boxscore,name){
   if(NROW(data)!=1){
     if (name %in% data$name){
+      data$year <- substr(data$date,1,4)
       temp <- data.frame(table(data$year[data$name==name]))
       temp$Var1 <- as.character(temp$Var1)
       if(any(boxscore$period %in% temp$Var1) ==FALSE){

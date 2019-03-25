@@ -21,5 +21,6 @@ Process for creating team box scores
 }
 \examples{
 ## internal function
+## not rn
 #team_dispose(cg_list,boxscore)
 }

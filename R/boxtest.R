@@ -9,6 +9,7 @@
 #' @return complete pitcher box score
 #' @examples
 #' ## internal function
+#' ## not run
 #' #boxscore_test("한화",boxscore,cg_list,cgs_list)
 
 boxscore_test <- function(name,boxscore,cg_list,cgs_list){

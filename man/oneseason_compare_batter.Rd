@@ -24,10 +24,10 @@ Plots comparing two batter stats
 \description{
 This function creates a plot that compares two batters based on batter data of one season.
 This function has options called 'yearly' or 'monthly'.
-default: Based on the 2018 season, the 'monthly' parameter is NULL
+default: The 'yearly' parameter is 2018. ㅆhe 'monthly' parameter is NULL
 If you put specific year in the yearly parameter, this function draws a batting comparing plot of the corresponding year .
-If you put specific month in the monthly parameter, draws a batting comparison plot for the matched 2018 year and specific month.
-If you put specific year and month in two parameters, draws a batting comparison plot for the matched specific year and month.
+If you put specific month in the monthly parameter, this function draws a batting comparison plot for the matched 2018 year and specific month.
+If you put specific year and month in two parameters, this function draws a batting comparison plot for the matched specific year and month.
 If you are using MAC and Hangeul fonts are broken, type `theme_set(theme_gray(base_family = "AppleGothic"))`
 }
 \examples{

@@ -26,8 +26,8 @@ This function draws a plot that compares two pitchers based on one season batter
 This function has an option for yearly and monthly.
 default: Based on the 2018 season, the month argument is NULL
 If you put specific year in the yearly parameter, this function draws a pitching comparing plot of the corresponding year .
-If you put specific month in the monthly parameter, draws a pitching comparison plot for the matched 2018 year and specific month.
-If you put specific year and month in two parameters, draws a pitching comparison plot for the matched specific year and month.
+If you put specific month in the monthly parameter, this function draws a pitching comparison plot for the matched 2018 year and specific month.
+If you put specific year and month in two parameters, this function draws a pitching comparison plot for the matched specific year and month.
 If you are using MAC and Hangeul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
 }
 \examples{

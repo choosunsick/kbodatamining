@@ -14,7 +14,6 @@ A plot comparing records(ERA,K(SO),OBA,P/IP)
 }
 \description{
 A plotting function that compares the pitching of two teams.
-We compare stats of pitchers who have played in more than three games on each team.
 }
 \examples{
 team_pitcher_compare_plot(make_all_pitcher_data(hanhwa_pitcher_2018,"한화","LG",2018,NULL))

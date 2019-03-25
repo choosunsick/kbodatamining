@@ -23,5 +23,6 @@ Creating a complete box score with CG_list, CGS_list, and boxed score
 }
 \examples{
 ## internal function
+## not run
 #boxscore_test("한화",boxscore,cg_list,cgs_list)
 }

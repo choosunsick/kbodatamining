@@ -1,6 +1,6 @@
-#' Make all pitchers of two team data for plotting
+#'All pitchers' data for plotting
 #'
-#' Function: Make all pitchers of two team data for plotting
+#' Function: Make data of all pitchers from two teams for plotting
 #'
 #' @param data KBO pitcher data
 #' @param team1 The first of the team you want to compare

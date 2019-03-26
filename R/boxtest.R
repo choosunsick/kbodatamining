@@ -31,10 +31,10 @@ boxscore_test <- function(name,boxscore,cg_list,cgs_list){
   else{
     cg <- player_disposal(cg_list,boxscore,name)
     cgs <- player_disposal(cgs_list,boxscore,name)
-    if(NROW(cg)!=1 & NROW(cgs)!=1){
+    if(NCOL(cg)!=1 & NCOL(cgs)!=1){
       boxscore <- cbind(name,boxscore,cg$Freq[match(boxscore$period,cg$Var1)],cgs$Freq[match(boxscore$period,cgs$Var1)])
     }
-    else if(NROW(cg)!=1 & NROW(cgs)==1){
+    else if(NCOL(cg)!=1 & NCOL(cgs)==1){
       boxscore <- cbind(name,boxscore,cg$Freq[match(boxscore$period,cg$Var1)],cgs)
     }
     else{

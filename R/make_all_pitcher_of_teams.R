@@ -18,8 +18,6 @@ make_all_pitcher_data <- function(data,team1,team2,yearly,monthly){
   id_1 <- unique(temp$id)
   id_2 <- unique(temp_1$id)
   pitchers_team_data_1 <- do.call(rbind,lapply(1:NROW(id_1),function(x)pitcher_boxscore(data = temp,name = unique(temp$name[temp$id==id_1[x]]) ,id=id_1[x],yearly,monthly)))
-  #이밑에 줄에서 rbind 오류남
-  # box test쪽 문제 인듯
   pitchers_team_data_2 <- do.call(rbind,lapply(1:NROW(id_2),function(x)pitcher_boxscore(data = temp_1,name = unique(temp_1$name[temp_1$id==id_2[x]]),id=id_2[x],yearly,monthly)))
   pitchers_data <- rbind(pitchers_team_data_1,pitchers_team_data_2)
   return(pitchers_data)

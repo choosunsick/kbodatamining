@@ -66,3 +66,18 @@
 #' }
 #' @source \url{https://github.com/LOPES-HUFS/KBO_Data_Wrangling}
 "hanhwa_pitcher_2018"
+
+#' all player id list
+#'
+#' This data includes all KBO player IDs from 2010 to 2018.
+#'
+#' @format A data frame with 1194 rows and 5 variables:
+#' \describe{
+#' \item{name}{name, Player name}
+#' \item{namecode}{namecode, check same name}
+#' \item{id}{id, player id}
+#' \item{season}{season, play season}
+#' \item{nickname}{nickname, classification same name}
+#' }
+#' @source \url{https://github.com/LOPES-HUFS/KBO_Data_Wrangling}
+"all_player_idlist"

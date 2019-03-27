@@ -1,3 +1,4 @@
+^README\.Rmd$
 ^data-raw$
 ^LICENSE\.md$
 ^.*\.Rproj$
@@ -6,6 +7,5 @@
 .gitignore
 README.md
 .Rhistory
-
 ^json_sample$
 ^player_id_list$

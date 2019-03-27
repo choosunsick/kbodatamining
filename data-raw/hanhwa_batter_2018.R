@@ -1,6 +1,6 @@
 library(jsonlite)
-sample_set <- fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
-batter_id  <- read.csv("./player_id_list/batter_id_list.csv",stringsAsFactors = F)
+sample_set <- fromJSON(system.file("extdata", "Hanhwa_normalseason_2018.json", package = "kbodatamining"))
+batter_id  <- read.csv(system.file("extdata", "batter_id_list.csv", package = "kbodatamining"))
 
 hanhwa_batter_2018 <- do.call(rbind,lapply(names(sample_set),FUN = function(x)json2batterdf(sample_set,x)))
 hanhwa_batter_2018 <- hanhwa_batter_2018[,c(18:21,11,16:17,1:9,24,23,22,13,12,10,15)]

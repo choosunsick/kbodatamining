@@ -5,14 +5,19 @@
 \title{Plot comparing stats of two batter during one season}
 \usage{
 oneseason_compare_batter(data = kbodatamining::hanhwa_batter_2018,
-  playername1, playername2, yearly = 2018, monthly = NULL)
+  playername1, playername2, id1 = NULL, id2 = NULL, yearly = 2018,
+  monthly = NULL)
 }
 \arguments{
-\item{data}{Default data is hanhwa_batter_2018 You can put other kbo batter data if you want.}
+\item{data}{Default data is hanhwa_batter_2018. You can put other KBO batter data.}
 
 \item{playername1}{The first of the player you want to compare}
 
 \item{playername2}{The second of the player you want to compare}
+
+\item{id1}{Defalut value is NULL. The first of the player id you want to compare}
+
+\item{id2}{Defalut value is NULL. The second of the player id you want to compare}
 
 \item{yearly}{The default value is 2018 Possible values are a specific year.}
 
@@ -24,7 +29,7 @@ Plots comparing two batter stats
 \description{
 This function creates a plot that compares two batters based on batter data of one season.
 This function has options called 'yearly' or 'monthly'.
-default: The 'yearly' parameter is 2018. ㅆhe 'monthly' parameter is NULL
+default: The 'yearly' parameter is 2018. The 'monthly' parameter is NULL
 If you put specific year in the yearly parameter, this function draws a batting comparing plot of the corresponding year .
 If you put specific month in the monthly parameter, this function draws a batting comparison plot for the matched 2018 year and specific month.
 If you put specific year and month in two parameters, this function draws a batting comparison plot for the matched specific year and month.

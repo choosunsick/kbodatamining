@@ -5,7 +5,8 @@
 \title{Plot comparing two pitcher stats with one season}
 \usage{
 oneseason_compare_pitcher(data = kbodatamining::hanhwa_pitcher_2018,
-  playername1, playername2, yearly = 2018, monthly = NULL)
+  playername1, playername2, id1 = NULL, id2 = NULL, yearly = 2018,
+  monthly = NULL)
 }
 \arguments{
 \item{data}{Default data is hanhwa_pitcher_2018 You can put other KBO pitcher data if you want.}
@@ -13,6 +14,10 @@ oneseason_compare_pitcher(data = kbodatamining::hanhwa_pitcher_2018,
 \item{playername1}{Name of the batter you want to compare with playername1}
 
 \item{playername2}{NName of the batter you want to compare with playername2}
+
+\item{id1}{Defalut value is NULL. The first of the player id you want to compare}
+
+\item{id2}{Defalut value is NULL. The second of the player id you want to compare}
 
 \item{yearly}{The default value is NULL Possible values are a specific year.}
 
@@ -28,11 +33,11 @@ default: Based on the 2018 season, the month argument is NULL
 If you put specific year in the yearly parameter, this function draws a pitching comparing plot of the corresponding year .
 If you put specific month in the monthly parameter, this function draws a pitching comparison plot for the matched 2018 year and specific month.
 If you put specific year and month in two parameters, this function draws a pitching comparison plot for the matched specific year and month.
-If you are using MAC and Hangeul fonts are broken, type `theme_gray (base_family = "AppleGothic"))`
+If you are using MAC and Hangeul fonts are broken, type `theme_set(theme_gray(base_family = "AppleGothic"))`
 }
 \examples{
 ## default: yearly=2018, monthly=NULL
-oneseason_compare_pitcher(hanhwa_pitcher_2018,"정우람","이태양",yearly=2018)
+oneseason_compare_pitcher(hanhwa_pitcher_2018,"정우람","송은범",yearly=2018)
 ## yearly=2018, monthly="05"
-oneseason_compare_pitcher(hanhwa_pitcher_2018,"정우람","이태양",yearly=2018,monthly="05")
+oneseason_compare_pitcher(hanhwa_pitcher_2018,"정우람","송은범",yearly=2018,monthly="05")
 }

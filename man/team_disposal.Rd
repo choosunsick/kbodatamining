@@ -7,20 +7,21 @@
 team_disposal(data, boxscore, teamname)
 }
 \arguments{
-\item{data}{cg_list or cgs_list (The result value of bind_cg_list or bind_cgs_list)}
+\item{data}{cg_list or cgs_list (The result value of cg_calculate or cgs_calculate)}
 
 \item{boxscore}{The result value of the pitcher_statistics function}
 
 \item{teamname}{teamname}
 }
 \value{
-CG or CGS
+yearly CG or CGS
 }
 \description{
 Process for creating team box scores
 }
 \examples{
 ## internal function
-## not rn
-#team_dispose(cg_list,boxscore)
+## not run
+# boxscore <- date_test(data=hanhwa_pitcher_2018,teamname="한화",id=NULL,2018,NULL,pitcher_statistics)
+# team_disposal(cg_calculate(hanhwa_pitcher_2018,"한화"),boxscore,"한화")
 }

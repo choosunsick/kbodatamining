@@ -33,7 +33,6 @@ If you are looking for a player who has the same name with other players, you ne
 \examples{
 ## default: id=NULL, yearly=NULL, monthly=NULL
 pitcher_boxscore(hanhwa_pitcher_2018,"정우람")
-pitcher_boxscore(hanhwa_pitcher_2018,"한화")
 ## id=NULL, yearly=2018, monthly=NULL
 pitcher_boxscore(hanhwa_pitcher_2018,"정우람",yearly=2018)
 ## id=NULL, yearly=NULL, monthly="05"

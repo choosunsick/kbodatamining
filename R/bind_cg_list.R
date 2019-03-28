@@ -10,7 +10,7 @@
 #' @export
 
 bind_cg_list <- function(data,team){
-  cg_list <- do.call(rbind,lapply(unique(team),function(x)cg_calculate(data,x)))
+  cg_list <- unique(do.call(rbind,lapply(unique(team),function(x)cg_calculate(data,x))))
 
   if(NROW(cg_list)!=0){
     cg_list[,1:3] <- do.call(cbind,lapply(cg_list[,1:3],function(x)as.character(x)))

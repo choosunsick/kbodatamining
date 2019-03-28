@@ -2,14 +2,15 @@
 #'
 #' Process for creating team box scores
 #'
-#' @param data cg_list or cgs_list (The result value of bind_cg_list or bind_cgs_list)
+#' @param data cg_list or cgs_list (The result value of cg_calculate or cgs_calculate)
 #' @param boxscore The result value of the pitcher_statistics function
 #' @param teamname teamname
-#' @return  CG or CGS
+#' @return yearly CG or CGS
 #' @examples
 #' ## internal function
-#' ## not rn
-#' #team_dispose(cg_list,boxscore)
+#' ## not run
+#' # boxscore <- date_test(data=hanhwa_pitcher_2018,teamname="한화",id=NULL,2018,NULL,pitcher_statistics)
+#' # team_disposal(cg_calculate(hanhwa_pitcher_2018,"한화"),boxscore,"한화")
 
 team_disposal <- function(data,boxscore,teamname){
   if(NROW(data)!=1){
@@ -22,7 +23,7 @@ team_disposal <- function(data,boxscore,teamname){
     temp <- temp[order(temp$Var1,decreasing = F),]
   }
   else{
-    temp <- 0
+    temp <-0
   }
   return(temp)
 }

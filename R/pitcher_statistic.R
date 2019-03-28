@@ -28,7 +28,7 @@ pitcher_statistics <- function(data){
   pit <- sum(data$pit)
   tbf <- sum(data$tbf)
   ha <- sum(data$h)
-  hra <- sum(data$hr)
+  hra <- sum(data$hr,na.rm = TRUE)
   era <- era_formula(data)
   p_ip <- p_ip_formula(data)
   k_9 <- k_9_formula(data)

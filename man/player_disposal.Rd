@@ -4,14 +4,12 @@
 \alias{player_disposal}
 \title{Process the player's complete game record}
 \usage{
-player_disposal(data, boxscore, name)
+player_disposal(data, boxscore)
 }
 \arguments{
 \item{data}{cg_list or cgs_list (The result value of bind_cg_list or bind_cgs_list)}
 
 \item{boxscore}{The result value of the pitcher_statistics function}
-
-\item{name}{player name}
 }
 \value{
 boxscore with CG or CGS

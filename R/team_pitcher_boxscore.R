@@ -22,6 +22,10 @@
 #' team_pitcher_boxscore(data=hanhwa_pitcher_2018,teamname="한화",yearly=2018,monthly="05")
 #' @export
 team_pitcher_boxscore <- function(data=kbodatamining::hanhwa_pitcher_2018,teamname,yearly=NULL,monthly=NULL){
+  if(teamname %in% unique(kbodatamining::hanhwa_batter_2018$team) == FALSE){
+    warning("Please check the name of the team you are looking for.")
+    stop("There is no data with the team name entered.")
+  }
   boxscore <- date_test(data,teamname,id=NULL,yearly,monthly,pitcher_statistics)
   cg_list <- team_disposal(cg_calculate(data,teamname),boxscore,teamname)
   cgs_list <- team_disposal(cgs_calculate(data,teamname),boxscore,teamname)

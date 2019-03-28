@@ -22,6 +22,10 @@
 #' team_batter_boxscore(data=hanhwa_batter_2018,teamname="한화",yearly=2018,monthly="05")
 #' @export
 team_batter_boxscore <- function(data=kbodatamining::hanhwa_batter_2018,teamname,yearly=NULL,monthly=NULL){
+  if(teamname %in% unique(kbodatamining::hanhwa_batter_2018$team) == FALSE){
+    warning("Please check the name of the team you are looking for.")
+    stop("There is no data with the team name entered.")
+  }
   boxscore <- date_test(data,teamname,id=NULL,yearly,monthly,batter_statistics)
   colnames(boxscore)<-c("period","team","g","away","home","pa","ab","h","r","rbi","1B","2B","3B","hr","tb","bb","hbp",
                           "ibb","so","gidp","sh","sf","avg","obp","slg","ops","babip")

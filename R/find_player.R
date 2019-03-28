@@ -22,7 +22,7 @@ find_player <- function(data,playername,id){
   }
   if(NROW(player_data)==0){
     warning("Please check the name of the player you are looking for.")
-    stop("There is no data for player.")
+    stop("There is no data for that player.")
   }
   return(player_data)
 }

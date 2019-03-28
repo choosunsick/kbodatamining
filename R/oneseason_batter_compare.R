@@ -21,12 +21,12 @@
 #' @return Plots comparing two batter stats
 #' @examples
 #' ## default: yearly=2018, monthly=NULL
-#' oneseason_compare_batter(hanhwa_batter_2018,"이용규","정근우",yearly=2018)
+#' oneseason_batter_compare(hanhwa_batter_2018,"이용규","정근우",yearly=2018)
 #' ## yearly=2018, monthly="05"
-#' oneseason_compare_batter(hanhwa_batter_2018,"이용규","정근우",yearly=2018,monthly="05")
+#' oneseason_batter_compare(hanhwa_batter_2018,"이용규","정근우",yearly=2018,monthly="05")
 #' @export
 
-oneseason_compare_batter <- function(data=kbodatamining::hanhwa_batter_2018,playername1,playername2,id1=NULL,id2=NULL,yearly=2018,monthly=NULL){
+oneseason_batter_compare <- function(data=kbodatamining::hanhwa_batter_2018,playername1,playername2,id1=NULL,id2=NULL,yearly=2018,monthly=NULL){
   player_1 <- batter_boxscore(data = data,name = playername1,id=id1,yearly = yearly,monthly = monthly)
   player_2 <- batter_boxscore(data = data,name = playername2,id=id2,yearly = yearly,monthly = monthly)
   data <- rbind(player_1,player_2)

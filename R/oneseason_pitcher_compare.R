@@ -21,12 +21,12 @@
 #' @importFrom dplyr filter
 #' @examples
 #' ## default: yearly=2018, monthly=NULL
-#' oneseason_compare_pitcher(hanhwa_pitcher_2018,"정우람","송은범",yearly=2018)
+#' oneseason_pitcher_compare(hanhwa_pitcher_2018,"정우람","송은범",yearly=2018)
 #' ## yearly=2018, monthly="05"
-#' oneseason_compare_pitcher(hanhwa_pitcher_2018,"정우람","송은범",yearly=2018,monthly="05")
+#' oneseason_pitcher_compare(hanhwa_pitcher_2018,"정우람","송은범",yearly=2018,monthly="05")
 #' @export
 
-oneseason_compare_pitcher <- function(data=kbodatamining::hanhwa_pitcher_2018,playername1,playername2,id1=NULL,id2=NULL,yearly=2018,monthly=NULL){
+oneseason_pitcher_compare <- function(data=kbodatamining::hanhwa_pitcher_2018,playername1,playername2,id1=NULL,id2=NULL,yearly=2018,monthly=NULL){
   player_1 <- pitcher_boxscore(data = data,name = playername1,id=id1,yearly = yearly,monthly = monthly)
   player_2 <- pitcher_boxscore(data = data,name = playername2,id=id2,yearly = yearly,monthly = monthly)
   data <- rbind(player_1,player_2)

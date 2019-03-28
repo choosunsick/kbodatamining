@@ -2,7 +2,7 @@
 % Please edit documentation in R/yearly_month_record.R
 \name{yearly_month_record}
 \alias{yearly_month_record}
-\title{Annual record for the entered month}
+\title{Monthly record of every year}
 \usage{
 yearly_month_record(data, name, id, recordname, month)
 }
@@ -15,13 +15,13 @@ yearly_month_record(data, name, id, recordname, month)
 
 \item{recordname}{The name of the record you want}
 
-\item{month}{The month you want to find}
+\item{month}{Possible value is a specific month}
 }
 \value{
-the record of the month entered in every year of the entered player
+the Monthly record of every year of the player or team
 }
 \description{
-It shows the record of the month entered in every year of the entered player
+This function shows the Monthly record of every year of the player or team
 }
 \examples{
 ## internal function

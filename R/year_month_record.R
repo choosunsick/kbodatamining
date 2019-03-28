@@ -1,20 +1,20 @@
-#' Record of players by period
+#' Record of player or team by period
 #'
-#' It shows the record you want to view the player you entered during the entered period.
+#' This function shows the baseball record of the player or team of the year and month you put in
 #'
 #' @param data KBO datas with at least one year of data
 #' @param name The name of the player or the team you want
 #' @param id The id of the player you want
 #' @param recordname The name of the record you want
-#' @param year The year you want to find
-#' @param month The month you want to find
-#' @return The record of the player during entered period
+#' @param year Possible value is a specific year.
+#' @param month Possible value is a specific month.
+#' @return The record of the player or team during the period you put
 #' @examples
 #' ## internal function
 #' # year_month_record(hanhwa_batter_2018,"이용규",avg_formula,2018,"05")
 #' # year_month_record(hanhwa_batter_2018,"한화",avg_formula,2018,"05")
 year_month_record <- function(data,name,id,recordname,year,month){
-  if(name_test(name)=="team"){
+  if(name %in% unique(kbodatamining::hanhwa_batter_2018$team)){
     temp_data <- find_team(data,name)
   }
   else{

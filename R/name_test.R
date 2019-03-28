@@ -1,16 +1,17 @@
-#' Check name tag
+#' Check samename
 #'
-#' This function identifies whether 'name' parameter is a team name or a player name.
+#' This function checks whether the name is the same or not.
 #'
-#' @param name KBO player name or KBO Team name
-#' @return name tag
+#' @param name KBO player name
+#' @return check of samename
 #' @examples
 #' ## internal function
-#' #name_test("한화")
+#' name_test("이병규")
+#' @export
 
 name_test <- function(name){
-  if(name %in% unique(kbodatamining::hanhwa_pitcher_2018$team))
-    return("team")
+  if(NROW(find_player_id(name))>1)
+    return("samename")
   else
-    return("not_team")
+    return("not_samename")
 }

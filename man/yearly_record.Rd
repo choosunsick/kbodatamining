@@ -2,7 +2,7 @@
 % Please edit documentation in R/yearly_record.R
 \name{yearly_record}
 \alias{yearly_record}
-\title{Yearly record show}
+\title{Yearly record}
 \usage{
 yearly_record(data, name, id, recordname)
 }
@@ -16,10 +16,10 @@ yearly_record(data, name, id, recordname)
 \item{recordname}{The name of the record you want}
 }
 \value{
-calculate yearly record
+The yearly record of the player or team
 }
 \description{
-It shows the yearly record of the entered player
+This function shows the yearly record of the player or team
 }
 \examples{
 ## internal function

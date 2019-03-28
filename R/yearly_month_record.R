@@ -1,19 +1,19 @@
-#' Annual record for the entered month
+#' Monthly record of every year
 #'
-#' It shows the record of the month entered in every year of the entered player
+#' This function shows the Monthly record of every year of the player or team
 #'
 #' @param data KBO datas with at least one year of data
 #' @param name The name of the player or the team you want
 #' @param id The id of the player you want
 #' @param recordname The name of the record you want
-#' @param month The month you want to find
-#' @return the record of the month entered in every year of the entered player
+#' @param month Possible value is a specific month
+#' @return the Monthly record of every year of the player or team
 #' @examples
 #' ## internal function
 #' #yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula,"05")
 #' #yearly_month_record(hanhwa_batter_2018,"한화",avg_formula,"05")
 yearly_month_record <- function(data,name,id,recordname,month){
-  if(name_test(name)=="team"){
+  if(name %in% unique(kbodatamining::hanhwa_batter_2018$team)){
     subset_data <- find_team(data,name)
   }
   else{

@@ -2,20 +2,20 @@
 % Please edit documentation in R/name_test.R
 \name{name_test}
 \alias{name_test}
-\title{Check name tag}
+\title{Check samename}
 \usage{
 name_test(name)
 }
 \arguments{
-\item{name}{KBO player name or KBO Team name}
+\item{name}{KBO player name}
 }
 \value{
-name tag
+check of samename
 }
 \description{
-This function identifies whether 'name' parameter is a team name or a player name.
+This function checks whether the name is the same or not.
 }
 \examples{
 ## internal function
-#name_test("한화")
+name_test("이병규")
 }

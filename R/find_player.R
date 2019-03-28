@@ -11,14 +11,14 @@
 #' @export
 find_player <- function(data,playername,id){
   if(is.null(id)==TRUE){
+    if(name_test(playername)=="samename"){
+      warning("This person is presumed to have the samename.")
+      stop("Please use find_player_id function.")
+    }
     player_data <- data[data$name == playername,]
     }
   else{
     player_data <- data[data$name == playername&data$id==id,]
-  }
-  if(NROW(player_data)!=0&NROW(unique(player_data$id))!=1){
-    warning("This person is presumed to have the same name.")
-    stop("Please check all_player_id_list.csv for the player's id you want.")
   }
   if(NROW(player_data)==0){
     warning("Please check the name of the player you are looking for.")

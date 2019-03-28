@@ -2,7 +2,7 @@
 % Please edit documentation in R/year_month_record.R
 \name{year_month_record}
 \alias{year_month_record}
-\title{Record of players by period}
+\title{Record of player or team by period}
 \usage{
 year_month_record(data, name, id, recordname, year, month)
 }
@@ -15,15 +15,15 @@ year_month_record(data, name, id, recordname, year, month)
 
 \item{recordname}{The name of the record you want}
 
-\item{year}{The year you want to find}
+\item{year}{Possible value is a specific year.}
 
-\item{month}{The month you want to find}
+\item{month}{Possible value is a specific month.}
 }
 \value{
-The record of the player during entered period
+The record of the player or team during the period you put
 }
 \description{
-It shows the record you want to view the player you entered during the entered period.
+This function shows the baseball record of the player or team of the year and month you put in
 }
 \examples{
 ## internal function

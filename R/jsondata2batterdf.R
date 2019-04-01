@@ -16,6 +16,7 @@
 #' @return the batter dataframe data that is changed from json data file
 #' @examples
 #' ## not run
+#' ## This example does not run the example because it requires a json file.
 #' # jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
 #' # json2batterdf(jsondata,names(jsondata)[1])
 #' @export

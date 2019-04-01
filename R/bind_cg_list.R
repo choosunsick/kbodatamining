@@ -6,8 +6,10 @@
 #' @param team KBO team name
 #' @return Complete game player and CG count data frame for all teams
 #' @examples
-#' bind_cg_list(hanhwa_pitcher_2018,"한화")
-#' @export
+#' ## internal function:
+#' ## This function creates Complete game data for the pitcher's boxscore.
+#' # bind_cg_list(hanhwa_pitcher_2018,"한화")
+
 
 bind_cg_list <- function(data,team){
   cg_list <- unique(do.call(rbind,lapply(unique(team),function(x)cg_calculate(data,x))))

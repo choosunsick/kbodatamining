@@ -26,7 +26,7 @@ The record of the player or team during the period you put
 This function shows the baseball record of the player or team of the year and month you put in
 }
 \examples{
-## internal function
+## internal function - not run
 # year_month_record(hanhwa_batter_2018,"이용규",avg_formula,2018,"05")
 # year_month_record(hanhwa_batter_2018,"한화",avg_formula,2018,"05")
 }

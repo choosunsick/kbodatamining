@@ -1,4 +1,4 @@
-#' Complete game count
+#' Complete game count formula
 #'
 #' Creating a list of players who have achieve Complete game on the team.
 #'

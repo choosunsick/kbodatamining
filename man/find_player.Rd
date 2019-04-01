@@ -20,5 +20,6 @@ The batter data only the player you want to find
 find_player function creates data that contains player you want.
 }
 \examples{
+## internal function
 find_player(hanhwa_batter_2018,"이용규",NULL)
 }

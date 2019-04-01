@@ -7,6 +7,7 @@
 #' @param id player id you want to find
 #' @return The batter data only the player you want to find
 #' @examples
+#' ## internal function
 #' find_player(hanhwa_batter_2018,"이용규",NULL)
 #' @export
 find_player <- function(data,playername,id){

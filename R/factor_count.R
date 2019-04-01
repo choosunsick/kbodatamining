@@ -6,6 +6,7 @@
 #' @param record_factor This is the category of batting to find, and it should be a string type.
 #' @return Sum of the batter records in every innings
 #' @examples
+#' ## internal function
 #' lee <- find_player(hanhwa_batter_2018,"이용규",NULL)
 #' inning <- c('one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve')
 #' inning_data <- subset(lee,select=inning)

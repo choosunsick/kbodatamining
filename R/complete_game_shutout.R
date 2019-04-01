@@ -1,4 +1,4 @@
-#' Complete Game Shutout count
+#' Complete Game Shutout count formula
 #'
 #' Creating a list of players who have achieve Complete Game Shutout on the team.
 #'

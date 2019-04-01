@@ -7,6 +7,7 @@
 #' @return The team data that you want to find
 #' @importFrom stringr str_split str_detect
 #' @examples
+#' ## internal function
 #' find_team(hanhwa_batter_2018,"한화")
 #' @export
 find_team <- function(data,team){

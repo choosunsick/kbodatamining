@@ -18,5 +18,6 @@ The team data that you want to find
 finding data that contains team you want.
 }
 \examples{
+## internal function
 find_team(hanhwa_batter_2018,"한화")
 }

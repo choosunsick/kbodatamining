@@ -2,7 +2,7 @@
 % Please edit documentation in R/complete_game_shutout.R
 \name{cgs_calculate}
 \alias{cgs_calculate}
-\title{Complete Game Shutout count}
+\title{Complete Game Shutout count formula}
 \usage{
 cgs_calculate(data, team)
 }

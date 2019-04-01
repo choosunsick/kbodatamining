@@ -24,7 +24,7 @@ the Monthly record of every year of the player or team
 This function shows the Monthly record of every year of the player or team
 }
 \examples{
-## internal function
+## internal function - not run
 #yearly_month_record(hanhwa_batter_2018,"이용규",avg_formula,"05")
 #yearly_month_record(hanhwa_batter_2018,"한화",avg_formula,"05")
 }

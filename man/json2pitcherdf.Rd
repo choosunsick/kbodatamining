@@ -29,6 +29,7 @@ This function changes pitcher data in json file to dataframe data
 }
 \examples{
 ## not run
+## This example does not run the example because it requires a json file.
 # jsondata <- jsonlite::fromJSON(./json_sample/Hanhwa_normalseason_2018.json)
 # json2pitcherdf(jsondata,names(jsondata)[1])
 }

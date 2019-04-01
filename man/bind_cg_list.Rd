@@ -18,5 +18,7 @@ Complete game player and CG count data frame for all teams
 Creating a complete game list from data.
 }
 \examples{
-bind_cg_list(hanhwa_pitcher_2018,"한화")
+## internal function:
+## This function creates Complete game data for the pitcher's boxscore.
+# bind_cg_list(hanhwa_pitcher_2018,"한화")
 }

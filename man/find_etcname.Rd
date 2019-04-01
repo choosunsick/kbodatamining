@@ -24,8 +24,7 @@ find items etc info
 finding etc name from jsondata
 }
 \examples{
-## internal function
-## not run
+## internal function - not run
 # jsondata <- jsonlite::fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
 # find_etcname(jsondata,names(jsondata)[1],"구장","관중","경기시간")
 }

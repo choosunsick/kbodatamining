@@ -2,7 +2,7 @@
 % Please edit documentation in R/complete_game.R
 \name{cg_calculate}
 \alias{cg_calculate}
-\title{Complete game count}
+\title{Complete game count formula}
 \usage{
 cg_calculate(data, team)
 }

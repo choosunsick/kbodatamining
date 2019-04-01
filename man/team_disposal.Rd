@@ -20,8 +20,7 @@ yearly CG or CGS
 Process for creating team box scores
 }
 \examples{
-## internal function
-## not run
+## internal function - not run
 # boxscore <- date_test(data=hanhwa_pitcher_2018,teamname="한화",id=NULL,2018,NULL,pitcher_statistics)
 # team_disposal(cg_calculate(hanhwa_pitcher_2018,"한화"),boxscore,"한화")
 }

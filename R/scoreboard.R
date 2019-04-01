@@ -7,6 +7,7 @@
 #' @return gameid's baseball game appears as a scoreboard data frame.
 #' @examples
 #' ## not run
+#' ## This example does not run the example because it requires a json file.
 #' # jsondata <- jsonlite::fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
 #' # scoreboard(jsondata,names(jsondata)[1])
 #' @export

@@ -12,6 +12,7 @@
 #' @importFrom dplyr filter %>%
 #' @importFrom rlang .data
 #' @examples
+#' ## internal function
 #' date_test(hanhwa_batter_2018,"이용규",NULL,NULL,NULL,avg_formula)
 #' @export
 date_test <- function(data,name,id,yearly,monthly,recordname){

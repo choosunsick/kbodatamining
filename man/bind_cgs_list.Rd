@@ -18,5 +18,7 @@ Complete game player and CGS count data frame for all teams
 The calculated Complete game Shutout data frames are grouped into one data frame.
 }
 \examples{
-bind_cgs_list(hanhwa_pitcher_2018,"한화")
+## internal function:
+## This function creates Complete game data for the pitcher's boxscore.
+# bind_cgs_list(hanhwa_pitcher_2018,"한화")
 }

@@ -8,7 +8,7 @@
 #' @param recordname The name of the record you want
 #' @return The yearly record of the player or team
 #' @examples
-#' ## internal function
+#' ## internal function - not run
 #' #yearly_record(hanhwa_batter_2018,"이용규",avg_formula)
 #' #yearly_record(hanhwa_batter_2018,"한화",avg_formula)
 yearly_record <- function(data,name,id,recordname){

@@ -18,6 +18,6 @@ boxscore with CG or CGS
 Process for creating player box scores
 }
 \examples{
-## internal function
+## internal function - not run
 #player_disposal(cg_list,boxscore)
 }

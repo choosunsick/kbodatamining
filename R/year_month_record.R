@@ -10,7 +10,7 @@
 #' @param month Possible value is a specific month.
 #' @return The record of the player or team during the period you put
 #' @examples
-#' ## internal function
+#' ## internal function - not run
 #' # year_month_record(hanhwa_batter_2018,"이용규",avg_formula,2018,"05")
 #' # year_month_record(hanhwa_batter_2018,"한화",avg_formula,2018,"05")
 year_month_record <- function(data,name,id,recordname,year,month){

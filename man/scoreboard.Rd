@@ -19,6 +19,7 @@ This function creates a scoreboard for that information based on json data and g
 }
 \examples{
 ## not run
+## This example does not run the example because it requires a json file.
 # jsondata <- jsonlite::fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
 # scoreboard(jsondata,names(jsondata)[1])
 }

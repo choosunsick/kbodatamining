@@ -6,7 +6,7 @@
 #' @param boxscore The result value of the pitcher_statistics function
 #' @return boxscore with CG or CGS
 #' @examples
-#' ## internal function
+#' ## internal function - not run
 #' #player_disposal(cg_list,boxscore)
 
 player_disposal <- function(data,boxscore){

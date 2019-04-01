@@ -26,5 +26,6 @@ Baseball record data created according to 'yearly', 'monthly' parameter
 Tests whether the two parameters are null.
 }
 \examples{
+## internal function
 date_test(hanhwa_batter_2018,"이용규",NULL,NULL,NULL,avg_formula)
 }

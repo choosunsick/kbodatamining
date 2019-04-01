@@ -22,7 +22,7 @@ The yearly record of the player or team
 This function shows the yearly record of the player or team
 }
 \examples{
-## internal function
+## internal function - not run
 #yearly_record(hanhwa_batter_2018,"이용규",avg_formula)
 #yearly_record(hanhwa_batter_2018,"한화",avg_formula)
 }

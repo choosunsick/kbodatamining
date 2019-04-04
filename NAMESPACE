@@ -2,8 +2,6 @@
 
 export(avg_formula)
 export(batter_boxscore)
-export(bind_cg_list)
-export(bind_cgs_list)
 export(bind_player_id)
 export(cg_calculate)
 export(cgs_calculate)

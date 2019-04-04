@@ -2,91 +2,77 @@
 output: github_document
 ---
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "man/figures/README-"
 )
 ```
 
 # `kbodatamining`
 
-## Package Introduction(패키지 소개)
+## Package Introduction
 
 The goal of `kbodatamining` package is analizing and visualizing korean baseball data(KBO data). 
-이 패키지는 파이썬으로 수집한 KBO 자료를 R에서 활용하기 위해 만들어졌습니다. 
 This package is intended to make use of KBO data collected from Python to R.
 
-## Package Installation (패키지 설치)
-당신은 `kbodatamining` 패키지를 깃허브에서 아래의 명령어로 설치할 수 있습니다.
+## Package Installation
+
 You can install package `kbodatamining` from github with the following command.
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("choosunsick/kbodatamining")
 ```
 
-## Package Functionality(패키지 기능성)
-
-이 패키지의 주요 기능은 2가지 입니다.
-There are two primary functions in this package.
-첫 번째는 선수들의 기록들을 box score로 만드는 기능입니다.
-The first is to make the records of players box-score.
-예를 들면 다음과 같습니다.
+## Package Functionality
+There are two primary functions in this package. The first is to make the records of players box-score.
 for example:
 
 ```{r}
+library(kbodatamining)
+
 # batter example
 batter_boxscore(data = hanhwa_batter_2018,name = "이용규",yearly = 2018)
 # pitcher example
 pitcher_boxscore(data = hanhwa_pitcher_2018,name = "정우람",yearly = 2018)
 # team hitting example
-batter_boxscore(data = hanhwa_batter_2018,name = "한화",yearly = 2018)
+team_batter_boxscore(data = hanhwa_batter_2018,teamname = "한화",yearly = 2018)
 # team pitching example
-pitcher_boxscore(data = hanhwa_pitcher_2018,name = "한화",yearly = 2018)
+team_pitcher_boxscore(data = hanhwa_pitcher_2018,teamname = "한화",yearly = 2018)
 ```
 
-두 번째는 선수별로 월별 혹은 시즌별 비교를 시각화하는 기능입니다.
-The second is to visualize monthly or seasonal comparisons for each player.
-추가로 이 두 가지 기능은 각 팀의 경우에도 적용될 수 있습니다.
-In addition, these two functions can be applied to each team.
-예를들면:
+The second is to visualize monthly or seasonal comparisons for each player. In addition, these two functions can be applied to each team.
 for example:
 ```{r}
+library(kbodatamining)
+theme_set(theme_gray(base_family = "AppleGothic"))
 # comparing batters
-oneseason_compare_batter(data = hanhwa_batter_2018,playername1 = "이용규",playername2 = "정근우",yearly=2018)
+oneseason_batter_compare(data = hanhwa_batter_2018,playername1 = "이용규",playername2 = "정근우",yearly=2018)
 # comparing pitchers
-oneseason_compare_pitcher(data = hanhwa_pitcher_2018,playername1 = "정우람",playername2 = "이태양",yearly=2018)
+oneseason_pitcher_compare(data = hanhwa_pitcher_2018,playername1 = "정우람",playername2 = "송은범",yearly=2018)
 # comparing batters of team
-compare_batter_of_teams(hanhwa_batter_2018,"한화","LG",yearly=2018)
+compare_batter_statistic_teams(hanhwa_batter_2018,"한화","LG",yearly=2018)
 # comparing pitchers of team
-compare_pitcher_of_teams(hanhwa_pitcher_2018,"한화","LG",yearly=2018)
+compare_pitcher_statistic_teams(hanhwa_pitcher_2018,"한화","LG",yearly=2018)
 ```
 
-당신은 이 기능에 대한 자세한 설명은 vignette 폴더의 'plotting example'문서에서 찾아 보실 수 있습니다.
 You can find a detailed explanation of this function in the 'plotting example' document of the vignette folder.
 
-## Notes on data (데이터 관련 참고사항)
-KBO 자료를 Python으로 수집하는 방법은 [이 링크](https://choosunsick.github.io/post/kbo_data_wrangling/)에서 확인하실 수 있습니다.
-How to collect KBO data from Python can be found at [blog](https://choosunsick.github.io/post/kbo_data_wrangling/).
-참고로 패키지 내의 샘플 데이터로 2018 시즌 한화의 데이터가 들어있습니다.
-For reference, the sample data in the package includes the data of 2018 season Hanhwa team. 
-이 샘플 데이터는 타자와 투수 데이터로 나누어져 있습니다. 
-There are two types of this sample data: 'hanhwa_batter_2018' and 'hanhwa_pitcher_2018'.
-당신은 샘플 데이터로 패키지의 기능들을 확인해 보실 수 있습니다. 
-You can check the package's functions with sample data.
+## Notes on data
+How to collect KBO data from Python can be found at [LINK](https://choosunsick.github.io/post/kbo_data_wrangling/).
+For reference, the sample data in the package includes the data of 2018 season Hanhwa team. This sample data is divided into 'hanhwa_batter_2018', 'hanhwa_pitcher_2018'. You can check the package's functions using sample data.
 
 ## Json data processing (json data 처리과정)
-당신이 만약 위의 링크를 보고 파이썬을 통해 KBO 경기에 대한 json 파일을 얻었다면, 당신은 json 파일을 R에서 사용하기위해 가공해야 할 것입니다. 
-If you see the above link and get a json file for the KBO game through Python, you will have to process the json file to use it in R.
-그래서 나는 json 파일을 R에서 불러와 DATAFRAME으로 만드는 예시를 보여줄 것입니다. 
-So I'll show you an example of how to load a json file from R and make it a DATAFRAME.
-처리 과정의 예시는 이 깃허브 안의 json_sample 폴더의 자료를 통해서 보여줄 것입니다.
-An example of the process will be shown through the data in the json_sample folder in this github.
+
+If you see the link above and get a json file for the KBO game through Python, you will have to process the json file to use it in R. So I'll show you an example of loading a json file from R and making it to DATAFRAME. An example of the process will be shown through the data in the json_sample folder in this github.
 for example:
 
 ```{r}
 library(jsonlite)
+library(kbodatamining)
 # read json file
 sample_set <- fromJSON("./json_sample/Hanhwa_normalseason_2018.json")
 # make batter data dataframe 
@@ -97,11 +83,13 @@ hanhwa_batter_2018 <- hanhwa_batter_2018[,c(18:21,11,16:17,1:9,24,23,22,13,12,10
 colnames(hanhwa_batter_2018) <- c('date','away','home','doubleheader','name','team','position',
                                   'one','two','three','four','five','six','seven','eight','nine',
                                   'ten','eleven','twelve','ab','h','r','rbi')
+head(hanhwa_batter_2018)
 ```
-추가적으로 선수들의 id 열을 만들어줘야 한다.
-In addition, you need to create an id column for the players.
+
+In addition, you need to create an id column of the players.
 
 ```{r}
+library("kbodatamining")
 # read id list 
 batter_id  <- read.csv("./player_id_list/batter_id_list.csv",stringsAsFactors = F)
 # extract the appropriate id list for your data
@@ -109,7 +97,7 @@ batter_id_2018 <- batter_id[substr(batter_id$date,1,4)==2018,]
 batter_id_hanhwa_2018 <- batter_id_2018[batter_id_2018$away=="한화"|batter_id_2018$home=="한화",]
 # make id column 
 hanhwa_batter_2018 <- get_player_id(hanhwa_batter_2018,batter_id_hanhwa_2018)
+head(hanhwa_batter_2018)
 ```
 
-위의 과정을 당신의 json 파일을 가지고 연도와 팀이름만 바꿔서 반복하면 된다. 
-Repeat the above process with your json file, replacing only the year and team name.
+Repeat the above process with your json file, changing only the year and team name.

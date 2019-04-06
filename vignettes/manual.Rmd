@@ -1,5 +1,5 @@
 ---
-title: "kbodatamining manual"
+title: "plotting function manual"
 author: "Sunsick Choo"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -16,54 +16,48 @@ knitr::opts_chunk$set(
 )
 ```
 
-This document describes the plot functions that this package has.
+This document describes the plotting functions that this package has.
 (이 문서에서는 이 패키지가 가지고 있는 플로팅 기능에 대해 설명할 것입니다.)
 
-## oneseason_compare_batter function   
-(첫번째는 타자들을 비교하여 plot을 그려주는 함수입니다.)
-This function is a function that draws a plot comparing the hitters. 
-이 함수의 return값은 선수의 여러 스탯을 2개의 plot으로 나누어 그려줍니다.
+## Plot to compare individual batters - oneseason_batter_compare function   
+
+This function draws a plot through comparing batters..
 The return value of this function divides the player's statistics into two plots.
-첫 번째는 홈런,안타,득점 등과 같은 스텟을 비교하는 플롯입니다.
-The first is a plot that compares stats, such as home runs, hits, and scoring.
-두 번째는 타율,장타율,출루율 같은 스텟을 비교하는 플롯입니다.
-The second is a plot that compares stats, such as batting average, slugging percentage, and on-base percentage.
-이 함수에는 'yearly', 'monthly' 인자가 있습니다. 이 인자들에 적합하지 않은 값을 넣을 경우 에러가 발생합니다.
-This function has a 'yearly', 'monthly' parameter. If you put a value that is not suitable for these parameters, an error occurs.
-예를 들면 데이터에 없는 선수를 비교하려하거나 데이터에 없는 시즌을 비교하려고 할 때 에러가 발생합니다.  
-For example, an error occurs when you try to compare a player or a season that is not in the data.
+The first plot compares stats, such as 'homeruns', 'hits', and 'scoring'.
+The second plot compares statss, such as batting average, slugging percentage, and on-base percentage.
+선수 이름에 관해 에러가 나는 경우가 있습니다.
+There is an error case with the player name.
+For example, an error occurs when you try to compare a player that is not in the data.
+Also, if the player you are comparing has the same name with other players, An error will occur.
+To solve the problem, you can insert the id of the player who has the same name with other players
 
+## Plot to compare individual pitchers - oneseason_pitcher_compare function
 
-## oneseason_compare_pitcher function
-This function is a function that draws a plot comparing the pitchers. 
+This function draws a plot through comparing pitchers. 
+The return value of this function divides the player's statistics into three plots.
+The first plot compares stats, such as save, earned run and hit allowed
+The second plot compares stats, such as Pitch number and total batter faced
+The third is a plot that compares the percentage stats, such as winning rate, ERA, and so on.
+The reason for dividing the stats into three is the scale of the values.
+This function also has the same error as the above function.
 
+## Plot to compare team batters stats - compare_batter_statistic_teams
 
-## Figures
+This function draws a plot through comparing the batter stats of team. 
+This function returns each plots using the ggplot `facet_wrap()` function for the team's hit statistics.
+The batter stats of two teams are compared against each other and displayed as a bar graph.
+The x-axis of plots represents the two teams to compare.
+The y-axis of the plots represents the number of stats to compare.
 
-The figure sizes have been customised so that you can easily put two images side-by-side. 
+## Plot to compare team pitchers stats - compare_pitcher_statistic_teams
+This function draws a plot through comparing the pitching stats of team. 
+This function returns plots using the ggplot facet_wrap function for the team's pitching statistics.
+The pitching stats of both teams are compared against each other and displayed as a bar graph.
+The x-axis of plots represents the two teams to compare.
+The y-axis of the plots represents stats to compare.
 
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
+##Cautions when using the above functions
 
-You can enable figure captions by `fig_caption: yes` in YAML:
-
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
+This functions have a 'yearly', 'monthly' parameter. If you put a value that is not suitable for these parameters, an error occurs.
+For example, an error occurs when you try to compare a season that is not in the data.
+To prevent errors, you need to be clear about what season the data is about.

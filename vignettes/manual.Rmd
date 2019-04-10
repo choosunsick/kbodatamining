@@ -17,7 +17,6 @@ knitr::opts_chunk$set(
 ```
 
 This document describes the plotting functions that this package has.
-(이 문서에서는 이 패키지가 가지고 있는 플로팅 기능에 대해 설명할 것입니다.)
 
 ## Plot to compare individual batters - oneseason_batter_compare function   
 
@@ -25,8 +24,7 @@ This function draws a plot through comparing batters..
 The return value of this function divides the player's statistics into two plots.
 The first plot compares stats, such as 'homeruns', 'hits', and 'scoring'.
 The second plot compares statss, such as batting average, slugging percentage, and on-base percentage.
-선수 이름에 관해 에러가 나는 경우가 있습니다.
-There is an error case with the player name.
+there is an case of error regarding the player name.
 For example, an error occurs when you try to compare a player that is not in the data.
 Also, if the player you are comparing has the same name with other players, An error will occur.
 To solve the problem, you can insert the id of the player who has the same name with other players
